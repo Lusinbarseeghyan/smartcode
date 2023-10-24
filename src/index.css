@@ -1,6 +1,23 @@
+:root {
+    --font-family-roboto: "Roboto", sans-serif;
+    --main-color: #f3b01b;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-align: center;
+}
+
+.container {
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
 }
