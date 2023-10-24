@@ -1,13 +1,13 @@
 import { Route, Routes } from "react-router-dom";
 
 import Layout from "./Pages/Layout/Layout";
-import Courses from "./pages/Courses/Courses";
-import Features from "./pages/Features/Features";
-import Staff from "./pages/Staff/Staff";
-import About from "./pages/About/About";
-import Home from "./pages/Home/Home";
-import Partners from "./pages/Partners/Partners";
-import NotFound from "./pages/NotFound/NotFound";
+import Courses from "./Pages/Courses/Courses";
+import Features from "./Pages/Features/Features";
+import Staff from "./Pages/Staff/Staff";
+import About from "./Pages/About/About";
+import Home from "./Pages/Home/Home";
+import Partners from "./Pages/Partners/Partners";
+import NotFound from "./Pages/NotFound/NotFound";
 
 const Router = () => {
     return (
