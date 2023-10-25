@@ -14,11 +14,11 @@
 }
 .courseImage{
     margin: 1% auto;
-    width: 70%;
+    width: 50%;
     justify-content: center;
 }
 .courseImage img{
-    max-width: 100%;
+    width: 90%;
 }
 .course button{
     padding: 7px;
