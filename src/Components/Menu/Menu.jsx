@@ -8,7 +8,7 @@ const Menu = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 90) {
+            if (window.scrollY > 0) {
                 navRef.current.classList.add(classes.scroll_nav);
                 navRef.current.classList.remove(classes.scroll_nav_exit);
             } else {

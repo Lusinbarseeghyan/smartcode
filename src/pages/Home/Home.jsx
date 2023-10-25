@@ -78,7 +78,6 @@ const Home = () => {
             <HomeSection textAnimation={textAnimation} />
             <main className={classes.main}>
                 <div className={classes.main_bg}></div>
-                <h2></h2>
             </main>
         </div>
     );
