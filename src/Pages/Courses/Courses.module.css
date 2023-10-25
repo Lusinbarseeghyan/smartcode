@@ -1,0 +1,27 @@
+.cards{
+    margin: 2% 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+.course{
+    border: 1px solid black;
+    width: 20%;
+    background-color: rgb(255, 243, 245);
+}
+.courseImage{
+    margin: 1% auto;
+    width: 70%;
+    justify-content: center;
+}
+.courseImage img{
+    max-width: 100%;
+}
+.course button{
+    padding: 7px;
+    border-radius: 10px;
+}
+
