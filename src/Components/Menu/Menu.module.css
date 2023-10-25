@@ -1,7 +1,8 @@
 .header_cont {
     display: flex;
-    padding: 1rem;
-    border-bottom: 1px solid var(--main-color);
+    z-index: 99999999999999;
+    background-color: transparent;
+    height: 80px;
 }
 .header {
     display: flex;
@@ -26,13 +27,59 @@
 .nav_menu {
     display: flex;
     column-gap: 1rem;
-    & li {
-        font-family: var(--font-family-roboto);
+    & a {
+        font-family: var(--font-family-grotesk);
+        color: aliceblue;
+        transition: all 0.4s;
     }
+}
+.nav_menu a:hover {
+    scale: 1.05;
 }
 .links {
     display: flex;
     column-gap: 0.5em;
     font-size: 15px;
-    color: black;
+}
+.links a {
+    color: aliceblue;
+}
+.scroll_nav {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.449);
+    animation: nav 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+@keyframes nav {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.scroll_nav_exit {
+    width: 100%;
+    background: none;
+    display: flex;
+    align-items: center;
+    z-index: 99999999999;
+    background-color: transparent;
+    animation: nav_exit 0.2s;
+    top: 0;
+}
+
+@keyframes nav_exit {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }

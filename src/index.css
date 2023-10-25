@@ -1,15 +1,22 @@
 :root {
-    --font-family-roboto: "Roboto", sans-serif;
+    --font-family-poppins: "Poppins", sans-serif;
+    --font-family-grotesk: "Space Grotesk", sans-serif;
     --main-color: #f3b01b;
+    --white: #f0f8ff;
+    --white-smoke: #dddddd;
 }
-
+::selection {
+    background-color: var(--main-color);
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-align: center;
 }
-
+body {
+    background-color: #131313;
+}
 .container {
     max-width: 1040px;
     margin: 0 auto;
