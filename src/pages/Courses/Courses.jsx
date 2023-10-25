@@ -1,68 +1,23 @@
+import { useState, useEffect } from "react";
+
 import classes from './Courses.module.css'
 
 const Courses = () => {
-    const separateCourses = [
-        {
-            id: 1,
-            name: "HTML",
-            price: 10000,
-            duration: 8,
-            image: "https://smartcode.am/public/image/courses/front-end.svg",
-        },
-        {
-            id: 2,
-            name: "Phyton",
-            price: 10000,
-            duration: 8,
-            image: "https://itgen.io/images/tild6235-3737-4162-b464-373530363731__frame_642x.png",
-        },
-        {
-            id: 3,
-            name: "UI/UX become smarter",
-            price: 10000,
-            duration: 8,
-            image: "https://smartcode.am/public/image/courses/front-end.svg",
-        },
-        {
-            id: 4,
-            name: "Java Script",
-            price: 10000,
-            duration: 8,
-            image: "https://smartcode.am/public/image/courses/front-end.svg",
-        },
-        {
-            id: 1,
-            name: "HTML",
-            price: 10000,
-            duration: 8,
-            image: "https://smartcode.am/public/image/courses/front-end.svg",
-        },
-        {
-            id: 2,
-            name: "HTML",
-            price: 10000,
-            duration: 8,
-            image: "https://smartcode.am/public/image/courses/front-end.svg",
-        },
-        {
-            id: 3,
-            name: "UI/UX become smarter",
-            price: 10000,
-            duration: 8,
-            image: "https://smartcode.am/public/image/courses/front-end.svg",
-        },
-        {
-            id: 4,
-            name: "Java Script",
-            price: 10000,
-            duration: 8,
-            image: "https://smartcode.am/public/image/courses/front-end.svg",
-        },
-    ];
-
+    
+    const [courseData, setCourseData]=useState([])
+    useEffect(()=>{
+        (
+            async ()=>{
+                const result = await fetch("http://localhost:3001/courses");
+                const jsonData=await result.json();
+                setCourseData(jsonData)
+            }
+        )()
+    },[])
+    
     return <div id="courses" className={classes.cards}>
         {
-            separateCourses.map((course)=>{
+            courseData.map((course)=>{
                 return (
                     <div className={classes.course}>
                         <div className={classes.courseImage}>

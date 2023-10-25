@@ -1,0 +1,95 @@
+{
+    "courses":[
+        {
+            "id": 1,
+            "name": "WEB Front-End",
+            "duration": 8,
+            "price": 58000,
+            "image": "https://smartcode.am/public/image/courses/front-end.svg"
+        },
+        {
+            "id": 2,
+            "name": "Phyton(ML/AI)",
+            "duration": 7,
+            "price": 68000,
+            "image": "https://smartcode.am/public/image/courses/python-ml.svg"
+        },
+        {
+            "id": 3,
+            "name": "JAVA",
+            "duration": 6,
+            "price": 68000,
+            "image": "https://smartcode.am/public/image/courses/java.svg"
+        },
+        {
+            "id": 4,
+            "name": "JavaScript",
+            "duration": 3,
+            "price": 58000,
+            "image": "https://smartcode.am/public/image/courses/javaScript.svg"
+        },
+        {
+            "id": 5,
+            "name": "React.js (Redux)",
+            "duration": 3,
+            "price": 58000,
+            "image": "https://smartcode.am/public/image/courses/react.svg"
+        },
+        {
+            "id": 6,
+            "name": "Node.js",
+            "duration": 3,
+            "price": 68000,
+            "image": "https://smartcode.am/public/image/courses/node.svg"
+        },
+        {
+            "id": 7,
+            "name": "DevOps",
+            "duration": 4,
+            "price": 68000,
+            "image": "https://smartcode.am/public/image/courses/devops.svg?"
+        },
+        {
+            "id": 8,
+            "name": "C#",
+            "duration": 6,
+            "price": 68000,
+            "image": "https://smartcode.am/public/image/courses/C.svg"
+        },
+        {
+            "id": 9,
+            "name": "Python (Django)",
+            "duration": 5,
+            "price": 68000,
+            "image": "https://smartcode.am/public/image/courses/python-django.svg"
+        },
+        {
+            "id": 10,
+            "name": "PHP (Laravel)",
+            "duration": 3,
+            "price": 68000,
+            "image": "https://smartcode.am/public/image/courses/php.svg"
+        },
+        {
+            "id": 11,
+            "name": "WEB Full-Stack",
+            "duration": 11,
+            "price": 58000,
+            "image": "https://smartcode.am/public/image/courses/full-stack.svg"
+        },
+        {
+            "id": 12,
+            "name": "UI / UX Design",
+            "duration": 4,
+            "price": 65000,
+            "image": "https://smartcode.am/public/image/courses/ui-ux.svg"
+        },
+        {
+            "id": 13,
+            "name": "Graphic Design",
+            "duration": 3,
+            "price": 65000,
+            "image": "https://smartcode.am/public/image/courses/graphic-design.svg?v=1.2"
+        }
+    ]
+}
