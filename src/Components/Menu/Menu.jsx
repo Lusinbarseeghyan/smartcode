@@ -8,30 +8,21 @@ const Menu = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 0) {
-                navRef.current.classList.add(classes.scroll_nav);
-                navRef.current.classList.remove(classes.scroll_nav_exit);
-            } else {
-                navRef.current.classList.remove(classes.scroll_nav);
-                navRef.current.classList.add(classes.scroll_nav_exit);
-
-            }
+            navRef.current.classList[window.scrollY ? "add" : "remove"](classes.scrolled);
         };
 
         window.addEventListener("scroll", handleScroll);
 
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
+        return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
     return (
-        <div className={classes.header_cont} ref={navRef}>
+        <div className={classes.wrapper} ref={navRef}>
             <header className={`container ${classes.header}`}>
                 <nav className={classes.nav}>
                     <div className={classes.logo}>
                         <NavLink to="/">
-                            <img src={logo} alt="logo" />
+                            <img src={logo} alt="SmartCode Logo" />
                         </NavLink>
                     </div>
                     <div className={classes.nav_menu}>

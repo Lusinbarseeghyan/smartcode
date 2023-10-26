@@ -11,14 +11,14 @@
         color: var(--white-smoke);
         font-family: var(--font-family-grotesk);
         position: relative;
-        padding: 0.5rem;
+        padding: 0.5em;
     }
 }
 .section_cont h2::after {
     content: "";
     background: var(--main-color);
     height: 1px;
-    width: 50px;
+    width: 80px;
     position: absolute;
     bottom: 0;
     left: 50%;
