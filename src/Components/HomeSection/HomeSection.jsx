@@ -1,9 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-
 import trainers from "../../assets/videos/trainers.mp4";
-
 import classes from "./HomeSection.module.css";
+
 const HomeSection = ({ topAnimation, leftAnimation, rightAnimation }) => {
     return (
         <motion.section
