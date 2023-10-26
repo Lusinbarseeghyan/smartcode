@@ -38,23 +38,6 @@ body {
     margin-top: 20px;
 }
 
-#partners {
-    background-color: #263238;
-    height: 500px;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-#partners > h1 {
-    margin: 20px 0;
-}
-
-#partners > p {
-    color: seashell;
-    width: 500px;
-    margin: auto;
-}
-
 h1, p {
     color: white;
 }

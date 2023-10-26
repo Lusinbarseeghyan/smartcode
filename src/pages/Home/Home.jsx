@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import bgVideo from "../../assets/videos/banner.mp4";
-import FormBox from "../../Components/FormBox/FormBox";
-import HomeSection from "../../Components/HomeSection/HomeSection";
-
+import FormBox from "../../components/FormBox/FormBox";
+import HomeSection from "../../components/HomeSection/HomeSection";
 import classes from "./Home.module.css";
+
 const Home = () => {
     const textAnimation = {
         hidden: {
@@ -42,35 +42,18 @@ const Home = () => {
                 </div>
                 <div className={`container ${classes.header_content}`}>
                     <div className={classes.header_text}>
-                        <motion.h1
-                            variants={textAnimation}
-                            custom={1}
-                            className={classes.header_title}
-                        >
+                        <motion.h1 variants={textAnimation} custom={1} className={classes.header_title}>
                             Smart Code
                         </motion.h1>
-                        <motion.p
-                            variants={textAnimation}
-                            custom={2}
-                            className={classes.header_intro}
-                        >
+                        <motion.p variants={textAnimation} custom={2} className={classes.header_intro}>
                             <span>Սովորի՛ր</span> ծրագրավորում <br />
                             <span>Դարձի՛ր</span> պահանջված մասնագետ
                         </motion.p>
-                        <motion.p
-                            variants={textAnimation}
-                            custom={3}
-                            className={classes.header_intro}
-                        >
-                            Որակյալ ուսուցում, անվճար պրակտիկա, երաշխավորված
-                            աշխատանք։
+                        <motion.p variants={textAnimation} custom={3} className={classes.header_intro}>
+                            Որակյալ ուսուցում, անվճար պրակտիկա, երաշխավորված աշխատանք։
                         </motion.p>
                     </div>
-                    <motion.div
-                        className={classes.header_form}
-                        variants={formAnimation}
-                        custom={4}
-                    >
+                    <motion.div className={classes.header_form} variants={formAnimation} custom={4}>
                         <FormBox />
                     </motion.div>
                 </div>
