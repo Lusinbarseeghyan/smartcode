@@ -4,19 +4,25 @@
     --main-color: #f3b01b;
     --white: #f0f8ff;
     --white-smoke: #dddddd;
+    --menuHeight: 50px;
 }
+
 ::selection {
     background-color: var(--main-color);
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-align: center;
+    font-family: var(--font-family-poppins);
 }
+
 body {
     background-color: #131313;
 }
+
 .container {
     max-width: 1040px;
     margin: 0 auto;
@@ -35,9 +41,9 @@ body {
 }
 
 .mt-20 {
-    margin-top: 20px;
+    margin-top: calc(var(--menuHeight) + 20px);
 }
 
-h1, p {
-    color: white;
+.mx-auto {
+    margin-left: auto;
 }

@@ -49,7 +49,7 @@ const Partners = () => {
     ];
 
     return (
-        <div className={classes.partners}>
+        <div className={`container mt-20 ${classes.partners}`}>
             <h1>Մեր գործընկերները</h1>
             <p>
                 Դասընթացի ավարտին կստանաք հնարավորություն անցնել աշխատանքի մեր գործընկեր

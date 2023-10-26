@@ -10,15 +10,28 @@
     background-color: #263238;
     border-radius: 10px;
     overflow: hidden;
-    margin-bottom: 20px;
 }
 
 .partners > h1 {
     margin: 20px 0;
+    color: seashell;
 }
 
 .partners > p {
     color: seashell;
     width: 500px;
     margin: auto;
+}
+
+@media (max-width: 980px) {
+    .partners {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+    }
 }
