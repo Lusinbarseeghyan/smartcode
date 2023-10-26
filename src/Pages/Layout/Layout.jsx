@@ -5,7 +5,7 @@ const Layout = () => {
     return (
         <div id="app">
             <Menu />
-            <div className="container mt-20">
+            <div className="mt-20">
                 <Outlet />
             </div>
         </div>

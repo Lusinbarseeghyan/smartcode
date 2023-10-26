@@ -1,23 +1,20 @@
 import { useState, useEffect } from "react";
 
-import classes from './Courses.module.css'
+import classes from "./Courses.module.css";
 
 const Courses = () => {
-    
-    const [courseData, setCourseData]=useState([])
-    useEffect(()=>{
-        (
-            async ()=>{
-                const result = await fetch("http://localhost:3001/courses");
-                const jsonData=await result.json();
-                setCourseData(jsonData)
-            }
-        )()
-    },[])
-    
-    return <div id="courses" className={classes.cards}>
-        {
-            courseData.map((course)=>{
+    const [courseData, setCourseData] = useState([]);
+    useEffect(() => {
+        (async () => {
+            const result = await fetch("http://localhost:3001/courses");
+            const jsonData = await result.json();
+            setCourseData(jsonData);
+        })();
+    }, []);
+
+    return (
+        <div id="courses" className={classes.cards}>
+            {courseData.map((course) => {
                 return (
                     <div className={classes.course}>
                         <div className={classes.courseImage}>
@@ -31,9 +28,9 @@ const Courses = () => {
                         </div>
                     </div>
                 );
-            })
-        }
-    </div>;
+            })}
+        </div>
+    );
 };
 
 export default Courses;
