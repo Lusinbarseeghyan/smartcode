@@ -7,7 +7,7 @@
     padding: 1em 0;
 }
 .main_container h2 {
-    font-size: 30px;
+    font-size: var(--title);
     position: relative;
     color: var(--white);
     font-family: var(--font-family-grotesk);
@@ -16,13 +16,13 @@
     padding-bottom: 0.5em;
     position: relative;
     font-family: var(--font-family-grotesk);
-    color: var(--white-smoke);
+    color: var(--white);
 }
 .main_container > p::after {
     content: "";
     background: var(--main-color);
     height: 1px;
-    width: 50px;
+    width: 80px;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -79,10 +79,9 @@
         rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
         rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
-.reasons > .reason:nth-child(9) {
+.span_column {
     background-color: var(--main-color);
     grid-column: span 2;
-    grid-row: span 2;
     width: 100%;
     & .reason_top h2 {
         border: 1px solid var(--white);
@@ -100,7 +99,7 @@
     align-items: center;
     justify-content: center;
     border: 1px solid var(--main-color);
-    color: var(--white);
+    color: var(--white-smoke);
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -115,7 +114,7 @@
     font-family: var(--font-family-grotesk);
     font-size: 16px;
     font-weight: 500;
-    color: var(--white);
+    color: var(--white-smoke);
 }
 .reason_bottom p {
     font-family: var(--font-family-grotesk);

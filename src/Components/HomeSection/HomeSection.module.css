@@ -13,6 +13,7 @@
         font-family: var(--font-family-grotesk);
         position: relative;
         padding: 0.5em;
+        font-size: var(--title);
     }
 }
 
@@ -72,15 +73,35 @@
 .section_video_cont::after {
     content: "SmartCode";
     position: absolute;
-    font-size: 25px;
+    font-size: 20px;
     background-color: var(--main-color);
     color: var(--white-smoke);
     padding: 0.5em;
     border-radius: 10px;
-    right: 0;
+    right: 10px;
     bottom: 0px;
     z-index: 99998;
     font-family: var(--font-family-grotesk);
     font-weight: 700;
     letter-spacing: 2px;
+    animation: videoTextAnim 2s infinite ease-in-out;
+}
+@keyframes videoTextAnim {
+    0% {
+        transform: translate(0, 0);
+        filter: hue-rotate(0);
+    }
+    25% {
+        transform: translate(3px, 0);
+    }
+    50% {
+        transform: translate(3px, -5px);
+    }
+    75% {
+        transform: translate(0, -5px);
+    }
+    100% {
+        transform: translate(0, 0);
+        filter: hue-rotate(360deg);
+    }
 }

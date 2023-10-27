@@ -13,6 +13,8 @@ import { BiSupport, BiSolidHourglassTop } from "react-icons/bi";
 
 import mainImage from "../../assets/images/header.svg";
 
+import { isOdd } from "../../utils/helpers";
+
 import classes from "./HomeMain.module.css";
 const HomeMain = ({ topAnimation, leftAnimation, rightAnimation }) => {
     const mainRef = useRef(null);
@@ -122,11 +124,16 @@ const HomeMain = ({ topAnimation, leftAnimation, rightAnimation }) => {
                 </motion.p>
                 <div className={classes.main_content}>
                     <div className={classes.reasons}>
-                        {reasons.map((reason) => {
+                        {reasons.map((reason, index) => {
+                            const lastReason = index === reasons.length - 1;
+                            let reasonClasses = classes.reason;
+                            if (lastReason && isOdd(reasons.length)) {
+                                reasonClasses += " " + classes.span_column;
+                            }
                             return (
                                 <motion.div
                                     key={reason.id}
-                                    className={classes.reason}
+                                    className={reasonClasses}
                                     variants={leftAnimation}
                                     custom={reason.id}
                                 >
