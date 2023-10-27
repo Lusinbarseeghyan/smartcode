@@ -6,19 +6,22 @@
     height: fit-content;
     padding: 1em 0;
 }
+
 .main_container h2 {
     font-size: var(--title);
     position: relative;
     color: var(--white);
     font-family: var(--font-family-grotesk);
 }
-.main_container > p {
+
+.main_container>p {
     padding-bottom: 0.5em;
     position: relative;
     font-family: var(--font-family-grotesk);
     color: var(--white);
 }
-.main_container > p::after {
+
+.main_container>p::after {
     content: "";
     background: var(--main-color);
     height: 1px;
@@ -28,6 +31,7 @@
     left: 50%;
     transform: translateX(-50%);
 }
+
 .main_content {
     display: flex;
     align-items: start;
@@ -37,8 +41,10 @@
     height: 100%;
     position: relative;
 }
-.main_content > .main_image {
+
+.main_content>.main_image {
     width: 400px;
+
     & img {
         width: 100%;
         opacity: 1;
@@ -46,11 +52,13 @@
         transition: all 1s;
     }
 }
+
 .fixed {
     position: sticky;
     top: 80px;
     right: 0;
 }
+
 .absolute {
     position: absolute;
     bottom: 0;
@@ -74,19 +82,23 @@
     width: 300px;
     border-radius: 12px;
     background-color: transparent;
-    background-color: #222;
+    /* background-color: #222;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
         rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
-        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
+
 }
+
 .span_column {
     background-color: var(--main-color);
     grid-column: span 2;
     width: 100%;
+
     & .reason_top h2 {
         border: 1px solid var(--white);
     }
 }
+
 .reason_top {
     display: flex;
     align-items: center;
@@ -94,6 +106,7 @@
 
     color: var(--main-color);
 }
+
 .reason_top h2 {
     display: flex;
     align-items: center;
@@ -104,18 +117,21 @@
     width: 50px;
     border-radius: 50%;
 }
+
 .reason_bottom {
     padding: 0.5em;
     display: flex;
     flex-direction: column;
     row-gap: 0.5em;
 }
+
 .reason_bottom h3 {
     font-family: var(--font-family-grotesk);
     font-size: 16px;
     font-weight: 500;
     color: var(--white-smoke);
 }
+
 .reason_bottom p {
     font-family: var(--font-family-grotesk);
     font-size: 13px;

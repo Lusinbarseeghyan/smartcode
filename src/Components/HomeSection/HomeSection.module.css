@@ -42,6 +42,7 @@
     align-items: start;
     text-align: start;
     width: 100%;
+
     & p {
         color: var(--white-smoke);
         font-family: var(--font-family-grotesk);
@@ -86,20 +87,25 @@
     letter-spacing: 2px;
     animation: videoTextAnim 2s infinite ease-in-out;
 }
+
 @keyframes videoTextAnim {
     0% {
         transform: translate(0, 0);
         filter: hue-rotate(0);
     }
+
     25% {
         transform: translate(3px, 0);
     }
+
     50% {
         transform: translate(3px, -5px);
     }
+
     75% {
         transform: translate(0, -5px);
     }
+
     100% {
         transform: translate(0, 0);
         filter: hue-rotate(360deg);

@@ -2,6 +2,7 @@ import HomeHeader from "../../components/HomeHeader/HomeHeader";
 import HomeMain from "../../components/HomeMain/HomeMain";
 import HomeSection from "../../components/HomeSection/HomeSection";
 
+import classes from './Home.module.css'
 const Home = () => {
     const leftAnimation = {
         hidden: {
@@ -39,7 +40,7 @@ const Home = () => {
         }),
     };
     return (
-        <div id="home">
+        <div className={classes.home}>
             <HomeHeader
                 leftAnimation={leftAnimation}
                 rightAnimation={rightAnimation}
