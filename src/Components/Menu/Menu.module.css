@@ -9,8 +9,8 @@
     position: fixed;
     top: 0;
     left: 0;
+
     transition: background-color 0.2s;
-    background-color: #eee;
     z-index: 99999999999999999;
 }
 .toggle_menu {
