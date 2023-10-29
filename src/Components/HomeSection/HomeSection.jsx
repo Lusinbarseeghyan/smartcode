@@ -2,8 +2,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import trainers from "../../assets/videos/trainers.mp4";
 import classes from "./HomeSection.module.css";
+import useAnimations from "../../utils/Animations/useAnimations";
 
-const HomeSection = ({ topAnimation, leftAnimation, rightAnimation }) => {
+const HomeSection = () => {
+    const { leftAnimationVariant, topAnimationVariant } = useAnimations();
+
     return (
         <motion.section
             className={`container ${classes.section_cont}`}
@@ -11,12 +14,10 @@ const HomeSection = ({ topAnimation, leftAnimation, rightAnimation }) => {
             whileInView="visible"
             viewport={{ amount: 0.1 }}
         >
-            <motion.h2 variants={topAnimation} custom={1}>
-                Միացիր մեր թիմին
-            </motion.h2>
+            <motion.h2 {...topAnimationVariant(1)}>Միացիր մեր թիմին</motion.h2>
             <div className={classes.section}>
                 <div className={classes.section_text}>
-                    <motion.p variants={leftAnimation} custom={2}>
+                    <motion.p {...leftAnimationVariant(2)}>
                         Մեզ մոտ կարող եք սովորել ծրագրավորման բոլոր լեզուները,
                         UX / UI Design: Մեզ մոտ անհատական մոտեցում է
                         ցուցաբերվում բոլոր ուսանողներին, որը Ձեզ կօգնի հասնել
@@ -25,8 +26,7 @@ const HomeSection = ({ topAnimation, leftAnimation, rightAnimation }) => {
                 </div>
                 <motion.div
                     className={classes.section_video_cont}
-                    variants={rightAnimation}
-                    custom={3}
+                    {...topAnimationVariant(4)}
                 >
                     <video src={trainers} autoPlay loop muted />
                 </motion.div>

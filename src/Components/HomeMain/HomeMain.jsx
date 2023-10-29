@@ -1,5 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
+
+import { isOdd } from "../../utils/helpers";
+import useAnimations from "../../utils/Animations/useAnimations";
+
 import { LiaChalkboardTeacherSolid } from "react-icons/lia";
 import {
     MdOutlineDone,
@@ -13,12 +17,16 @@ import { BiSupport, BiSolidHourglassTop } from "react-icons/bi";
 
 import mainImage from "../../assets/images/header.svg";
 
-import { isOdd } from "../../utils/helpers";
+import SmartCodeText from "../SmartCodeText/SmartCodeText";
 
 import classes from "./HomeMain.module.css";
-const HomeMain = ({ topAnimation, leftAnimation, rightAnimation }) => {
+
+const HomeMain = () => {
     const mainRef = useRef(null);
     const imageRef = useRef(null);
+
+    const { leftAnimationVariant, rightAnimationVariant, topAnimationVariant } =
+        useAnimations();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -26,13 +34,10 @@ const HomeMain = ({ topAnimation, leftAnimation, rightAnimation }) => {
 
             if (
                 sectionRect.top < 800 &&
-                sectionRect.bottom > window.innerHeight - 300
+                sectionRect.bottom > window.innerHeight - 500
             ) {
                 imageRef.current.classList.remove(classes.absolute);
-                imageRef.current.classList.add(
-                    classes.fixed,
-                    classes.section_image
-                );
+                imageRef.current.classList.add(classes.fixed);
             } else {
                 imageRef.current.classList.remove(classes.fixed);
                 imageRef.current.classList.add(classes.absolute);
@@ -109,17 +114,23 @@ const HomeMain = ({ topAnimation, leftAnimation, rightAnimation }) => {
         },
     ];
     return (
-        <main ref={mainRef} className="container">
+        <main ref={mainRef} className={`container ${classes.main_container}`}>
+            <div className={classes.smart_code_parallax}>
+                <SmartCodeText baseVelocity={-5}>
+                    Smart Code Smart Code
+                </SmartCodeText>
+                <SmartCodeText baseVelocity={5}>Learn With Us</SmartCodeText>
+            </div>
             <motion.main
-                className={classes.main_container}
+                className={classes.main}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ amount: 0.1 }}
+                viewport={{ once: true }}
             >
-                <motion.h2 variants={topAnimation} custom={1}>
+                <motion.h2 {...topAnimationVariant(1)}>
                     Ինչո՞ւ սովորել մեզ մոտ
                 </motion.h2>
-                <motion.p variants={topAnimation} custom={2}>
+                <motion.p {...topAnimationVariant(2)}>
                     Մեզ մոտ ծրագրավորում սովորելը ձեռնտու է`
                 </motion.p>
                 <div className={classes.main_content}>
@@ -134,8 +145,7 @@ const HomeMain = ({ topAnimation, leftAnimation, rightAnimation }) => {
                                 <motion.div
                                     key={reason.id}
                                     className={reasonClasses}
-                                    variants={leftAnimation}
-                                    custom={reason.id}
+                                    {...leftAnimationVariant(reason.id)}
                                 >
                                     <div className={classes.reason_top}>
                                         <h2>{reason.icon}</h2>
@@ -159,11 +169,10 @@ const HomeMain = ({ topAnimation, leftAnimation, rightAnimation }) => {
                     <motion.div
                         className={classes.main_image}
                         ref={imageRef}
-                        variants={rightAnimation}
-                        custom={3}
+                        {...rightAnimationVariant(2)}
                         initial="hidden"
                         whileInView="visible"
-                        viewport={{ amount: 0.2 }}
+                        viewport={{ once: true }}
                     >
                         <img src={mainImage} alt="" />
                     </motion.div>

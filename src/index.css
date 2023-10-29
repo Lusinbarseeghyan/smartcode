@@ -3,7 +3,9 @@
     --font-family-grotesk: "Space Grotesk", sans-serif;
     --main-color: #f3b01b;
     --white: #f0f8ff;
-    --white-smoke: #dddddd;
+    --white-smoke: #ddd;
+    --main-dark-color: #1e282d;
+    --dark: #111;
     --title: 25px;
     --menuHeight: 50px;
 }
