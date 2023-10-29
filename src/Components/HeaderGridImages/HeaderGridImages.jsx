@@ -20,6 +20,7 @@ const HeaderGridImages = () => {
         const scrollPosition = window.scrollY;
         const startScalePosition = 30;
         const endScalePosition = 300;
+
         if (scrollPosition > startScalePosition) {
             let scale =
                 1.2 +

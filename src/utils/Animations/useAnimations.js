@@ -65,7 +65,7 @@ const useAnimations = () => {
         },
         visible: (custom) => ({
             opacity: 1,
-            transition: { delay: custom * 0.2 },
+            transition: { delay: custom * 0.1 },
         }),
     };
 

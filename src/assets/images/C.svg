@@ -1,0 +1,12 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 109" width="110" height="109">
+	<title>C_Sharp_logo 2-svg</title>
+	<style>
+		tspan { white-space:pre }
+		.s0 { fill: #263238 } 
+	</style>
+	<path id="Layer" class="s0" d="m4.95 54.5c-0.31-50.77 67.77-73.18 97.12-26.01l-22.53 13.02c-13.6-22.47-47.36-14.43-48.57 12.99c0.36 25.28 33.55 37.02 48.57 12.99l22.53 13.02c-25.87 44.86-95.82 28.72-97.12-26.01z" />
+	<path id="Layer" class="s0" d="m90.81 39.76h4.29l-2.93 28.28h-4.37l3.01-28.28z" />
+	<path id="Layer" class="s0" d="m99.99 39.76h4.29l-2.93 28.28h-4.37l3.01-28.28z" />
+	<path id="Layer" class="s0" d="m107.45 50.61h-21.45v-4.14h21.45v4.14z" />
+	<path id="Layer" class="s0" d="m106.25 60.7h-21.45v-4.14h21.45v4.14z" />
+</svg>
