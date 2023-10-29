@@ -8,6 +8,7 @@
     --dark: #111;
     --title: 25px;
     --menuHeight: 50px;
+    --text-color-dark: #111;
 }
 
 ::selection {
@@ -36,7 +37,7 @@ a {
 }
 
 body {
-    background-color: #1e282d;
+    background-color: #121618;
 }
 
 .mt-20 {
@@ -45,4 +46,13 @@ body {
 
 .mx-auto {
     margin-left: auto;
+}
+
+.mb-footer {
+    margin-bottom: 250px;
+}
+
+#app {
+    overflow: hidden;
+    height: 100vh;
 }

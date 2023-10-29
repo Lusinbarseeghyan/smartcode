@@ -5,7 +5,7 @@ import HomeSection from "../../components/HomeSection/HomeSection";
 import classes from "./Home.module.css";
 const Home = () => {
     return (
-        <div className={classes.home}>
+        <div className={`mb-footer ${classes.home}`}>
             <HomeHeader />
             <HomeMain />
             <HomeSection />
