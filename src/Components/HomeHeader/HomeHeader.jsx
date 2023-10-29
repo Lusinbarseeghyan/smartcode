@@ -7,6 +7,7 @@ import HeaderGridImages from "../HeaderGridImages/HeaderGridImages";
 import FormBox from "../../components/FormBox/FormBox";
 
 import classes from "./HomeHeader.module.css";
+
 const HomeHeader = () => {
     const { leftAnimationVariant, opacityAnimationVariant } = useAnimations();
 

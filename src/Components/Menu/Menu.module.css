@@ -1,17 +1,16 @@
 .header_cont {
     display: flex;
-    height: 80px;
 }
 .wrapper {
     width: 100%;
     height: var(--menuHeight);
     background-color: transparent;
-    position: fixed;
     top: 0;
     left: 0;
-
     transition: background-color 0.2s;
     z-index: 99999999999999999;
+    padding: 1rem;
+    position: relative;
 }
 .toggle_menu {
     display: none;
@@ -26,6 +25,7 @@
 
 .scrolled {
     background-color: var(--main-dark-color) !important;
+    position: sticky;
     & a {
         color: var(--white-smoke) !important;
     }

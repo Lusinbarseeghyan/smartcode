@@ -5,14 +5,20 @@
     --white: #f0f8ff;
     --white-smoke: #ddd;
     --main-dark-color: #1e282d;
+    --card-color: #98c1d9;
     --dark: #111;
     --title: 25px;
     --menuHeight: 50px;
+<<<<<<< HEAD
     --text-color-dark: #111;
+=======
+    scroll-behavior: smooth;
+>>>>>>> 90e28d0ebee2a3c39f3c886beab6aa670614337d
 }
 
 ::selection {
     background-color: var(--main-color);
+    color: var(--white);
 }
 
 * {
@@ -21,6 +27,9 @@
     box-sizing: border-box;
     text-align: center;
     font-family: var(--font-family-poppins);
+}
+body {
+    background-color: #eee;
 }
 
 .container {

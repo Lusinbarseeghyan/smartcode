@@ -3,6 +3,7 @@ import logo from "../../assets/images/logo.svg";
 import { Link, NavLink } from "react-router-dom";
 import { BsInstagram, BsLinkedin } from "react-icons/bs";
 import { FaBars } from "react-icons/fa";
+import ScrollArrow from "../ScrollArrow/ScrollArrow";
 
 import classes from "./Menu.module.css";
 const Menu = () => {
@@ -20,6 +21,9 @@ const Menu = () => {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
+    useEffect(() => {
+        navRef.current.scrollIntoView({ scrollBehavior: "smooth" });
+    }, [navRef]);
     return (
         <div className={classes.wrapper} ref={navRef}>
             <header className={`container ${classes.header}`}>
@@ -50,6 +54,7 @@ const Menu = () => {
                     </Link>
                 </div>
             </header>
+            <ScrollArrow />
         </div>
     );
 };
