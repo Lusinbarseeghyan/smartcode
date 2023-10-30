@@ -1,24 +1,21 @@
-import React from "react";
-
 import classes from "./CourseCard.module.css";
-const CourseCard = ({ course }) => {
+
+const CourseCard = ({ image, name, price, duration }) => {
     return (
-        <div>
-            <div className={classes.course_card_box}>
-                <div className={classes.course_card_top}>
-                    <img src={course.image} alt="" />
+        <div className={classes.course}>
+            <header>
+                <img src={image} alt="" />
+            </header>
+            <main>
+                <h2>{name}</h2>
+                <div className={classes.overview}>
+                    <span>{price} ֏</span>
+                    <span>{`${duration} ամիս`} </span>
                 </div>
-                <div className={classes.course_card_middle}>
-                    <h2>{course.name}</h2>
-                    <div className={classes.overview}>
-                        <span>{course.price} ֏</span>
-                        <span>{`${course.duration} ամիս`} </span>
-                    </div>
-                </div>
-                <div className={classes.course_card_bottom}>
-                    <button>Տեսնել ավելին</button>
-                </div>
-            </div>
+            </main>
+            <footer>
+                <button>Տեսնել ավելին</button>
+            </footer>
         </div>
     );
 };

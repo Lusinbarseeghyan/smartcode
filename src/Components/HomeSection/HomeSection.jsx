@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import trainers from "../../assets/videos/trainers.mp4";
-import classes from "./HomeSection.module.css";
 import useAnimations from "../../utils/Animations/useAnimations";
+import classes from "./HomeSection.module.css";
 
 const HomeSection = () => {
     const { leftAnimationVariant, topAnimationVariant } = useAnimations();
@@ -18,16 +18,12 @@ const HomeSection = () => {
             <div className={classes.section}>
                 <div className={classes.section_text}>
                     <motion.p {...leftAnimationVariant(2)}>
-                        Մեզ մոտ կարող եք սովորել ծրագրավորման բոլոր լեզուները,
-                        UX / UI Design: Մեզ մոտ անհատական մոտեցում է
-                        ցուցաբերվում բոլոր ուսանողներին, որը Ձեզ կօգնի հասնել
-                        Ձեր նպատակներին։
+                        Մեզ մոտ կարող եք սովորել ծրագրավորման բոլոր լեզուները, UX / UI Design: Մեզ մոտ
+                        անհատական մոտեցում է ցուցաբերվում բոլոր ուսանողներին, որը Ձեզ կօգնի հասնել Ձեր
+                        նպատակներին։
                     </motion.p>
                 </div>
-                <motion.div
-                    className={classes.section_video_cont}
-                    {...topAnimationVariant(4)}
-                >
+                <motion.div className={classes.section_video_cont} {...topAnimationVariant(4)}>
                     <video src={trainers} autoPlay loop muted />
                 </motion.div>
             </div>

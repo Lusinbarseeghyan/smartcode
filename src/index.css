@@ -9,11 +9,10 @@
     --dark: #111;
     --title: 25px;
     --menuHeight: 50px;
-<<<<<<< HEAD
     --text-color-dark: #111;
-=======
     scroll-behavior: smooth;
->>>>>>> 90e28d0ebee2a3c39f3c886beab6aa670614337d
+    --app-width: 1040px;
+    --body-bg-color: #eee;
 }
 
 ::selection {
@@ -28,12 +27,14 @@
     text-align: center;
     font-family: var(--font-family-poppins);
 }
-body {
-    background-color: #eee;
+
+.content {
+    padding-top: calc(var(--menuHeight));
+    width: 100%;
 }
 
 .container {
-    max-width: 1040px;
+    max-width: var(--app-width);
     margin: 0 auto;
 }
 
@@ -46,11 +47,15 @@ a {
 }
 
 body {
-    background-color: #121618;
+    background-color: var(--body-bg-color);
 }
 
 .mt-20 {
-    margin-top: calc(var(--menuHeight) + 20px);
+    margin-top: 20px;
+}
+
+.mt-40 {
+    margin-top: 40px;
 }
 
 .mx-auto {
@@ -59,9 +64,4 @@ body {
 
 .mb-footer {
     margin-bottom: 250px;
-}
-
-#app {
-    overflow: hidden;
-    height: 100vh;
 }

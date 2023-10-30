@@ -9,6 +9,7 @@
 	.st3{fill:#FFFFFF;}
 	.st4{opacity:0.16;fill:#FFFFFF;}
 	.undertext{fill:#FFFFFF;}
+	.black .undertext {fill: #000000;}
 </style>
 <g>
 	<g>

@@ -13,14 +13,19 @@
 }
 
 .features {
-    display: grid;
-    grid-template-columns: 1fr 50px;
     background-color: var(--features-background-color);
+}
+
+.wrapper {
+    display: grid;
+    height: calc(100vh - var(--menuHeight));
+    grid-template-columns: 1fr 50px;
+    overflow: hidden;
 }
 
 .list {
     overflow-y: auto;
-    height: calc(100vh - calc(50px + 20px));
+    height: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
 }

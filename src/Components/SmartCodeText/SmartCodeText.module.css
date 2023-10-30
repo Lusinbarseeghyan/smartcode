@@ -29,10 +29,8 @@
     .parallax {
         width: 100%;
     }
+
     .parallax .scroller {
         width: 100%;
-    }
-    .parallax span {
-        font-size: 45px;
     }
 }

@@ -1,13 +1,17 @@
 import { Outlet } from "react-router-dom";
 import Menu from "../../components/Menu/Menu";
-import Footer from "../../components/Footer/Footer";
+// import Footer from "../../components/Footer/Footer";
+import ScrollArrow from "../../components/ScrollArrow/ScrollArrow";
 
 const Layout = () => {
     return (
         <div id="app">
             <Menu />
-            <Outlet />
-            <Footer />
+            <div className="content">
+                <Outlet />
+                {/* <Footer /> */}
+            </div>
+            <ScrollArrow />
         </div>
     );
 };

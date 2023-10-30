@@ -10,6 +10,7 @@ const Courses = () => {
     const [courseData, setCourseData] = useState([]);
 
     const { leftAnimationVariant } = useAnimations();
+
     useEffect(() => {
         (async () => {
             const result = await fetch("http://localhost:3001/courses");
@@ -18,25 +19,22 @@ const Courses = () => {
             setCourseData(jsonData);
         })();
     }, []);
+
     return (
-        <div className={classes.courses_page_container}>
+        <div className={`mt-40 ${classes.wrapper}`}>
             <div className={classes.course_bg_white}></div>
             <div className={classes.course_bg_dark}></div>
 
             <motion.div
-                className={`container ${classes.courses_container}`}
+                className={`container ${classes.course_cards_container}`}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
+                {...leftAnimationVariant(2)}
             >
-                <motion.div
-                    className={classes.course_cards_container}
-                    {...leftAnimationVariant(2)}
-                >
-                    {courseData.map((course) => {
-                        return <CourseCard key={course.id} course={course} />;
-                    })}
-                </motion.div>
+                {courseData.map((course) => {
+                    return <CourseCard key={course.id} {...course} />;
+                })}
             </motion.div>
         </div>
     );
