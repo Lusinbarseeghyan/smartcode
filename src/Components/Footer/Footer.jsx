@@ -11,6 +11,7 @@ import {
 import { ImLocation2 } from "react-icons/im";
 
 import classes from "./Footer.module.css";
+
 const Footer = () => {
     return (
         <div className={`mt-20 ${classes.footer_container}`}>

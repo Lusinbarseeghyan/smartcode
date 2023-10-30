@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Menu from "../../components/Menu/Menu";
-// import Footer from "../../components/Footer/Footer";
+import Footer from "../../components/Footer/Footer";
 import ScrollArrow from "../../components/ScrollArrow/ScrollArrow";
 
 const Layout = () => {
@@ -9,7 +9,7 @@ const Layout = () => {
             <Menu />
             <div className="content">
                 <Outlet />
-                {/* <Footer /> */}
+                <Footer />
             </div>
             <ScrollArrow />
         </div>

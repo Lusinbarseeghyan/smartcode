@@ -1,6 +1,11 @@
 import { LiaChalkboardTeacherSolid } from "react-icons/lia";
 import classes from "./Features.module.css";
-import { MdAssuredWorkload, MdOutlineDone, MdOutlineRocketLaunch, MdVideoChat } from "react-icons/md";
+import {
+    MdAssuredWorkload,
+    MdOutlineDone,
+    MdOutlineRocketLaunch,
+    MdVideoChat,
+} from "react-icons/md";
 import { BiSolidHourglassTop, BiSupport } from "react-icons/bi";
 import { TbFreeRights } from "react-icons/tb";
 import { SiCoffeescript } from "react-icons/si";
@@ -28,7 +33,8 @@ const Features = ({ theme = "dark" }) => {
             id: 3,
             icon: <SiCoffeescript />,
             title: "Հարմարավետ կահավորված լսարաններ",
-            description: "Մեր հարմարավետ կահավորված լսարաններում Ձեր ուսման պրոցեսը կդառնա էլ ավելի հաճելի։",
+            description:
+                "Մեր հարմարավետ կահավորված լսարաններում Ձեր ուսման պրոցեսը կդառնա էլ ավելի հաճելի։",
         },
         {
             id: 4,
@@ -41,13 +47,15 @@ const Features = ({ theme = "dark" }) => {
             id: 5,
             icon: <MdVideoChat />,
             title: "Դասի ձայնագրություն",
-            description: "Յուրաքանչյուր դասի ավարտին կստանաք նաև դասի տեսագրությունը՝ տանը կրկնելու համար։",
+            description:
+                "Յուրաքանչյուր դասի ավարտին կստանաք նաև դասի տեսագրությունը՝ տանը կրկնելու համար։",
         },
         {
             id: 6,
             icon: <BiSupport />,
             title: "Օնլայն օգնական",
-            description: "Կուրսի ամբողջ ընթացքում դուք կստանաք հեռավար աջակցություն` մասնագետի կողմից:",
+            description:
+                "Կուրսի ամբողջ ընթացքում դուք կստանաք հեռավար աջակցություն` մասնագետի կողմից:",
         },
         {
             id: 7,
@@ -83,20 +91,29 @@ const Features = ({ theme = "dark" }) => {
         });
     }
 
-    const detectScroll = (deltaY) => {
+    const detectScroll = (e) => {
+        let deltaY = e.deltaY;
         if (deltaY < 0) {
             setCurrent((current) => (current - 1 < 0 ? current : current - 1));
         } else if (deltaY > 0) {
-            setCurrent((current) => (current + 1 > reasons.length - 1 ? current : current + 1));
+            setCurrent((current) =>
+                current + 1 > reasons.length - 1 ? current : current + 1
+            );
         }
     };
 
     return (
         <div
-            className={classNames(classes.features, { [classes[theme]]: ["dark", "light"].includes(theme) })}
+            className={classNames(classes.features, {
+                [classes[theme]]: ["dark", "light"].includes(theme),
+            })}
         >
             <div className={`container ${classes.wrapper} `}>
-                <div ref={listRef} className={classes.list} onWheel={(e) => detectScroll(e.deltaY)}>
+                <div
+                    ref={listRef}
+                    className={classes.list}
+                    onWheel={detectScroll}
+                >
                     {reasons.map((reason, index) => (
                         <div
                             key={reason.id}
@@ -104,7 +121,9 @@ const Features = ({ theme = "dark" }) => {
                             ref={current === index ? currentRef : null}
                         >
                             <div className={classes.line}>
-                                <div className={classes.iconWrapper}>{reason.icon}</div>
+                                <div className={classes.iconWrapper}>
+                                    {reason.icon}
+                                </div>
                             </div>
                             <div className={classes.content}>
                                 <h1>{reason.title}</h1>
@@ -113,7 +132,12 @@ const Features = ({ theme = "dark" }) => {
                         </div>
                     ))}
                 </div>
-                <Minimap reasons={reasons} current={current} setCurrent={setCurrent} theme={theme} />
+                <Minimap
+                    reasons={reasons}
+                    current={current}
+                    setCurrent={setCurrent}
+                    theme={theme}
+                />
             </div>
         </div>
     );

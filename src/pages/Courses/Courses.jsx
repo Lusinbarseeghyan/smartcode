@@ -21,7 +21,7 @@ const Courses = () => {
     }, []);
 
     return (
-        <div className={`mt-40 ${classes.wrapper}`}>
+        <div className={`mt-40 mb-footer ${classes.wrapper}`}>
             <div className={classes.course_bg_white}></div>
             <div className={classes.course_bg_dark}></div>
 

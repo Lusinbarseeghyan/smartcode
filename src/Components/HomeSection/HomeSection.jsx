@@ -9,7 +9,7 @@ const HomeSection = () => {
 
     return (
         <motion.section
-            className={`container ${classes.section_cont}`}
+            className={`container mb-footer ${classes.section_cont}`}
             initial="hidden"
             whileInView="visible"
             viewport={{ amount: 0.1 }}

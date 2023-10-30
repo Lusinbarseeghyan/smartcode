@@ -31,6 +31,8 @@
 .content {
     padding-top: calc(var(--menuHeight));
     width: 100%;
+    background-color: var(--body-bg-color);
+    z-index: 99;
 }
 
 .container {
