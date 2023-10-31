@@ -7,7 +7,8 @@ import classes from "./HomeHeader.module.css";
 
 const HomeHeader = () => {
     const { leftAnimationVariant } = useAnimations();
-    const formRef = useRef();
+    const videoStopRef = useRef();
+    const videoSectionRef = useRef();
 
     return (
         <div className={classes.wrapper}>
@@ -16,6 +17,7 @@ const HomeHeader = () => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
+                ref={videoSectionRef}
             >
                 <motion.div className={classes.content}>
                     <div className={classes.text}>
@@ -29,14 +31,15 @@ const HomeHeader = () => {
                             Որակյալ ուսուցում, անվճար պրակտիկա, երաշխավորված աշխատանք։
                         </motion.p>
                     </div>
-                    <HeaderGridImages formRef={formRef} />
+                    <HeaderGridImages videoSectionRef={videoSectionRef} videoStopRef={videoStopRef} />
                 </motion.div>
             </motion.header>
-            <div ref={formRef} className={`${classes.section} ${classes.form}`}>
+            <div className={`${classes.section} ${classes.form}`}>
                 <div className={`container ${classes.formWrapper}`}>
                     <motion.div initial="hidden" whileInView="visible" {...leftAnimationVariant(2)}>
                         <FormBox />
                     </motion.div>
+                    <div ref={videoStopRef} className={classes.videoStopRef}></div>
                 </div>
             </div>
         </div>
