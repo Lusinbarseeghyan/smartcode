@@ -21,7 +21,11 @@ const HeaderGridImages = ({ videoStopRef, videoSectionRef }) => {
         const startScalePosition = 30;
         const endScalePosition = 300;
 
-        if (videoRef.current && videoSectionRef.current && videoStopRef.current) {
+        if (
+            videoRef.current &&
+            videoSectionRef.current &&
+            videoStopRef.current
+        ) {
             let videoStopRect = videoStopRef.current.getBoundingClientRect();
 
             if (
@@ -34,28 +38,32 @@ const HeaderGridImages = ({ videoStopRef, videoSectionRef }) => {
                     (videoWrapperRef.current.offsetTop +
                         videoWrapperRef.current.offsetParent.offsetTop +
                         112.5);
-                res = res + (videoSectionRef.current.offsetHeight / 2 + 112.5 / 2);
+                res =
+                    res +
+                    (videoSectionRef.current.offsetHeight / 2 + 112.5 / 2);
 
-                console.log(res);
                 const stopPosition = res;
-
-                console.log(stopPosition);
 
                 if (scrollPosition > startScalePosition) {
                     let scale =
-                        1.2 + (scrollPosition - startScalePosition) / (endScalePosition - startScalePosition);
+                        1.2 +
+                        (scrollPosition - startScalePosition) /
+                            (endScalePosition - startScalePosition);
 
                     scale = scale > 3 ? 3 : scale;
 
                     videoRef.current.style.transform = `translateY(${
-                        scrollPosition > stopPosition ? stopPosition : scrollPosition
+                        scrollPosition > stopPosition
+                            ? stopPosition
+                            : scrollPosition
                     }px) scale(${scale})`;
 
                     if (videoRef.current.paused && videoRef.current.play) {
                         videoRef.current.play();
                     }
                 } else {
-                    videoRef.current.style.transform = "translateX(0%) translateY(0) scale(1)";
+                    videoRef.current.style.transform =
+                        "translateX(0%) translateY(0) scale(1)";
 
                     if (!videoRef.current.paused && videoRef.current.pause) {
                         videoRef.current.pause();
@@ -70,14 +78,34 @@ const HeaderGridImages = ({ videoStopRef, videoSectionRef }) => {
     return (
         <motion.div {...opacityAnimationVariant(1)} ref={sectionRef}>
             <motion.div className={classes.list} {...rightAnimationVariant(1)}>
-                <img className={classes.first_image} src={third} alt="smartcode" />
-                <img className={classes.second_image} src={first} alt="smartcode" />
-                <img className={classes.third_image} src={sec} alt="smartcode" />
+                <img
+                    className={classes.first_image}
+                    src={third}
+                    alt="smartcode"
+                />
+                <img
+                    className={classes.second_image}
+                    src={first}
+                    alt="smartcode"
+                />
+                <img
+                    className={classes.third_image}
+                    src={sec}
+                    alt="smartcode"
+                />
                 <div className={classes.forth_image} ref={videoWrapperRef}>
                     <video ref={videoRef} src={bgVideo} muted></video>
                 </div>
-                <img className={classes.fivth_image} src={fivth} alt="smartcode" />
-                <img className={classes.sixth_image} src={sixth} alt="smartcode" />
+                <img
+                    className={classes.fivth_image}
+                    src={fivth}
+                    alt="smartcode"
+                />
+                <img
+                    className={classes.sixth_image}
+                    src={sixth}
+                    alt="smartcode"
+                />
             </motion.div>
         </motion.div>
     );

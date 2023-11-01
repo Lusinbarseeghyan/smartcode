@@ -21,22 +21,22 @@ const Courses = () => {
     }, []);
 
     return (
-        <div className={`mt-40 mb-footer ${classes.wrapper}`}>
+        <motion.div
+            className={`mt-40 mb-footer ${classes.wrapper}`}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            {...leftAnimationVariant(2)}
+        >
             <div className={classes.course_bg_white}></div>
             <div className={classes.course_bg_dark}></div>
 
-            <motion.div
-                className={`container ${classes.course_cards_container}`}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                {...leftAnimationVariant(2)}
-            >
+            <div className={`container ${classes.course_cards_container}`}>
                 {courseData.map((course) => {
                     return <CourseCard key={course.id} {...course} />;
                 })}
-            </motion.div>
-        </div>
+            </div>
+        </motion.div>
     );
 };
 

@@ -2,7 +2,12 @@ import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import classNames from "classnames";
 import { LiaChalkboardTeacherSolid } from "react-icons/lia";
-import { MdOutlineDone, MdVideoChat, MdOutlineRocketLaunch, MdAssuredWorkload } from "react-icons/md";
+import {
+    MdOutlineDone,
+    MdVideoChat,
+    MdOutlineRocketLaunch,
+    MdAssuredWorkload,
+} from "react-icons/md";
 import { SiCoffeescript } from "react-icons/si";
 import { TbFreeRights } from "react-icons/tb";
 import { BiSupport, BiSolidHourglassTop } from "react-icons/bi";
@@ -16,13 +21,17 @@ const HomeMain = () => {
     const mainRef = useRef(null);
     const imageRef = useRef(null);
 
-    const { leftAnimationVariant, rightAnimationVariant, topAnimationVariant } = useAnimations();
+    const { leftAnimationVariant, rightAnimationVariant, topAnimationVariant } =
+        useAnimations();
 
     useEffect(() => {
         const handleScroll = () => {
             const sectionRect = mainRef.current.getBoundingClientRect();
 
-            if (sectionRect.top < 800 && sectionRect.bottom > window.innerHeight - 500) {
+            if (
+                sectionRect.top < 800 &&
+                sectionRect.bottom > window.innerHeight - 500
+            ) {
                 imageRef.current.classList.remove(classes.absolute);
                 imageRef.current.classList.add(classes.fixed);
             } else {
@@ -54,7 +63,8 @@ const HomeMain = () => {
             id: 3,
             icon: <SiCoffeescript />,
             title: "Հարմարավետ կահավորված լսարաններ",
-            description: "Մեր հարմարավետ կահավորված լսարաններում Ձեր ուսման պրոցեսը կդառնա էլ ավելի հաճելի։",
+            description:
+                "Մեր հարմարավետ կահավորված լսարաններում Ձեր ուսման պրոցեսը կդառնա էլ ավելի հաճելի։",
         },
         {
             id: 4,
@@ -67,13 +77,15 @@ const HomeMain = () => {
             id: 5,
             icon: <MdVideoChat />,
             title: "Դասի ձայնագրություն",
-            description: "Յուրաքանչյուր դասի ավարտին կստանաք նաև դասի տեսագրությունը՝ տանը կրկնելու համար։",
+            description:
+                "Յուրաքանչյուր դասի ավարտին կստանաք նաև դասի տեսագրությունը՝ տանը կրկնելու համար։",
         },
         {
             id: 6,
             icon: <BiSupport />,
             title: "Օնլայն օգնական",
-            description: "Կուրսի ամբողջ ընթացքում դուք կստանաք հեռավար աջակցություն` մասնագետի կողմից:",
+            description:
+                "Կուրսի ամբողջ ընթացքում դուք կստանաք հեռավար աջակցություն` մասնագետի կողմից:",
         },
         {
             id: 7,
@@ -101,7 +113,9 @@ const HomeMain = () => {
     return (
         <main ref={mainRef} className={`container ${classes.wrapper}`}>
             <div className={classes.smart_code_parallax}>
-                <SmartCodeText baseVelocity={-5}>Smart Code Smart Code</SmartCodeText>
+                <SmartCodeText baseVelocity={-5}>
+                    Smart Code Smart Code
+                </SmartCodeText>
                 <SmartCodeText baseVelocity={5}>Learn With Us</SmartCodeText>
             </div>
             <motion.main
@@ -110,8 +124,12 @@ const HomeMain = () => {
                 whileInView="visible"
                 viewport={{ once: true }}
             >
-                <motion.h2 {...topAnimationVariant(1)}>Ինչո՞ւ սովորել մեզ մոտ</motion.h2>
-                <motion.p {...topAnimationVariant(2)}>Մեզ մոտ ծրագրավորում սովորելը ձեռնտու է`</motion.p>
+                <motion.h2 {...topAnimationVariant(1)}>
+                    Ինչո՞ւ սովորել մեզ մոտ
+                </motion.h2>
+                <motion.p {...topAnimationVariant(2)}>
+                    Մեզ մոտ ծրագրավորում սովորելը ձեռնտու է`
+                </motion.p>
                 <div className={classes.content}>
                     <div className={classes.reasons}>
                         {reasons.map((reason, index) => {
@@ -120,7 +138,8 @@ const HomeMain = () => {
                                 <motion.div
                                     key={reason.id}
                                     className={classNames(classes.reason, {
-                                        [classes.span_column]: lastReason && isOdd(reasons.length),
+                                        [classes.span_column]:
+                                            lastReason && isOdd(reasons.length),
                                     })}
                                     {...leftAnimationVariant(reason.id)}
                                 >
