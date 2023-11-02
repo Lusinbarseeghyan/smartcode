@@ -1,39 +1,40 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 import classes from "./CourseInfo.module.css";
+import { useDispatch, useSelector } from "react-redux";
+import { selectCourse } from "../../store/slices/courses/coursesSlice";
+import { fetchCourse } from "../../store/slices/courses/coursesApi";
 
 const CourseInfo = () => {
-    const [currentCourse, setCurrentCourse] = useState(null);
-    const { course } = useParams();
+    const selectedCourse = useSelector(selectCourse);
+    const { name } = useParams();
+    const dispatch = useDispatch();
 
     useEffect(() => {
         (async () => {
-            const result = await fetch(
-                `http://localhost:3001/courses?name=${course}`
-            );
-            const jsonData = await result.json();
-            setCurrentCourse(jsonData[0]);
+            dispatch(fetchCourse(name));
         })();
-    }, [course]);
+    }, [name, dispatch]);
 
-    console.log(currentCourse);
+    if (!selectedCourse) {
+        return null;
+    }
+
     return (
-        <div
-            className={`container mb-footer mt-20 ${classes.course_info_container}`}
-        >
+        <div className={`container mb-footer mt-20 ${classes.course_info_container}`}>
             <div className={classes.course_image}>
-                <img src={currentCourse?.image} alt={currentCourse?.name} />
+                <img src={selectedCourse.posters.small} alt={selectedCourse.name} />
             </div>
             <div className={classes.bottom}>
                 <div className={classes.info}>
-                    <h1>{currentCourse?.name}</h1>
-                    <h2>{currentCourse?.description.title}</h2>
-                    <p>{currentCourse?.description.subtitle}</p>
-                    <p>{currentCourse?.description.body.text}</p>
+                    <h1>{selectedCourse.name}</h1>
+                    <h2>{selectedCourse.title}</h2>
+                    <p>{selectedCourse.subtitle}</p>
+                    <p>{selectedCourse.description}</p>
                 </div>
                 <div className={classes.body_image}>
-                    <img src={currentCourse?.description.body.image} alt="" />
+                    <img src={selectedCourse.posters.big} alt={selectedCourse.title} />
                 </div>
             </div>
         </div>

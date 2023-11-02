@@ -1,8 +1,10 @@
-import { createStore } from "redux";
+import { configureStore } from "@reduxjs/toolkit";
+import { appReducer } from "./slices/app/appSlice";
+import { coursesReducer } from "./slices/courses/coursesSlice";
 
-export const store = createStore((state, action) => {
-    switch (action.type) {
-        default:
-            return state;
-    }
-}, {});
+export const store = configureStore({
+    reducer: {
+        app: appReducer,
+        courses: coursesReducer,
+    },
+});

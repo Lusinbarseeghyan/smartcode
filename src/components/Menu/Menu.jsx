@@ -24,7 +24,7 @@ const Menu = () => {
                         <NavLink to="/">
                             <SmartCodeLogo
                                 title="SmartCode logo"
-                                className={!darkMode && "black"}
+                                className={!darkMode ? "black" : undefined}
                             ></SmartCodeLogo>
                         </NavLink>
                     </div>

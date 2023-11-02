@@ -39,7 +39,7 @@ const HomeHeader = () => {
                     <motion.div initial="hidden" whileInView="visible" {...leftAnimationVariant(2)}>
                         <FormBox />
                     </motion.div>
-                    <div ref={videoStopRef} className={classes.videoStopRef}></div>
+                    <div ref={videoStopRef} className={classes.videoStop}></div>
                 </div>
             </div>
         </div>

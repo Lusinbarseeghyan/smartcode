@@ -86,7 +86,7 @@
     }
 }
 
-.course footer button {
+.course footer a {
     background: none;
     padding: 0.5rem 1rem;
     color: white;
@@ -97,7 +97,7 @@
     border: 2px solid var(--card-color);
 }
 
-.course footer button:hover {
+.course footer a:hover {
     background-color: var(--card-color);
     color: var(--white);
     scale: 1.05;

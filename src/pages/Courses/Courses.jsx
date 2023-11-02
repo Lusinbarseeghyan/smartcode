@@ -1,24 +1,23 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { motion } from "framer-motion";
-
 import CourseCard from "../../components/CourseCard/CourseCard";
-
 import useAnimations from "../../utils/Animations/useAnimations";
-
+import { selectCoursesList } from "../../store/slices/courses/coursesSlice";
 import classes from "./Courses.module.css";
+import { fetchCourses } from "../../store/slices/courses/coursesApi";
+
 const Courses = () => {
-    const [courseData, setCourseData] = useState([]);
+    const list = useSelector(selectCoursesList);
+    const dispatch = useDispatch();
 
     const { leftAnimationVariant } = useAnimations();
 
     useEffect(() => {
         (async () => {
-            const result = await fetch("http://localhost:3001/courses");
-            const jsonData = await result.json();
-
-            setCourseData(jsonData);
+            dispatch(fetchCourses());
         })();
-    }, []);
+    }, [dispatch]);
 
     return (
         <motion.div
@@ -32,7 +31,7 @@ const Courses = () => {
             <div className={classes.course_bg_dark}></div>
 
             <div className={`container ${classes.course_cards_container}`}>
-                {courseData.map((course) => {
+                {list.map((course) => {
                     return <CourseCard key={course.id} {...course} />;
                 })}
             </div>
