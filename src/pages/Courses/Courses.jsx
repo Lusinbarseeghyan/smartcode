@@ -14,9 +14,7 @@ const Courses = () => {
     const { leftAnimationVariant } = useAnimations();
 
     useEffect(() => {
-        (async () => {
-            dispatch(fetchCourses());
-        })();
+        dispatch(fetchCourses());
     }, [dispatch]);
 
     return (

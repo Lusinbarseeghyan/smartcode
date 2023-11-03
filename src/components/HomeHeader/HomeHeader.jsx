@@ -13,7 +13,7 @@ const HomeHeader = () => {
     return (
         <div className={classes.wrapper}>
             <motion.header
-                className={`container ${classes.section} ${classes.header}`}
+                className={`container section ${classes.header}`}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}

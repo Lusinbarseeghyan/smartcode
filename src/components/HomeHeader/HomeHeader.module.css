@@ -4,16 +4,10 @@
     overflow: hidden;
 }
 
-.section {
-    width: 100%;
-    min-height: calc(100vh - var(--menuHeight));
-}
-
 .header {
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
 .header .content {
