@@ -25,9 +25,11 @@ import { fetchFeatures } from "../../store/slices/features/featuresApi";
 import SVG from "react-inlinesvg";
 
 import classes from "./HomeMain.module.css";
+
 const HomeMain = () => {
     const list = useSelector(selectFeaturesList);
     const dispatch = useDispatch();
+
     const mainRef = useRef(null);
     const imageRef = useRef(null);
 
