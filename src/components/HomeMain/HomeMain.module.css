@@ -14,14 +14,14 @@
     padding: 15px 0;
 }
 
-.main > h2 {
+.main>h2 {
     font-size: var(--title);
     position: relative;
     color: var(--dark);
     font-family: var(--font-family-grotesk);
 }
 
-.main > p {
+.main>p {
     padding-bottom: 10px;
     position: relative;
     font-family: var(--font-family-grotesk);
@@ -29,7 +29,7 @@
     text-align: center;
 }
 
-.main > p::after {
+.main>p::after {
     content: "";
     background: var(--main-color);
     height: 1px;
@@ -50,7 +50,7 @@
     position: relative;
 }
 
-.content > .main_image {
+.content>.main_image {
     width: 400px;
 
     & img {
@@ -89,8 +89,9 @@
     padding: 15px;
     width: 300px;
     border-radius: 12px;
-    background-color: var(--main-dark-color);
+    background-color: var(--body-bg-color);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 5px;
 }
 
@@ -107,6 +108,7 @@
     justify-content: center;
     border: 1px solid var(--main-color);
     color: var(--white-smoke);
+    color: black;
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -124,25 +126,25 @@
     font-size: 16px;
     font-weight: 500;
     color: var(--white-smoke);
+    color: black;
 }
 
 .span_column {
-    background: radial-gradient(
-        circle at 90% 20%,
-        var(--main-color) 1%,
-        rgb(251, 221, 19) 90%
-    );
+    background: radial-gradient(circle at 90% 20%,
+            var(--main-color) 1%,
+            rgb(251, 221, 19) 90%);
     grid-column: span 2;
     width: 100%;
 
     & .reason_top h2 {
         color: var(--white-smoke);
+        color: black;
         border: 1px solid;
     }
 }
 
 .span_column h3 {
-    color: var(--white-smoke);
+    color: var(--main-dark-color);
 }
 
 @media (max-width: 1100px) {
@@ -155,7 +157,7 @@
         margin: auto;
     }
 
-    .content > .main_image {
+    .content>.main_image {
         display: none;
     }
 

@@ -1,5 +1,5 @@
 .form_container {
-    background-color: var(--main-dark-color);
+    background-color: var(--body-bg-color);
     width: 400px;
     height: 400px;
     padding: 1rem;
@@ -14,14 +14,13 @@
         rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
         rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+
 .form_container::before {
     content: "";
     position: absolute;
-    background: radial-gradient(
-        circle at 20% 10%,
-        rgb(251, 221, 19) 0.1%,
-        var(--main-color) 90%
-    );
+    background: radial-gradient(circle at 20% 10%,
+            rgb(251, 221, 19) 0.1%,
+            var(--main-color) 90%);
     left: -30%;
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
@@ -30,6 +29,7 @@
     height: 60%;
     z-index: 1;
 }
+
 form {
     display: flex;
     flex-direction: column;
@@ -41,13 +41,15 @@ form {
     border-radius: 5px;
     backdrop-filter: blur(10px) grayscale(10%);
 }
-.form_container > h2 {
+
+.form_container>h2 {
     z-index: 2;
     color: var(--white);
     width: 280px;
     text-transform: uppercase;
     user-select: none;
 }
+
 form input {
     padding: 0.5rem;
     border: none;
@@ -56,25 +58,27 @@ form input {
     text-align: start;
     border-bottom: 1px solid var(--body-bg-color);
     color: var(--white);
+
     &::placeholder {
         color: var(--white);
         font-weight: 500;
     }
 }
+
 form button {
     border: none;
     background: none;
     padding: 0.5rem;
     cursor: pointer;
     transition: all 0.5s;
-    background-color: var(--main-color);
-    color: var(--white);
+    background-color: var(--white);
+    color: black;
     z-index: 1;
     opacity: 0.5;
 }
+
 form button:hover {
     border-color: transparent;
-    background-color: var(--main-color);
-    color: var(--white);
+    color: black;
     opacity: 1;
 }
