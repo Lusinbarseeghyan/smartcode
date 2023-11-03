@@ -21,14 +21,15 @@
     font-family: var(--font-family-grotesk);
 }
 
-.main>p {
+.main > p {
     padding-bottom: 10px;
     position: relative;
     font-family: var(--font-family-grotesk);
     color: var(--dark);
+    text-align: center;
 }
 
-.main>p::after {
+.main > p::after {
     content: "";
     background: var(--main-color);
     height: 1px;
@@ -49,7 +50,7 @@
     position: relative;
 }
 
-.content>.main_image {
+.content > .main_image {
     width: 400px;
 
     & img {
@@ -148,7 +149,7 @@
         margin: auto;
     }
 
-    .content>.main_image {
+    .content > .main_image {
         display: none;
     }
 

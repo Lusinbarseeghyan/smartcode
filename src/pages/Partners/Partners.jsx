@@ -8,11 +8,11 @@ import { selectPartnersList } from "../../store/slices/partners/partnersSlice";
 
 const Partners = () => {
     const list = useSelector(selectPartnersList);
-    const disptach = useDispatch();
+    const dispatch = useDispatch();
 
     useEffect(() => {
-        disptach(fetchPartners());
-    }, [disptach]);
+        dispatch(fetchPartners());
+    }, [dispatch]);
 
     return (
         <div className={`mt-40 mb-footer section ${classes.wrapper}`}>

@@ -34,7 +34,7 @@ const HomeHeader = () => {
                     <HeaderGridImages videoSectionRef={videoSectionRef} videoStopRef={videoStopRef} />
                 </motion.div>
             </motion.header>
-            <div className={`${classes.section} ${classes.form}`}>
+            <div className={`section ${classes.form}`}>
                 <div className={`container ${classes.formWrapper}`}>
                     <motion.div initial="hidden" whileInView="visible" {...leftAnimationVariant(2)}>
                         <FormBox />
