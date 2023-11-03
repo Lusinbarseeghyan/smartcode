@@ -64,12 +64,12 @@ const HomeMain = () => {
 
     return (
         <main ref={mainRef} className={`container ${classes.wrapper}`}>
-            <div className={classes.smart_code_parallax}>
+            {/* <div className={classes.smart_code_parallax}>
                 <SmartCodeText baseVelocity={-5}>
                     Smart Code Smart Code
                 </SmartCodeText>
                 <SmartCodeText baseVelocity={5}>Learn With Us</SmartCodeText>
-            </div>
+            </div> */}
             <motion.main
                 className={classes.main}
                 initial="hidden"
