@@ -35,7 +35,15 @@ const CourseInfo = () => {
                     <h1>{selectedCourse.name}</h1>
                     <h2>{selectedCourse.title}</h2>
                     <p>{selectedCourse.subtitle}</p>
-                    <p>{selectedCourse.description}</p>
+                    <p>{selectedCourse.description.mainTitle}</p>
+                    <ul>
+                        <li>{selectedCourse.description.stages.first}</li>
+                        <li>{selectedCourse.description.stages.second}</li>
+                        <li>{selectedCourse.description.stages.third}</li>
+                        <li>{selectedCourse.description.stages.forth}</li>
+                    </ul>
+                    <p>{selectedCourse.description.content}</p>
+                    <p>{selectedCourse.description.offer}</p>
                 </div>
                 <div className={classes.body_image}>
                     <img
