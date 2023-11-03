@@ -20,6 +20,11 @@
     color: var(--white);
 }
 
+.section {
+    width: 100%;
+    min-height: calc(100vh - var(--menuHeight));
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -29,7 +34,7 @@
 }
 
 .content {
-    padding-top: calc(var(--menuHeight));
+    padding-top: var(--menuHeight);
     width: 100%;
     background-color: var(--body-bg-color);
     z-index: 99;

@@ -14,21 +14,22 @@
     padding: 15px 0;
 }
 
-.main h2 {
+.main > h2 {
     font-size: var(--title);
     position: relative;
     color: var(--dark);
     font-family: var(--font-family-grotesk);
 }
 
-.main>p {
+.main > p {
     padding-bottom: 10px;
     position: relative;
     font-family: var(--font-family-grotesk);
     color: var(--dark);
+    text-align: center;
 }
 
-.main>p::after {
+.main > p::after {
     content: "";
     background: var(--main-color);
     height: 1px;
@@ -49,7 +50,7 @@
     position: relative;
 }
 
-.content>.main_image {
+.content > .main_image {
     width: 400px;
 
     & img {
@@ -89,6 +90,8 @@
     width: 300px;
     border-radius: 12px;
     background-color: var(--main-dark-color);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
 }
 
 .reason_top {
@@ -124,18 +127,22 @@
 }
 
 .span_column {
-    background-color: var(--main-color);
+    background: radial-gradient(
+        circle at 90% 20%,
+        var(--main-color) 1%,
+        rgb(251, 221, 19) 90%
+    );
     grid-column: span 2;
     width: 100%;
 
     & .reason_top h2 {
-        color: black;
+        color: var(--white-smoke);
         border: 1px solid;
     }
 }
 
 .span_column h3 {
-    color: black;
+    color: var(--white-smoke);
 }
 
 @media (max-width: 1100px) {
@@ -148,7 +155,7 @@
         margin: auto;
     }
 
-    .content>.main_image {
+    .content > .main_image {
         display: none;
     }
 

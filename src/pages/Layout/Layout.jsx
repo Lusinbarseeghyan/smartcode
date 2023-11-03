@@ -9,8 +9,8 @@ const Layout = () => {
             <Menu />
             <div className="content">
                 <Outlet />
-                <Footer />
             </div>
+            <Footer />
             <ScrollArrow />
         </div>
     );

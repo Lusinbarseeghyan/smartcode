@@ -1,42 +1,38 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { motion } from "framer-motion";
-
 import CourseCard from "../../components/CourseCard/CourseCard";
-
 import useAnimations from "../../utils/Animations/useAnimations";
-
+import { selectCoursesList } from "../../store/slices/courses/coursesSlice";
 import classes from "./Courses.module.css";
+import { fetchCourses } from "../../store/slices/courses/coursesApi";
+
 const Courses = () => {
-    const [courseData, setCourseData] = useState([]);
+    const list = useSelector(selectCoursesList);
+    const dispatch = useDispatch();
 
     const { leftAnimationVariant } = useAnimations();
 
     useEffect(() => {
-        (async () => {
-            const result = await fetch("http://localhost:3001/courses");
-            const jsonData = await result.json();
-
-            setCourseData(jsonData);
-        })();
-    }, []);
+        dispatch(fetchCourses());
+    }, [dispatch]);
 
     return (
-        <div className={`mt-40 mb-footer ${classes.wrapper}`}>
+        <motion.div
+            className={`mt-20 mb-footer ${classes.wrapper}`}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+        >
             <div className={classes.course_bg_white}></div>
             <div className={classes.course_bg_dark}></div>
 
-            <motion.div
-                className={`container ${classes.course_cards_container}`}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                {...leftAnimationVariant(2)}
-            >
-                {courseData.map((course) => {
+            <div className={`container ${classes.course_cards_container}`}>
+                {list.map((course) => {
                     return <CourseCard key={course.id} {...course} />;
                 })}
-            </motion.div>
-        </div>
+            </div>
+        </motion.div>
     );
 };
 

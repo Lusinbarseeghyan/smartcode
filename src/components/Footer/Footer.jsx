@@ -34,27 +34,47 @@ const Footer = () => {
                 </div>
                 <div className={classes.about_container}>
                     <h3>Կապ մեզ հետ</h3>
-                    <div className={classes.about_phone}>
-                        <BsFillTelephoneFill />
-                        <ul>
-                            <li>+374 41 435344</li>
-                            <li>+374 95 435341</li>
-                        </ul>
-                    </div>
-                    <div className={classes.about_email}>
-                        <BsFillEnvelopePaperHeartFill />
-                        <ul>
-                            <li>support@smartcode.am</li>
-                            <li>hr@smartcode.am</li>
-                        </ul>
-                    </div>
-                    <div className={classes.about_location}>
-                        <ImLocation2 />
-                        <ul>
-                            <li>Հանրապետության 22</li>
-                            <li>Երվանդ Քոչար 28/2</li>
-                        </ul>
-                    </div>
+                    <address>
+                        <div className={classes.about_phone}>
+                            <BsFillTelephoneFill />
+                            <ul>
+                                <Link to={"tel:+374 41 435344"}>
+                                    <li>+374 41 435344</li>
+                                </Link>
+                                <Link to={"tel:+374 95 435341"}>
+                                    <li>+374 95 435341</li>
+                                </Link>
+                            </ul>
+                        </div>
+                        <div className={classes.about_email}>
+                            <BsFillEnvelopePaperHeartFill />
+                            <ul>
+                                <Link to={"mailto:support@smartcode.am"}>
+                                    <li>support@smartcode.am</li>
+                                </Link>
+                                <Link to={"mailto:hr@smartcode.am"}>
+                                    <li>hr@smartcode.am</li>
+                                </Link>
+                            </ul>
+                        </div>
+                        <div className={classes.about_location}>
+                            <ImLocation2 />
+                            <ul>
+                                <Link
+                                    to={
+                                        "https://maps.app.goo.gl/mCPUXRZL42V7RizHA"
+                                    }
+                                >
+                                    <li>Հանրապետության 22</li>
+                                </Link>
+                                <Link
+                                    to={`https://maps.app.goo.gl/iFajxCgt7ftz9dZE7`}
+                                >
+                                    <li>Երվանդ Քոչար 28/2</li>
+                                </Link>
+                            </ul>
+                        </div>
+                    </address>
                 </div>
             </footer>
         </div>

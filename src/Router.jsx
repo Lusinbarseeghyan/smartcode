@@ -7,6 +7,7 @@ import About from "./pages/About/About";
 import Home from "./pages/Home/Home";
 import Partners from "./pages/Partners/Partners";
 import NotFound from "./pages/NotFound/NotFound";
+import CourseInfo from "./components/CourseInfo/CourseInfo";
 
 const Router = () => {
     return (
@@ -14,6 +15,7 @@ const Router = () => {
             <Route path="/" element={<Layout />}>
                 <Route index element={<Home />} />
                 <Route path="/courses" element={<Courses />} />
+                <Route path="/courses/:name" element={<CourseInfo />} />
                 <Route path="/features" element={<Features />} />
                 <Route path="/staff" element={<Staff />} />
                 <Route path="/about" element={<About />} />
