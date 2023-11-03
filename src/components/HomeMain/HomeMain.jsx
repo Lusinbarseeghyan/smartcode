@@ -9,6 +9,7 @@ import classes from "./HomeMain.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { selectFeaturesList } from "../../store/slices/features/featuresSlice";
 import { fetchFeatures } from "../../store/slices/features/featuresApi";
+import SVG from "react-inlinesvg";
 
 const HomeMain = () => {
     const list = useSelector(selectFeaturesList);
@@ -16,13 +17,11 @@ const HomeMain = () => {
     const mainRef = useRef(null);
     const imageRef = useRef(null);
 
-    useEffect(() => {
-        dispatch(fetchFeatures());
-    }, [dispatch]);
-
     const { leftAnimationVariant, rightAnimationVariant, topAnimationVariant } = useAnimations();
 
     useEffect(() => {
+        dispatch(fetchFeatures());
+
         const handleScroll = () => {
             const sectionRect = mainRef.current.getBoundingClientRect();
 
@@ -37,7 +36,7 @@ const HomeMain = () => {
 
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+    }, [dispatch]);
 
     return (
         <main ref={mainRef} className={`container ${classes.wrapper}`}>
@@ -67,9 +66,9 @@ const HomeMain = () => {
                                 >
                                     <div className={classes.reason_top}>
                                         <h2>
-                                            <img
+                                            <SVG
                                                 src={`/images/features/${feature.icon}`}
-                                                alt={feature.title}
+                                                title={feature.title}
                                             />
                                         </h2>
                                     </div>
