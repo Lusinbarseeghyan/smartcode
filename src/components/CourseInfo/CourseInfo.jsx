@@ -1,11 +1,10 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
-
-import classes from "./CourseInfo.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { selectCourse } from "../../store/slices/courses/coursesSlice";
 import { fetchCourse } from "../../store/slices/courses/coursesApi";
 
+import classes from "./CourseInfo.module.css";
 const CourseInfo = () => {
     const selectedCourse = useSelector(selectCourse);
     const { name } = useParams();
@@ -22,9 +21,14 @@ const CourseInfo = () => {
     }
 
     return (
-        <div className={`container mb-footer mt-20 ${classes.course_info_container}`}>
+        <div
+            className={`container mb-footer mt-20 ${classes.course_info_container}`}
+        >
             <div className={classes.course_image}>
-                <img src={selectedCourse.posters.small} alt={selectedCourse.name} />
+                <img
+                    src={selectedCourse.posters.small}
+                    alt={selectedCourse.name}
+                />
             </div>
             <div className={classes.bottom}>
                 <div className={classes.info}>
@@ -34,7 +38,10 @@ const CourseInfo = () => {
                     <p>{selectedCourse.description}</p>
                 </div>
                 <div className={classes.body_image}>
-                    <img src={selectedCourse.posters.big} alt={selectedCourse.title} />
+                    <img
+                        src={selectedCourse.posters.big}
+                        alt={selectedCourse.title}
+                    />
                 </div>
             </div>
         </div>

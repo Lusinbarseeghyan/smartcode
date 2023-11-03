@@ -224,6 +224,7 @@ const Staff = () => {
             },
         },
     ];
+
     return (
         <div
             id="staff"
@@ -234,6 +235,7 @@ const Staff = () => {
                 alignItems: "center",
                 justifyContent: "center",
                 gap: "1rem",
+                paddingBottom: 20,
             }}
         >
             {trainers.map((trainer) => {

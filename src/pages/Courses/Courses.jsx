@@ -19,11 +19,10 @@ const Courses = () => {
 
     return (
         <motion.div
-            className={`mt-40 mb-footer ${classes.wrapper}`}
+            className={`mt-20 mb-footer ${classes.wrapper}`}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            {...leftAnimationVariant(2)}
         >
             <div className={classes.course_bg_white}></div>
             <div className={classes.course_bg_dark}></div>

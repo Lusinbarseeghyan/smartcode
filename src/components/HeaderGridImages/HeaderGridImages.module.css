@@ -57,6 +57,7 @@
     border-radius: 12px;
     position: relative;
     z-index: 100;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .fivth_image {

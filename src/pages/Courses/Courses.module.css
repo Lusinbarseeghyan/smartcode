@@ -3,6 +3,7 @@
     height: auto;
     position: relative;
     padding-bottom: 40px;
+    padding-top: var(--menuHeight);
 }
 
 .courses_container {

@@ -4,10 +4,9 @@ import { motion } from "framer-motion";
 import classes from "./TrainerCard.module.css";
 const TrainerCard = ({ image, proffesion, name }) => {
     const videoRef = useRef();
-    const handlePlay = async () => {
+    const handlePlay = () => {
         if (videoRef.current.paused) {
-            await videoRef.current.play();
-            videoRef.current.loop = true;
+            videoRef.current.play();
         }
         videoRef.current.play();
     };

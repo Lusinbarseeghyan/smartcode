@@ -1,14 +1,16 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
+
+import useAnimations from "../../utils/Animations/useAnimations";
+
 import first from "../../assets/images/1.jpg";
 import sec from "../../assets/images/2.jpg";
 import third from "../../assets/images/3.jpg";
 import fivth from "../../assets/images/4.jpg";
 import sixth from "../../assets/images/5.jpg";
 import bgVideo from "../../assets/videos/banner.mp4";
-import classes from "./HeaderGridImages.module.css";
-import useAnimations from "../../utils/Animations/useAnimations";
 
+import classes from "./HeaderGridImages.module.css";
 const HeaderGridImages = ({ videoStopRef, videoSectionRef }) => {
     const { rightAnimationVariant, opacityAnimationVariant } = useAnimations();
 
@@ -52,7 +54,7 @@ const HeaderGridImages = ({ videoStopRef, videoSectionRef }) => {
 
                     scale = scale > 3 ? 3 : scale;
 
-                    videoRef.current.style.transform = `translateY(${
+                    videoRef.current.style.transform = `translateX(0%)translateY(${
                         scrollPosition > stopPosition
                             ? stopPosition
                             : scrollPosition
@@ -62,8 +64,8 @@ const HeaderGridImages = ({ videoStopRef, videoSectionRef }) => {
                         videoRef.current.play();
                     }
                 } else {
-                    videoRef.current.style.transform =
-                        "translateX(0%) translateY(0) scale(1)";
+                    videoRef.current.style.transform = "translateY(0) scale(1)";
+                    videoRef.current.currentTime = 0;
 
                     if (!videoRef.current.paused && videoRef.current.pause) {
                         videoRef.current.pause();
@@ -94,7 +96,12 @@ const HeaderGridImages = ({ videoStopRef, videoSectionRef }) => {
                     alt="smartcode"
                 />
                 <div className={classes.forth_image} ref={videoWrapperRef}>
-                    <video ref={videoRef} src={bgVideo} muted></video>
+                    <video
+                        disablePictureInPicture
+                        ref={videoRef}
+                        src={bgVideo}
+                        muted
+                    ></video>
                 </div>
                 <img
                     className={classes.fivth_image}

@@ -29,7 +29,9 @@ const Features = ({ theme = "dark" }) => {
         if (deltaY < 0) {
             setCurrent((current) => (current - 1 < 0 ? current : current - 1));
         } else if (deltaY > 0) {
-            setCurrent((current) => (current + 1 > list.length - 1 ? current : current + 1));
+            setCurrent((current) =>
+                current + 1 > list.length - 1 ? current : current + 1
+            );
         }
     };
 
@@ -40,7 +42,11 @@ const Features = ({ theme = "dark" }) => {
             })}
         >
             <div className={`container ${classes.wrapper} `}>
-                <div ref={listRef} className={classes.list} onWheel={detectScroll}>
+                <div
+                    ref={listRef}
+                    className={classes.list}
+                    onWheel={detectScroll}
+                >
                     {list.map((feature, index) => (
                         <div
                             key={feature.id}
@@ -49,7 +55,10 @@ const Features = ({ theme = "dark" }) => {
                         >
                             <div className={classes.line}>
                                 <div className={classes.iconWrapper}>
-                                    <img src={`/images/features/${feature.icon}`} alt={feature.title} />
+                                    <img
+                                        src={`/images/features/${feature.icon}`}
+                                        alt={feature.title}
+                                    />
                                 </div>
                             </div>
                             <div className={classes.content}>
@@ -59,7 +68,12 @@ const Features = ({ theme = "dark" }) => {
                         </div>
                     ))}
                 </div>
-                <Minimap reasons={list} current={current} setCurrent={setCurrent} theme={theme} />
+                <Minimap
+                    reasons={list}
+                    current={current}
+                    setCurrent={setCurrent}
+                    theme={theme}
+                />
             </div>
         </div>
     );

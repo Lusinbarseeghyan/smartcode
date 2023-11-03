@@ -14,7 +14,7 @@
     padding: 15px 0;
 }
 
-.main h2 {
+.main > h2 {
     font-size: var(--title);
     position: relative;
     color: var(--dark);
@@ -90,6 +90,8 @@
     width: 300px;
     border-radius: 12px;
     background-color: var(--main-dark-color);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
 }
 
 .reason_top {
@@ -125,18 +127,22 @@
 }
 
 .span_column {
-    background-color: var(--main-color);
+    background: radial-gradient(
+        circle at 90% 20%,
+        var(--main-color) 1%,
+        rgb(251, 221, 19) 90%
+    );
     grid-column: span 2;
     width: 100%;
 
     & .reason_top h2 {
-        color: black;
+        color: var(--white-smoke);
         border: 1px solid;
     }
 }
 
 .span_column h3 {
-    color: black;
+    color: var(--white-smoke);
 }
 
 @media (max-width: 1100px) {
