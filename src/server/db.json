@@ -282,5 +282,70 @@
             "logo": "https://smartcode.am/public/image/partners/unisoft.png",
             "website": "https://unisoft.am/"
         }
+    ],
+    "comments": [
+        {
+            "id": 1,
+            "name": "Ani Alaverdyan",
+            "image": " ",
+            "date": "11 october",
+            "text": "Անցել եմ Front-End դասընթացը , ցանկանում եմ շնորհակալություն հայտնել Սմարտկոդ ուսումնական կենտրոնին բարձրակարգ ուսումնական պայմաններ ապահովելու համար, առանձնահատուկ շնորհակալություն իմ ուսուցչին՝ Էմիլին, ով բացի իր մասնագիտական փայլուն գիտելիքներին զուգահեռ, մոտիվացնում և սովորեցնում է ուսանողներին գիտելիքի ստացման և ըմբռնման ճիշտ ուղին։ Ապագա ուսանողներին ցանկանում եմ , որպեսզի ցուցաբերեն առավելագույն աշխատասիրություն և համառություն՝ հաջողության հասնելու համար։ 💪Սիրով ՝ Կիմ 😊"
+        },
+        {
+            "id": 2,
+            "name": "Poghosyan Gev",
+            "image": "https://scontent.fevn9-1.fna.fbcdn.net/v/t39.30808-1/277307346_3302000643367623_4809482947693888224_n.jpg?stp=cp0_dst-jpg_p60x60&_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=UNTh2ZA6YGcAX-dbydM&_nc_ht=scontent.fevn9-1.fna&oh=00_AfC3MEUDRYuTU0lm0RcFtRLI8weB0-FKqEVSSLcI-MBxXQ&oe=6546ED5D",
+            "date": "24 December 2018",
+            "text": "Անհատական մոտեցում յուրաքանչյուր ուսանողին։ Հաճելի մթնոլորտ։"
+        },
+        {
+            "id": 3,
+            "name": "Inesa Ghalumyan",
+            "image": "https://scontent.fevn9-1.fna.fbcdn.net/v/t1.6435-1/139523044_1838741362945002_4989255461917053603_n.jpg?stp=cp0_dst-jpg_p60x60&_nc_cat=104&ccb=1-7&_nc_sid=2b6aad&_nc_ohc=jjtNYJWLF70AX8CvUA_&_nc_ht=scontent.fevn9-1.fna&oh=00_AfCoWxJDdF5Kf-41GTVQkHFCAhrrVo8qh1zkvMsnu0eEmQ&oe=6568F4C3",
+            "date": "27 November 2020",
+            "text": "Highly recommend!!🙂 Good fundaments for learning new programming languages. It is worth mentioning that the course materials are well organized. Also, the atmosphere is friendly, which contributes to learning right there."
+        },
+        {
+            "id": 4,
+            "name": "Hasmik Petrosyan",
+            "image": "https://scontent.fevn9-1.fna.fbcdn.net/v/t39.30808-1/387764572_2323549834521735_4726345997389470777_n.jpg?stp=cp6_dst-jpg_p60x60&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=BJVkSSqVtJcAX_pcErD&_nc_ht=scontent.fevn9-1.fna&oh=00_AfBnBWHPgJ2jrQiBMQaRSqZ0chTIZ9YjQXeyUrq9SYApVg&oe=6546D382",
+            "date": "06 December 2020",
+            "text": "Very good specialists and great quality ! Would highly recommend"
+        },
+        {
+            "id": 5,
+            "name": "Vitali Danilov",
+            "image": "https://scontent.fevn9-1.fna.fbcdn.net/v/t1.6435-1/40517737_657978807921033_3072328022523641856_n.jpg?stp=dst-jpg_p320x320&_nc_cat=100&ccb=1-7&_nc_sid=2b6aad&_nc_ohc=lTEbjdnygNYAX_bK9-V&_nc_ht=scontent.fevn9-1.fna&oh=00_AfA_iibVjyt1rmggt9bgeEVQRHBiFe-1MEYKKjn4EViQow&oe=6568FB5F",
+            "date": "10 January 2023",
+            "text": "Ուզում եմ իմ երախտագիտությունը հայտնել SmartCode ուսումնական կենտրոնին «WEB Front-End» դասընթացի  հարմարավետ և հստակ ներկայացման համար։ Շնորհակալություն որակյալ կրթության համար,շատ գոհ եմ 😘"
+        },
+        {
+            "id": 6,
+            "name": "Հայկ Ջամբազյան",
+            "image": "https://scontent.fevn9-1.fna.fbcdn.net/v/t1.6435-1/125185369_3204307029678386_2697615139183233415_n.jpg?stp=cp0_dst-jpg_p60x60&_nc_cat=102&ccb=1-7&_nc_sid=2b6aad&_nc_ohc=6qUM2KXpvNsAX_PckkS&_nc_ht=scontent.fevn9-1.fna&oh=00_AfABAMoXIAGPcMUdxkSuy-jXPSvYnTDXOyWXNDGLyBs5KQ&oe=6568C9C0",
+            "date": "11 March 2021",
+            "text": "I have been studying in this office already for a long time, and I can assure that it's the very specialized office with its professional staff, the right place to improve your skills and  knowledge."
+        },
+        {
+            "id": 7,
+            "name": "Mariam Sharoyan",
+            "image": "https://scontent.fevn9-1.fna.fbcdn.net/v/t39.30808-1/248659130_4187422788035006_9037955196112022_n.jpg?stp=cp0_dst-jpg_p60x60&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=mTTq023iL-wAX-2OXw3&_nc_ht=scontent.fevn9-1.fna&oh=00_AfCYV-_MtcyhQ5w9pyJPsQT3lW6KwCtAQ27StxI0cD0Wvg&oe=65471E93",
+            "date": "12 June 2019",
+            "text": "The Best Programming Team 💪👍👍👏👏❤"
+        },
+        {
+            "id": 8,
+            "name": "Anushavan Yeghiazaryan",
+            "image": "https://scontent.fevn9-1.fna.fbcdn.net/v/t39.30808-1/394465482_2411711165687188_7926521008372920580_n.jpg?stp=cp0_dst-jpg_p60x60&_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=qI_FCzFzvM8AX_z-DXt&_nc_ht=scontent.fevn9-1.fna&oh=00_AfC8JeOVUadT3HzbyOmuWQzLIIZA_NlmOP_lMijAmgJHfA&oe=65457881",
+            "date": "21 January 2021",
+            "text": "Լավագույն ուսուցման կենտրոնը😊"
+        },
+        {
+            "id": 9,
+            "name": "Gohar Hovsepyan",
+            "image": "https://scontent.fevn9-1.fna.fbcdn.net/v/t39.30808-1/396961273_3718674168376084_8503439064900395179_n.jpg?stp=cp0_dst-jpg_p60x60&_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=KaQXLv9qmasAX9privl&_nc_ht=scontent.fevn9-1.fna&oh=00_AfBCFWPNO4A8WBE7bU6NPfGMbrP-MIHLQa63XXIWnsrTWw&oe=6547518E",
+            "date": "12 December 2020",
+            "text": "Թույն ծառայություններ, թույն մասնագետների կողմից։"
+        }
     ]
 }
