@@ -1,5 +1,3 @@
-import { filter } from "lodash";
-
 const useAnimations = () => {
     const leftAnimation = {
         hidden: {

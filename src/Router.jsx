@@ -8,6 +8,10 @@ import Home from "./pages/Home/Home";
 import Partners from "./pages/Partners/Partners";
 import NotFound from "./pages/NotFound/NotFound";
 import CourseInfo from "./components/CourseInfo/CourseInfo";
+import Login from "./pages/Login/Login";
+import RouteMiddleware from "./components/RouteMiddleware/RouteMiddleware";
+import Dashboard from "./pages/Dashboard/Dashboard";
+import Profile from "./pages/Profile/Profile";
 
 const Router = () => {
     return (
@@ -20,6 +24,18 @@ const Router = () => {
                 <Route path="/staff" element={<Staff />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/partners" element={<Partners />} />
+
+                <Route element={<RouteMiddleware guest />}>
+                    <Route path="/login" element={<Login />} />
+                </Route>
+
+                <Route element={<RouteMiddleware user />}>
+                    <Route path="/profile" element={<Profile />} />
+                </Route>
+
+                <Route element={<RouteMiddleware admin />}>
+                    <Route path="/dashboard" element={<Dashboard />} />
+                </Route>
             </Route>
             <Route path="*" element={<NotFound />} />
         </Routes>

@@ -1,12 +1,15 @@
 import { useEffect, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
-import { BsInstagram, BsLinkedin } from "react-icons/bs";
+import { NavLink } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { ReactComponent as SmartCodeLogo } from "../../assets/images/logo.svg";
 import classes from "./Menu.module.css";
+import { useDispatch, useSelector } from "react-redux";
+import { logoutUser, selectAuthUser, setAuthUser } from "../../store/slices/auth/authSlice";
 
 const Menu = () => {
+    const authUser = useSelector(selectAuthUser);
     const [darkMode, setDarkMode] = useState(false);
+    const dispatch = useDispatch();
 
     useEffect(() => {
         const handleScroll = () => (window.scrollY ? setDarkMode(true) : setDarkMode(false));
@@ -15,6 +18,10 @@ const Menu = () => {
 
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
+
+    const logout = () => {
+        dispatch(logoutUser());
+    };
 
     return (
         <div className={`${classes.menu} ${darkMode && classes.dark}`}>
@@ -42,12 +49,18 @@ const Menu = () => {
                     </nav>
                 </div>
                 <div className={classes.socials}>
-                    <Link>
-                        <BsInstagram />
-                    </Link>
-                    <Link>
-                        <BsLinkedin />
-                    </Link>
+                    {!authUser ? (
+                        <NavLink to={"/login"}>Login</NavLink>
+                    ) : (
+                        <>
+                            {authUser.type === "admin" ? (
+                                <NavLink to={"/dashboard"}>Dashboard</NavLink>
+                            ) : (
+                                <NavLink to={"/profile"}>Profile</NavLink>
+                            )}
+                            <NavLink onClick={logout}>Logout</NavLink>
+                        </>
+                    )}
                 </div>
             </header>
         </div>

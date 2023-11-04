@@ -1,30 +1,15 @@
 import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import classNames from "classnames";
-
 import { isOdd } from "../../utils/helpers";
 import useAnimations from "../../utils/Animations/useAnimations";
-import SmartCodeText from "../SmartCodeText/SmartCodeText";
 import FormBox from "../FormBox/FormBox";
-
-// import { LiaChalkboardTeacherSolid } from "react-icons/lia";
-// import {
-//     MdOutlineDone,
-//     MdVideoChat,
-//     MdOutlineRocketLaunch,
-//     MdAssuredWorkload,
-// } from "react-icons/md";
-// import { SiCoffeescript } from "react-icons/si";
-// import { TbFreeRights } from "react-icons/tb";
-// import { BiSupport, BiSolidHourglassTop } from "react-icons/bi";
-// import mainImage from "../../assets/images/header.svg";
-
 import { useDispatch, useSelector } from "react-redux";
 import { selectFeaturesList } from "../../store/slices/features/featuresSlice";
 import { fetchFeatures } from "../../store/slices/features/featuresApi";
 import SVG from "react-inlinesvg";
-
 import classes from "./HomeMain.module.css";
+
 const HomeMain = () => {
     const list = useSelector(selectFeaturesList);
     const dispatch = useDispatch();
@@ -35,8 +20,7 @@ const HomeMain = () => {
         dispatch(fetchFeatures());
     }, [dispatch]);
 
-    const { leftAnimationVariant, rightAnimationVariant, topAnimationVariant } =
-        useAnimations();
+    const { leftAnimationVariant, rightAnimationVariant, topAnimationVariant } = useAnimations();
 
     useEffect(() => {
         dispatch(fetchFeatures());
@@ -44,10 +28,7 @@ const HomeMain = () => {
         const handleScroll = () => {
             const sectionRect = mainRef.current.getBoundingClientRect();
 
-            if (
-                sectionRect.top < 800 &&
-                sectionRect.bottom > window.innerHeight - 500
-            ) {
+            if (sectionRect.top < 800 && sectionRect.bottom > window.innerHeight - 500) {
                 imageRef.current.classList.remove(classes.absolute);
                 imageRef.current.classList.add(classes.fixed);
             } else {
@@ -74,12 +55,8 @@ const HomeMain = () => {
                 whileInView="visible"
                 viewport={{ once: true }}
             >
-                <motion.h2 {...topAnimationVariant(1)}>
-                    Ինչո՞ւ սովորել մեզ մոտ
-                </motion.h2>
-                <motion.p {...topAnimationVariant(2)}>
-                    Մեզ մոտ ծրագրավորում սովորելը ձեռնտու է`
-                </motion.p>
+                <motion.h2 {...topAnimationVariant(1)}>Ինչո՞ւ սովորել մեզ մոտ</motion.h2>
+                <motion.p {...topAnimationVariant(2)}>Մեզ մոտ ծրագրավորում սովորելը ձեռնտու է`</motion.p>
                 <div className={classes.content}>
                     <div className={classes.reasons}>
                         {list.map((feature, index) => {
@@ -88,8 +65,7 @@ const HomeMain = () => {
                                 <motion.div
                                     key={feature.id}
                                     className={classNames(classes.reason, {
-                                        [classes.span_column]:
-                                            lastReason && isOdd(list.length),
+                                        [classes.span_column]: lastReason && isOdd(list.length),
                                     })}
                                     {...leftAnimationVariant(feature.id)}
                                 >

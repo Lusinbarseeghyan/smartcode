@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { motion } from "framer-motion";
 import CourseCard from "../../components/CourseCard/CourseCard";
-import useAnimations from "../../utils/Animations/useAnimations";
 import { selectCoursesList } from "../../store/slices/courses/coursesSlice";
 import classes from "./Courses.module.css";
 import { fetchCourses } from "../../store/slices/courses/coursesApi";
@@ -10,8 +9,6 @@ import { fetchCourses } from "../../store/slices/courses/coursesApi";
 const Courses = () => {
     const list = useSelector(selectCoursesList);
     const dispatch = useDispatch();
-
-    const { leftAnimationVariant } = useAnimations();
 
     useEffect(() => {
         dispatch(fetchCourses());
