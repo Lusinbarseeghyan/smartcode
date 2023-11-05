@@ -12,16 +12,18 @@
     align-items: center;
     height: 100%;
     padding: 15px 0;
+    align-items: center;
 }
 
-.main>h2 {
+.main > h2 {
     font-size: var(--title);
     position: relative;
     color: var(--dark);
     font-family: var(--font-family-grotesk);
+    text-align: center;
 }
 
-.main>p {
+.main > p {
     padding-bottom: 10px;
     position: relative;
     font-family: var(--font-family-grotesk);
@@ -29,7 +31,7 @@
     text-align: center;
 }
 
-.main>p::after {
+.main > p::after {
     content: "";
     background: var(--main-color);
     height: 1px;
@@ -50,7 +52,7 @@
     position: relative;
 }
 
-.content>.main_image {
+.content > .main_image {
     width: 400px;
 
     & img {
@@ -92,7 +94,6 @@
     background-color: var(--body-bg-color);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 5px;
 }
 
 .reason_top {
@@ -130,9 +131,11 @@
 }
 
 .span_column {
-    background: radial-gradient(circle at 90% 20%,
-            var(--main-color) 1%,
-            rgb(251, 221, 19) 90%);
+    background: radial-gradient(
+        circle at 90% 20%,
+        var(--main-color) 1%,
+        rgb(251, 221, 19) 90%
+    );
     grid-column: span 2;
     width: 100%;
 
@@ -157,7 +160,7 @@
         margin: auto;
     }
 
-    .content>.main_image {
+    .content > .main_image {
         display: none;
     }
 

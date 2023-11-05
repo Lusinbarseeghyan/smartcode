@@ -1,7 +1,9 @@
 import trainer from "../../assets/images/trainer.webm";
 import TrainerCard from "../../components/TrainerCard/TrainerCard";
-
+import useAnimations from "../../utils/Animations/useAnimations";
+import { motion } from "framer-motion";
 const Staff = () => {
+    const { opacityAnimationVariant } = useAnimations();
     const trainers = [
         {
             id: 1,
@@ -226,9 +228,12 @@ const Staff = () => {
     ];
 
     return (
-        <div
+        <motion.div
             id="staff"
             className="mt-20 container mb-footer"
+            initial="hidden"
+            whileInView="visible"
+            {...opacityAnimationVariant(1)}
             style={{
                 display: "flex",
                 flexWrap: "wrap",
@@ -241,7 +246,7 @@ const Staff = () => {
             {trainers.map((trainer) => {
                 return <TrainerCard key={trainer.id} {...trainer} />;
             })}
-        </div>
+        </motion.div>
     );
 };
 

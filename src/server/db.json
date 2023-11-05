@@ -7,23 +7,22 @@
             "price": 58000,
             "posters": {
                 "small": "https://smartcode.am/public/image/courses/front-end.svg",
-                "big": "https://smartcode.am/public/image/courses/poster/front-end.png"
+                "big": "https://cdn-icons-png.flaticon.com/512/2721/2721264.png"
             },
             "shortTitle": "WEB Front-End",
             "title": "Ծրագրավորում 0-ից դասընթաց",
             "subtitle": "SmartCode-ը մեկնարկում է 3 փուլից բաղկացած` ծրագրավորում 0-ից (Front-End) դասընթացի նոր ընդունելություն։",
-            "description":{
-                "mainTitle":"Դասընթացի փուլերը՝",
-                "stages":{
-                    "first":"1. HTML5, CSS3, BOOTSTRAP, SASS",
-                    "second":"2. JavaScript (Jquery)",
-                    "third":"3. React.js (Redux)",
+            "description": {
+                "mainTitle": "Դասընթացի փուլերը՝",
+                "stages": {
+                    "first": "1. HTML5, CSS3, BOOTSTRAP, SASS",
+                    "second": "2. JavaScript (Jquery)",
+                    "third": "3. React.js (Redux)",
                     "forth": ""
                 },
-                "content":"Դասընթացի տևողություն՝ 8 ամիս, շաբաթական՝ 3 պարապմունք (2 ժամ տևողությամբ): Դասընթացի ավարտին բոլոր ուսանողներին կտրվի վկայական։ Դասընթացի ամսական վճարը՝ 58,000 դրամ նաև ԱՊԱՌԻԿ ամսական՝ 24,000 դրամ։",
-                "offer":"Գրանցվի՛ր հիմա և ստացիր 3 փորձնական դասի մասնակցության հնարավորություն ԱՆՎՃԱՐ։"
+                "content": "Դասընթացի տևողություն՝ 8 ամիս, շաբաթական՝ 3 պարապմունք (2 ժամ տևողությամբ): Դասընթացի ավարտին բոլոր ուսանողներին կտրվի վկայական։ Դասընթացի ամսական վճարը՝ 58,000 դրամ նաև ԱՊԱՌԻԿ ամսական՝ 24,000 դրամ։",
+                "offer": "Գրանցվի՛ր հիմա և ստացիր 3 փորձնական դասի մասնակցության հնարավորություն ԱՆՎՃԱՐ։"
             }
-               
         },
         {
             "id": 2,
@@ -32,24 +31,22 @@
             "price": 68000,
             "posters": {
                 "small": "https://smartcode.am/public/image/courses/python-ml.svg",
-                "big": "https://smartcode.am/public/image/courses/poster/python-ml.png"
+                "big": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/935px-Python-logo-notext.svg.png"
             },
             "shortTitle": "Phyton(ML/AI)",
-            "title": "Python / ML դասընթաց",
+            "title": "Python / ML & AI դասընթաց",
             "subtitle": "Python-ը ծրագրավորման ամենահայտնի լեզուն է աշխարհում: Այսօր գրեթե բոլոր հսկա ընկերությունները ինչպիսիք են՝ NASA, Google, Netflix, Facebook, Instagram, Pinterest, Dropbox օգտագործում են Python լեզուն իրենց նորարարական նախագծերում:",
             "description": {
                 "mainTitle": "Դասընթացի սկսզբում կսովորեք Python լեզվի հիմունքները և կկարգավորեք Python-ի հետ աշխատելու համար անհրաժեշտ միջավայր: Այնուհետև, առաջ կշարժվեք միջին մակարդակ իրական նախագծի ուղեկցությամբ, կսովորեք՝ օբյեկտ կողմնորոշված ծրագրավորման հիմունքները (OOP): Որից հետո ձեռք կբերեք Python-ի առաջադեմ մակարդակի գիտելիքներ՝ մեքենայական ուսուցման (ML) և արհեստական բանականության (AI) աշխատանքի վերաբերյալ:Դասընթացի փուլերը՝",
                 "stages": {
                     "first": "1. Python (OOP)",
                     "second": "2. Python (Machine learning & AI)",
-                    "third":"",
+                    "third": "",
                     "forth": ""
                 },
                 "content": "Դասընթացի տևողություն՝ 7 ամիս, շաբաթական՝ 3 պարապմունք (2 ժամ տևողությամբ): Դասընթացի ավարտին բոլոր ուսանողներին կտրվի վկայական։ Դասընթացի ամսական վճարը՝ 68,000 դրամ նաև ԱՊԱՌԻԿ ամսական՝ 25,000 դրամ։",
-                "offer":"Գրանցվի՛ր հիմա և ստացիր 3 փորձնական դասի մասնակցության հնարավորություն ԱՆՎՃԱՐ"
+                "offer": "Գրանցվի՛ր հիմա և ստացիր 3 փորձնական դասի մասնակցության հնարավորություն ԱՆՎՃԱՐ"
             }
-            
-                 
         },
         {
             "id": 3,
@@ -58,12 +55,12 @@
             "price": 68000,
             "posters": {
                 "small": "https://smartcode.am/public/image/courses/java.svg",
-                "big": "https://smartcode.am/public/image/courses/poster/java.png"
+                "big": "https://static.vecteezy.com/system/resources/previews/019/899/953/non_2x/java-free-download-free-png.png"
             },
             "shortTitle": "JAVA",
             "title": "Java դասընթաց",
             "subtitle": "Java-ն ամենաակտուալ և ամենապահանջված ծրագրավորման լեզուներից մեկն է ամբողջ աշխարհում: Այն հիանալի տարբերակ է IT ոլորտում կարիերան սկսելու համար:",
-            "description":{
+            "description": {
                 "mainTitle": "",
                 "stages": {
                     "first": "",
@@ -72,9 +69,8 @@
                     "forth": ""
                 },
                 "content": "Դասընթացի տևողություն՝ 6 ամիս, շաբաթական՝ 3 պարապմունք (2 ժամ տևողությամբ): Դասընթացի ավարտին բոլոր ուսանողներին կտրվի վկայական։ Դասընթացի ամսական վճարը՝ 68,000 դրամ նաև ԱՊԱՌԻԿ ամսական՝ 21,000 դրամ։",
-                "offer":"Գրանցվի՛ր հիմա և ստացիր 3 փորձնական դասի մասնակցության հնարավորություն ԱՆՎՃԱՐ։"
+                "offer": "Գրանցվի՛ր հիմա և ստացիր 3 փորձնական դասի մասնակցության հնարավորություն ԱՆՎՃԱՐ։"
             }
-             
         },
         {
             "id": 4,
@@ -83,12 +79,12 @@
             "price": 58000,
             "posters": {
                 "small": "https://smartcode.am/public/image/courses/javaScript.svg",
-                "big": "https://smartcode.am/public/image/courses/poster/javaScript.png"
+                "big": "https://i0.wp.com/blog.canadianwebhosting.com/wp-content/uploads/2018/04/javascript-logo.png?ssl=1"
             },
             "shortTitle": "JavaScript",
             "title": "JavaScript դասընթաց",
             "subtitle": "JavaScript ծրագրավորման խորացված դասընթաց` 0-ից մինչև հմուտ մասնագետ:JavaScript-ը վեբ ծրագրավորման մեջ կիրառվող հիմնական  տեխնոլոգիան է HTML և CSS-ի հետ միասին։ Եթե ցանկանում ես դառնալ մրցունակ Front-End ծրագրավորող, ապա պետք է սովորես JavaScript բավականին խորացված։ Ավելին, ներկայումս JavaScript-ը կիրառվում է նաև Mobile, Desktop հավելվածներում և խաղերի մշակման մեջ։",
-            "description":{
+            "description": {
                 "mainTitle": "",
                 "stages": {
                     "first": "",
@@ -96,10 +92,9 @@
                     "third": "",
                     "forth": ""
                 },
-                "content": "Դասընթացի տևողություն՝ 6 ամիս, շաբաթական՝ 3 պարապմունք (2 ժամ տևողությամբ): Դասընթացի ավարտին բոլոր ուսանողներին կտրվի վկայական։ Դասընթացի ամսական վճարը՝ 68,000 դրամ նաև ԱՊԱՌԻԿ ամսական՝ 21,000 դրամ։"
-,                "offer":"Գրանցվի՛ր հիմա և ստացիր 3 փորձնական դասի մասնակցության հնարավորություն ԱՆՎՃԱՐ։"
-            } 
-            
+                "content": "Դասընթացի տևողություն՝ 6 ամիս, շաբաթական՝ 3 պարապմունք (2 ժամ տևողությամբ): Դասընթացի ավարտին բոլոր ուսանողներին կտրվի վկայական։ Դասընթացի ամսական վճարը՝ 68,000 դրամ նաև ԱՊԱՌԻԿ ամսական՝ 21,000 դրամ։",
+                "offer": "Գրանցվի՛ր հիմա և ստացիր 3 փորձնական դասի մասնակցության հնարավորություն ԱՆՎՃԱՐ։"
+            }
         },
         {
             "id": 5,
@@ -108,7 +103,7 @@
             "price": 58000,
             "posters": {
                 "small": "https://smartcode.am/public/image/courses/react.svg",
-                "big": "https://smartcode.am/public/image/courses/poster/react.png"
+                "big": "https://static-00.iconduck.com/assets.00/react-javascript-js-framework-facebook-icon-512x455-jctj7y5w.png"
             },
             "shortTitle": "React.js (Redux)",
             "title": "React.js դասընթաց",
@@ -124,7 +119,6 @@
                 "content": "Դասընթացի տևողություն՝ 6 ամիս, շաբաթական՝ 3 պարապմունք (2 ժամ տևողությամբ): Դասընթացի ավարտին բոլոր ուսանողներին կտրվի վկայական։ Դասընթացի ամսական վճարը՝ 68,000 դրամ նաև ԱՊԱՌԻԿ ամսական՝ 21,000 դրամ։",
                 "offer": "Գրանցվի՛ր հիմա և ստացիր 3 փորձնական դասի մասնակցության հնարավորություն ԱՆՎՃԱՐ։"
             }
-             
         },
         {
             "id": 6,
@@ -133,7 +127,7 @@
             "price": 68000,
             "posters": {
                 "small": "https://smartcode.am/public/image/courses/node.svg",
-                "big": "https://smartcode.am/public/image/courses/poster/node.png"
+                "big": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png"
             },
             "shortTitle": "Node.js",
             "title": "Node.js դասընթաց",
@@ -149,7 +143,6 @@
                 "content": "Դասընթացի տևողություն՝ 3 ամիս, շաբաթական՝ 3 պարապմունք (2 ժամ տևողությամբ): Դասընթացի ավարտին բոլոր ուսանողներին կտրվի վկայական։ Դասընթացի ամսական վճարը՝ 68,000 դրամ նաև ԱՊԱՌԻԿ ամսական՝ 21,000 դրամ։",
                 "offer": "Գրանցվի՛ր հիմա և ստացիր 3 փորձնական դասի մասնակցության հնարավորություն ԱՆՎՃԱՐ։"
             }
-          
         },
         {
             "id": 7,
@@ -158,7 +151,7 @@
             "price": 68000,
             "posters": {
                 "small": "https://smartcode.am/public/image/courses/devops.svg",
-                "big": "https://smartcode.am/public/image/courses/poster/devops.png"
+                "big": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Devops-toolchain.svg/1280px-Devops-toolchain.svg.png"
             },
             "shortTitle": "DevOps",
             "title": "DevOps դասընթաց",
@@ -166,10 +159,10 @@
             "description": {
                 "mainTitle": "Դասընթացի ընթացքում՝",
                 "stages": {
-                    "first": "կսովորեք ինչպես կառավարել Linux համակարգերը",
-                    "second": "կծանոթանաք Python ծրագրավորման լեզվի հիմունքներին և կիրառությանը",
-                    "third": "կուսումնասիրեք CI/CD մեթոդաբանության աշխատանքը",
-                    "forth":"կտիրապետեք DevOps մասնագիտության լավագույն պրակտիկաներին"
+                    "first": "1. կսովորեք ինչպես կառավարել Linux համակարգերը",
+                    "second": "2. կծանոթանաք Python ծրագրավորման լեզվի հիմունքներին և կիրառությանը",
+                    "third": "3. կուսումնասիրեք CI/CD մեթոդաբանության աշխատանքը",
+                    "forth": "4. կտիրապետեք DevOps մասնագիտության լավագույն պրակտիկաներին"
                 },
                 "content": "Դասընթացի տևողություն՝ 4 ամիս, շաբաթական՝ 3 պարապմունք (2 ժամ տևողությամբ): Դասընթացի ավարտին բոլոր ուսանողներին կտրվի վկայական։ Դասընթացի ամսական վճարը՝ 68,000 դրամ նաև ԱՊԱՌԻԿ ամսական՝ 15,000 դրամ։",
                 "offer": "Գրանցվի՛ր հիմա և ստացիր 3 փորձնական դասի մասնակցության հնարավորություն ԱՆՎՃԱՐ։"
@@ -182,7 +175,7 @@
             "price": 68000,
             "posters": {
                 "small": "https://smartcode.am/public/image/courses/C.svg",
-                "big": "https://smartcode.am/public/image/courses/poster/devops.png"
+                "big": "https://vectorseek.com/wp-content/uploads/2023/09/CSharp-Logo-Vector.svg-.png"
             },
             "shortTitle": "C#",
             "title": "C# դասընթաց",
@@ -206,7 +199,7 @@
             "price": 68000,
             "posters": {
                 "small": "https://smartcode.am/public/image/courses/python-django.svg",
-                "big": "https://smartcode.am/public/image/courses/poster/python-django.png"
+                "big": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/935px-Python-logo-notext.svg.png"
             },
             "shortTitle": "Python (Django)",
             "title": "Python / DJango դասընթաց",
@@ -230,7 +223,7 @@
             "price": 68000,
             "posters": {
                 "small": "https://smartcode.am/public/image/courses/php.svg",
-                "big": "https://smartcode.am/public/image/courses/poster/php.png"
+                "big": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png"
             },
             "shortTitle": "PHP (Laravel)",
             "title": "PHP / Laravel դասընթաց",
@@ -254,7 +247,7 @@
             "price": 58000,
             "posters": {
                 "small": "https://smartcode.am/public/image/courses/full-stack.svg",
-                "big": "https://smartcode.am/public/image/courses/poster/full-stack.png"
+                "big": "https://static.vecteezy.com/system/resources/thumbnails/019/153/003/small/3d-minimal-programming-icon-coding-screen-web-development-concept-laptop-with-a-coding-screen-and-a-coding-icon-3d-illustration-png.png"
             },
             "shortTitle": "WEB Full-Stack",
             "title": "Վեբ ծրագրավորման դասընթաց",
@@ -278,7 +271,7 @@
             "price": 65000,
             "posters": {
                 "small": "https://smartcode.am/public/image/courses/ui-ux.svg",
-                "big": "https://smartcode.am/public/image/courses/poster/ui-ux.png"
+                "big": "https://www.softura.com/wp-content/uploads/2021/10/Group-256@2x.png"
             },
             "shortTitle": "UI / UX Design",
             "title": "UI / UX Design դասընթաց",
@@ -302,7 +295,7 @@
             "price": 65000,
             "posters": {
                 "small": "https://smartcode.am/public/image/courses/graphic-design.svg?v=1.2",
-                "big": "https://smartcode.am/public/image/courses/poster/graphic-design.png"
+                "big": "https://cdn-eokfn.nitrocdn.com/diBQUISGKsmoTQlhuYAsruhMTNXpLtAP/assets/images/optimized/rev-490b9c2/silica.co.in/wp-content/uploads/2020/03/Graphic-Design.png"
             },
             "shortTitle": "Graphic Design",
             "title": "Graphic Design դասընթաց",
@@ -385,7 +378,7 @@
         },
         {
             "id": 2,
-            "title": "Hi-Teck Gateway",
+            "title": "Hi-Tech Gateway",
             "logo": "https://smartcode.am/public/image/partners/hi-teck.png",
             "website": "https://hitechgateway.com/about"
         },

@@ -54,6 +54,7 @@
     display: flex;
     align-items: center;
     column-gap: 0.5rem;
+    padding: 0.3rem 0;
 
     & svg {
         color: var(--main-color);
@@ -62,6 +63,8 @@
     & ul li {
         text-align: start;
         color: var(--white);
+        font-family: var(--font-family-poppins);
+        font-style: normal;
     }
 }
 

@@ -3,9 +3,13 @@ import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { selectCourse } from "../../store/slices/courses/coursesSlice";
 import { fetchCourse } from "../../store/slices/courses/coursesApi";
+import { motion } from "framer-motion";
+
+import useAnimations from "../../utils/Animations/useAnimations";
 
 import classes from "./CourseInfo.module.css";
 const CourseInfo = () => {
+    const { scaleAnimationVariant } = useAnimations();
     const selectedCourse = useSelector(selectCourse);
     const { name } = useParams();
     const dispatch = useDispatch();
@@ -21,8 +25,11 @@ const CourseInfo = () => {
     }
 
     return (
-        <div
+        <motion.div
             className={`container mb-footer mt-20 ${classes.course_info_container}`}
+            initial="hidden"
+            whileInView="visible"
+            {...scaleAnimationVariant(1)}
         >
             <div className={classes.course_image}>
                 <img
@@ -32,16 +39,20 @@ const CourseInfo = () => {
             </div>
             <div className={classes.bottom}>
                 <div className={classes.info}>
-                    <h1>{selectedCourse.name}</h1>
                     <h2>{selectedCourse.title}</h2>
                     <p>{selectedCourse.subtitle}</p>
                     <p>{selectedCourse.description.mainTitle}</p>
-                    <ul>
-                        <li>{selectedCourse.description.stages.first}</li>
-                        <li>{selectedCourse.description.stages.second}</li>
-                        <li>{selectedCourse.description.stages.third}</li>
-                        <li>{selectedCourse.description.stages.forth}</li>
-                    </ul>
+                    {selectedCourse.description.stages.first ||
+                    selectedCourse.description.stages.second ||
+                    selectedCourse.description.stages.third ||
+                    selectedCourse.description.stages.forth ? (
+                        <ul>
+                            <li>{selectedCourse.description.stages.first}</li>
+                            <li>{selectedCourse.description.stages.second}</li>
+                            <li>{selectedCourse.description.stages.third}</li>
+                            <li>{selectedCourse.description.stages.forth}</li>
+                        </ul>
+                    ) : null}
                     <p>{selectedCourse.description.content}</p>
                     <p>{selectedCourse.description.offer}</p>
                 </div>
@@ -52,7 +63,7 @@ const CourseInfo = () => {
                     />
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

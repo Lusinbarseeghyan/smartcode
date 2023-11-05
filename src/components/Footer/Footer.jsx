@@ -53,10 +53,16 @@ const Footer = () => {
                         <div className={classes.about_email}>
                             <BsFillEnvelopePaperHeartFill />
                             <ul>
-                                <Link to={"mailto:support@smartcode.am"}>
+                                <Link
+                                    target="_blank"
+                                    to={"mailto:support@smartcode.am"}
+                                >
                                     <li>support@smartcode.am</li>
                                 </Link>
-                                <Link to={"mailto:hr@smartcode.am"}>
+                                <Link
+                                    target="_blank"
+                                    to={"mailto:hr@smartcode.am"}
+                                >
                                     <li>hr@smartcode.am</li>
                                 </Link>
                             </ul>
@@ -65,6 +71,7 @@ const Footer = () => {
                             <ImLocation2 />
                             <ul>
                                 <Link
+                                    target="_blank"
                                     to={
                                         "https://maps.app.goo.gl/mCPUXRZL42V7RizHA"
                                     }
@@ -72,6 +79,7 @@ const Footer = () => {
                                     <li>{t(`footer.address.first`)}</li>
                                 </Link>
                                 <Link
+                                    target="_blank"
                                     to={`https://maps.app.goo.gl/iFajxCgt7ftz9dZE7`}
                                 >
                                     <li>{t(`footer.address.second`)}</li>

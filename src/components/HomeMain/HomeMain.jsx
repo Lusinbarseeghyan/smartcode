@@ -4,20 +4,8 @@ import classNames from "classnames";
 
 import { isOdd } from "../../utils/helpers";
 import useAnimations from "../../utils/Animations/useAnimations";
-import SmartCodeText from "../SmartCodeText/SmartCodeText";
+// import SmartCodeText from "../SmartCodeText/SmartCodeText";
 import FormBox from "../FormBox/FormBox";
-
-// import { LiaChalkboardTeacherSolid } from "react-icons/lia";
-// import {
-//     MdOutlineDone,
-//     MdVideoChat,
-//     MdOutlineRocketLaunch,
-//     MdAssuredWorkload,
-// } from "react-icons/md";
-// import { SiCoffeescript } from "react-icons/si";
-// import { TbFreeRights } from "react-icons/tb";
-// import { BiSupport, BiSolidHourglassTop } from "react-icons/bi";
-// import mainImage from "../../assets/images/header.svg";
 
 import { useDispatch, useSelector } from "react-redux";
 import { selectFeaturesList } from "../../store/slices/features/featuresSlice";
@@ -25,12 +13,17 @@ import { fetchFeatures } from "../../store/slices/features/featuresApi";
 import SVG from "react-inlinesvg";
 
 import classes from "./HomeMain.module.css";
+<<<<<<< HEAD
 import { useTranslation } from "react-i18next";
+=======
+
+>>>>>>> 96e36e4de5a4328d4fe78cf0074463374c26524d
 const HomeMain = () => {
     const {t, i18n}= useTranslation("menu");
 
     const list = useSelector(selectFeaturesList);
     const dispatch = useDispatch();
+
     const mainRef = useRef(null);
     const imageRef = useRef(null);
 
@@ -38,8 +31,7 @@ const HomeMain = () => {
         dispatch(fetchFeatures());
     }, [dispatch]);
 
-    const { leftAnimationVariant, rightAnimationVariant, topAnimationVariant } =
-        useAnimations();
+    const { scaleAnimationVariant, topAnimationVariant } = useAnimations();
 
     useEffect(() => {
         dispatch(fetchFeatures());
@@ -94,7 +86,7 @@ const HomeMain = () => {
                                         [classes.span_column]:
                                             lastReason && isOdd(list.length),
                                     })}
-                                    {...leftAnimationVariant(feature.id)}
+                                    {...scaleAnimationVariant(feature.id)}
                                 >
                                     <div className={classes.reason_top}>
                                         <h2>
@@ -105,7 +97,7 @@ const HomeMain = () => {
                                         </h2>
                                     </div>
                                     <div className={classes.reason_bottom}>
-                                        <div className={classes.reason_icon}>
+                                        <div className={classes.reason_title}>
                                             <h3>{feature.title}</h3>
                                         </div>
                                     </div>
@@ -116,7 +108,7 @@ const HomeMain = () => {
                     <motion.div
                         className={classes.main_image}
                         ref={imageRef}
-                        {...rightAnimationVariant(2)}
+                        {...scaleAnimationVariant(2)}
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
