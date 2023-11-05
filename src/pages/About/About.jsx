@@ -4,41 +4,29 @@ import classes from "./About.module.css";
 import video1 from "../../assets/videos/video1.mp4";
 import video2 from "../../assets/videos/video2.mp4";
 import certificate from "../../assets/images/1.jpg";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+    const {t, i18n} = useTranslation("menu");
     return (
         <div className={classes.about_page}>
             <div className={classes.about_container}>
                 <AboutMain
-                    title={"Մեր մասին"}
-                    firstP={
-                        "SmartCode ծրագրավորման ուսուցման ընկերությունը արդեն 7 տարի է կազմակերպում և իրականացնում է ծրագրավորման դասընթացներ, նպատակ ունենալով աշխատաշուկային հանձնել որակյալ մասնագետներ:"
-                    }
-                    secondP={
-                        "Հետևելով համաշխարհային IT թրենդներին՝ թարմացվում և կատարելագործվում են դասավանդման ծրագրերը: Հատուկ մշակված ծրագրի, տնային առաջադրանքների և անվճար փորձաշրջանի արդյունքում մեր ուսանողները գրանցում են մեծ հաջողություններ: Հմուտ մասնագետների աշխատանքի արդյունքում մենք վայելում ենք մեր ուսանողների սերն ու վստահությունը: Համագործակցելով IT ընկերությունների հետ՝ մենք Երաշխավորում ենք լավագույն ուսանողների փորձաշրջանն ու աշխատանքը:"
-                    }
+                    title={t(`about.aboutMain.aboutTitle`)}
+                    firstP={t(`about.aboutMain.aboutBody`)}
+                    secondP={t(`about.aboutMain.aboutBodySecond`)}
                     video={video1}
                 />
                 <AboutMain
-                    title={"Մեր նպատակը"}
-                    firstP={
-                        "Մեր հիմնական նպատակն է ծրագրավորումը հասանելի դարձնել բոլորին` անկախ տարիքից, կրթությունից կամ մասնագիտական ​​փորձից: Մենք հավատում ենք, որ յուրաքանչյուրը կարող է սովորել կոդավորել և օգտագործել այդ հմտությունները իրենց նպատակների հասնելու համար:"
-                    }
-                    secondP={
-                        "SmartCode-ում մենք ձգտում ենք մեր ուսանողներին տրամադրել բոլոր անհրաժեշտ հարմարությունները հաջող ուսուցման համար:Մեր ուսումնական ծրագիրը մշակված է այնպես, որ ուսանողները կարողանան սովորել իրենց տեմպերով` փորձառու ուսուցիչների աջակցությամբ:"
-                    }
+                    title={t(`about.aboutGoals.goalTitle`)}
+                    firstP={t(`about.aboutGoals.goalBody`)}
+                    secondP={t(`about.aboutGoals.goalBodySecond`)}
                     video={video2}
                 />
                 <AboutMain
-                    title={
-                        "Դու էլ միացի՛ր մեզ, դարձի՛ր մրցունակ ծրագրավորման ոլորտում և երաշխավորի՛ր աշխատանքդ SmartCode-ի օգնությամբ:"
-                    }
-                    firstP={
-                        "Դասընթացի ավարտին բոլոր ուսանողներին կտրվի վկայական։"
-                    }
-                    secondP={
-                        "Իսկ  լավագույն արդյունք ցուցաբերած ուսանողներին կառաջարկվի աշխատանք գործընկեր կազմակերպություններում:"
-                    }
+                    title={t(`about.aboutOffer.title`)}
+                    firstP={t(`about.aboutOffer.certificate`)}
+                    secondP={t(`about.aboutOffer.workOffer`)}
                     image={certificate}
                 />
             </div>

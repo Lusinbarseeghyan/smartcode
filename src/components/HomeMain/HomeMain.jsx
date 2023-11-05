@@ -25,7 +25,10 @@ import { fetchFeatures } from "../../store/slices/features/featuresApi";
 import SVG from "react-inlinesvg";
 
 import classes from "./HomeMain.module.css";
+import { useTranslation } from "react-i18next";
 const HomeMain = () => {
+    const {t, i18n}= useTranslation("menu");
+
     const list = useSelector(selectFeaturesList);
     const dispatch = useDispatch();
     const mainRef = useRef(null);
@@ -75,10 +78,10 @@ const HomeMain = () => {
                 viewport={{ once: true }}
             >
                 <motion.h2 {...topAnimationVariant(1)}>
-                    Ինչո՞ւ սովորել մեզ մոտ
+                    {t(`HomeMain.why`)}
                 </motion.h2>
                 <motion.p {...topAnimationVariant(2)}>
-                    Մեզ մոտ ծրագրավորում սովորելը ձեռնտու է`
+                    {t(`HomeMain.becouse`)}
                 </motion.p>
                 <div className={classes.content}>
                     <div className={classes.reasons}>

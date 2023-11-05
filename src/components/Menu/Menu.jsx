@@ -3,6 +3,8 @@ import { Link, NavLink } from "react-router-dom";
 import { BsInstagram, BsLinkedin } from "react-icons/bs";
 import { FaBars } from "react-icons/fa";
 import { ReactComponent as SmartCodeLogo } from "../../assets/images/logo.svg";
+import { useTranslation } from "react-i18next";
+
 import classes from "./Menu.module.css";
 
 const Menu = () => {
@@ -15,6 +17,9 @@ const Menu = () => {
 
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
+
+    const { t, i18n } = useTranslation("menu");
+
 
     return (
         <div className={`${classes.menu} ${darkMode && classes.dark}`}>
@@ -29,15 +34,23 @@ const Menu = () => {
                         </NavLink>
                     </div>
                     <nav>
-                        <div className={`${classes.hamburger} ${darkMode && classes.dark}`}>
+                        <div
+                            className={`${classes.hamburger} ${
+                                darkMode && classes.dark
+                            }`}
+                        >
                             <FaBars />
                         </div>
-                        <div className={`${classes.links} ${darkMode && classes.dark}`}>
-                            <NavLink to="/courses">Դասընթացներ</NavLink>
-                            <NavLink to="/features">Առավելություններ</NavLink>
-                            <NavLink to="/staff">Թրեյներներ</NavLink>
-                            <NavLink to="/about">Մեր մասին</NavLink>
-                            <NavLink to="/partners">Գործընկերներ</NavLink>
+                        <div
+                            className={`${classes.links} ${
+                                darkMode && classes.dark
+                            }`}
+                        >
+                            <NavLink to="/courses">{t("menu.courses")}</NavLink>
+                            <NavLink to="/features">{t("menu.features")}</NavLink>
+                            <NavLink to="/staff">{t("menu.staff")}</NavLink>
+                            <NavLink to="/about">{t("menu.about")}</NavLink>
+                            <NavLink to="/partners">{t("menu.partners")}</NavLink>
                         </div>
                     </nav>
                 </div>

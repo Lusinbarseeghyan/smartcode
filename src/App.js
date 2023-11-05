@@ -1,5 +1,7 @@
 import { useEffect } from "react";
+
 import { useLocation } from "react-router-dom";
+
 import Router from "./Router";
 
 function App() {
@@ -8,7 +10,8 @@ function App() {
         document.documentElement.scrollTo(0, 0);
     }, [location.pathname]);
 
-    return <Router />;
+    
+        return <Router />
 }
 
 export default App;

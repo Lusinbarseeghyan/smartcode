@@ -1,4 +1,7 @@
 import React from "react";
+
+import { useTranslation } from "react-i18next";
+
 import { Link } from "react-router-dom";
 
 import logo from "../../assets/images/logo.svg";
@@ -12,16 +15,17 @@ import { ImLocation2 } from "react-icons/im";
 
 import classes from "./Footer.module.css";
 
+
 const Footer = () => {
+
+    const {t, i18n}= useTranslation("menu");
+
     return (
         <div className={`mt-20 ${classes.footer_container}`}>
             <footer className={`container ${classes.footer}`}>
                 <div className={classes.logo_container}>
                     <img src={logo} alt="logo" />
-                    <p>
-                        Որակյալ ուսուցում, Անվճար պրակտիկա, Երաշխավորված
-                        աշխատանք
-                    </p>
+                    <p>{t(`footer.about`)}</p>
 
                     <div className={classes.links}>
                         <Link>
@@ -33,7 +37,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className={classes.about_container}>
-                    <h3>Կապ մեզ հետ</h3>
+                    <h3>{t(`footer.contact`)}</h3>
                     <address>
                         <div className={classes.about_phone}>
                             <BsFillTelephoneFill />
@@ -65,12 +69,12 @@ const Footer = () => {
                                         "https://maps.app.goo.gl/mCPUXRZL42V7RizHA"
                                     }
                                 >
-                                    <li>Հանրապետության 22</li>
+                                    <li>{t(`footer.address.first`)}</li>
                                 </Link>
                                 <Link
                                     to={`https://maps.app.goo.gl/iFajxCgt7ftz9dZE7`}
                                 >
-                                    <li>Երվանդ Քոչար 28/2</li>
+                                    <li>{t(`footer.address.second`)}</li>
                                 </Link>
                             </ul>
                         </div>

@@ -12,8 +12,10 @@ import { BiLogoFacebook, BiLogoLinkedin } from "react-icons/bi";
 
 import classes from "./HomeHeader.module.css";
 import SmartCodeText from "../SmartCodeText/SmartCodeText";
+import { useTranslation } from "react-i18next";
 
 const HomeHeader = () => {
+    const {t, i18n} = useTranslation("menu");
     const { leftAnimationVariant, rightAnimationVariant } = useAnimations();
     const videoStopRef = useRef();
     const videoSectionRef = useRef();
@@ -36,13 +38,15 @@ const HomeHeader = () => {
                         </div>
 
                         <motion.p {...leftAnimationVariant(2)}>
-                            <span>Սովորի՛ր</span> ծրագրավորում <br />
-                            <span>Դարձի՛ր</span> պահանջված մասնագետ
+                            <span>{t(`homeHeader.do.firstPart`)}</span>{" "}
+                            {t(`homeHeader.do.secondPart`)}
+                            <br />
+                            <span>{t(`homeHeader.for.firstPart`)}</span>{" "}
+                            {t(`homeHeader.for.secondPart`)}
                         </motion.p>
 
                         <motion.p {...leftAnimationVariant(3)}>
-                            Որակյալ ուսուցում, անվճար պրակտիկա, երաշխավորված
-                            աշխատանք։
+                            {t(`homeHeader.opportunity`)}
                         </motion.p>
                     </div>
                     <HeaderGridImages
