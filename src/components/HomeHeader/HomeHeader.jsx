@@ -11,7 +11,7 @@ import { AiOutlineInstagram } from "react-icons/ai";
 import { BiLogoFacebook, BiLogoLinkedin } from "react-icons/bi";
 
 import classes from "./HomeHeader.module.css";
-import SmartCodeText from "../SmartCodeText/SmartCodeText";
+// import SmartCodeText from "../SmartCodeText/SmartCodeText";
 
 const HomeHeader = () => {
     const { leftAnimationVariant, rightAnimationVariant } = useAnimations();
@@ -22,12 +22,14 @@ const HomeHeader = () => {
         <div className={classes.wrapper}>
             <motion.header
                 className={`container section ${classes.header}`}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
                 ref={videoSectionRef}
             >
-                <motion.div className={classes.content}>
+                <motion.div
+                    className={classes.content}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                >
                     <div className={classes.text}>
                         <div className={classes.title}>
                             <h1 {...leftAnimationVariant(1)}>
@@ -51,12 +53,13 @@ const HomeHeader = () => {
                     />
                 </motion.div>
             </motion.header>
-            <div className={`section ${classes.form}`}>
+            <motion.div className={`section ${classes.form}`}>
                 <div className={`container ${classes.formWrapper}`}>
                     <motion.div
                         className={classes.form_container}
                         initial="hidden"
                         whileInView="visible"
+                        viewport={{ once: true }}
                         {...leftAnimationVariant(2)}
                     >
                         <div className={classes.form_box}>
@@ -71,6 +74,7 @@ const HomeHeader = () => {
                         className={classes.contacts}
                         initial="hidden"
                         whileInView="visible"
+                        viewport={{ once: true }}
                         {...rightAnimationVariant(3)}
                     >
                         <Link
@@ -89,7 +93,7 @@ const HomeHeader = () => {
                     </motion.div>
                     <div ref={videoStopRef} className={classes.videoStop}></div>
                 </div>
-            </div>
+            </motion.div>
         </div>
     );
 };

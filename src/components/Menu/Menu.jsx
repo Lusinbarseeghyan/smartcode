@@ -9,7 +9,8 @@ const Menu = () => {
     const [darkMode, setDarkMode] = useState(false);
 
     useEffect(() => {
-        const handleScroll = () => (window.scrollY ? setDarkMode(true) : setDarkMode(false));
+        const handleScroll = () =>
+            window.scrollY ? setDarkMode(true) : setDarkMode(false);
 
         window.addEventListener("scroll", handleScroll);
 
@@ -29,15 +30,23 @@ const Menu = () => {
                         </NavLink>
                     </div>
                     <nav>
-                        <div className={`${classes.hamburger} ${darkMode && classes.dark}`}>
+                        <div
+                            className={`${classes.hamburger} ${
+                                darkMode && classes.dark
+                            }`}
+                        >
                             <FaBars />
                         </div>
-                        <div className={`${classes.links} ${darkMode && classes.dark}`}>
+                        <div
+                            className={`${classes.links} ${
+                                darkMode && classes.dark
+                            }`}
+                        >
                             <NavLink to="/courses">Դասընթացներ</NavLink>
                             <NavLink to="/features">Առավելություններ</NavLink>
                             <NavLink to="/staff">Թրեյներներ</NavLink>
                             <NavLink to="/about">Մեր մասին</NavLink>
-                            <NavLink to="/partners">Գործընկերներ</NavLink>
+                            {/* <NavLink to="/partners">Գործընկերներ</NavLink> */}
                         </div>
                     </nav>
                 </div>

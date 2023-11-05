@@ -18,7 +18,7 @@ const TrainerCard = ({ image, proffesion, name }) => {
             }
         }
 
-        function fun2() {
+        function func2() {
             if (videoRef.current) {
                 if (videoRef.current.currentTime <= 0) {
                     videoRef.current.currentTime = 0;
@@ -28,14 +28,13 @@ const TrainerCard = ({ image, proffesion, name }) => {
                 }
             }
         }
-
         if (isMouseOver) {
             setInterval(func, 20);
         } else {
             clearInterval(func);
-            setInterval(fun2, 20);
+            setInterval(func2, 20);
             setTimeout(() => {
-                clearInterval(fun2);
+                clearInterval(func2);
             }, 1000);
         }
     }, [isMouseOver]);
@@ -45,19 +44,16 @@ const TrainerCard = ({ image, proffesion, name }) => {
             <div
                 className={classes.card_image}
                 onMouseEnter={() => setIsMouseOver(true)}
-                onMouseLeave={() => setIsMouseOver(false)}
+                onMouseOut={() => setIsMouseOver(false)}
             >
-                <motion.video ref={videoRef} src={image} muted />
+                <video ref={videoRef} src={image} />
             </div>
-            <div className={classes.info}>
-                <h6>{name}</h6>
-                <div className={classes.proffesion_icon}>
-                    <img src={proffesion.proffesion_image} alt="" />
-                </div>
-            </div>
-
             <div className={classes.card_bottom}>
+                <h6>{name}</h6>
                 <p>{proffesion.proffesion_name}</p>
+            </div>
+            <div className={classes.card_icon}>
+                <img src={proffesion.proffesion_image} alt="" />
             </div>
         </div>
     );

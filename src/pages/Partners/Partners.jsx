@@ -19,15 +19,19 @@ const Partners = () => {
             <div className={`container ${classes.partners}`}>
                 <h1>Մեր գործընկերները</h1>
                 <p>
-                    Դասընթացի ավարտին կստանաք հնարավորություն անցնել աշխատանքի մեր գործընկեր
-                    կազմակերպություններում
+                    Դասընթացի ավարտին կստանաք հնարավորություն անցնել աշխատանքի
+                    մեր գործընկեր կազմակերպություններում
                 </p>
                 <div className={classes.list}>
                     {list.map((partner, index) => (
                         <Partner
                             key={partner.id}
                             {...partner}
-                            size={[1, 2].includes(index) && isOdd(list.length) ? "big" : "default"}
+                            size={
+                                [1, 2].includes(index) && isOdd(list.length)
+                                    ? "big"
+                                    : "default"
+                            }
                         />
                     ))}
                 </div>

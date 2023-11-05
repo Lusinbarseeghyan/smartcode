@@ -11,7 +11,7 @@ const Courses = () => {
     const list = useSelector(selectCoursesList);
     const dispatch = useDispatch();
 
-    const { leftAnimationVariant } = useAnimations();
+    const { opacityAnimationVariant } = useAnimations();
 
     useEffect(() => {
         dispatch(fetchCourses());
@@ -23,6 +23,7 @@ const Courses = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
+            {...opacityAnimationVariant(1)}
         >
             <div className={classes.course_bg_white}></div>
             <div className={classes.course_bg_dark}></div>

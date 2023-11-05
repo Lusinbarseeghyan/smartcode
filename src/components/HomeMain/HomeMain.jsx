@@ -37,8 +37,7 @@ const HomeMain = () => {
         dispatch(fetchFeatures());
     }, [dispatch]);
 
-    const { leftAnimationVariant, rightAnimationVariant, topAnimationVariant } =
-        useAnimations();
+    const { scaleAnimationVariant, topAnimationVariant } = useAnimations();
 
     useEffect(() => {
         dispatch(fetchFeatures());
@@ -93,7 +92,7 @@ const HomeMain = () => {
                                         [classes.span_column]:
                                             lastReason && isOdd(list.length),
                                     })}
-                                    {...leftAnimationVariant(feature.id)}
+                                    {...scaleAnimationVariant(feature.id)}
                                 >
                                     <div className={classes.reason_top}>
                                         <h2>
@@ -104,7 +103,7 @@ const HomeMain = () => {
                                         </h2>
                                     </div>
                                     <div className={classes.reason_bottom}>
-                                        <div className={classes.reason_icon}>
+                                        <div className={classes.reason_title}>
                                             <h3>{feature.title}</h3>
                                         </div>
                                     </div>
@@ -115,7 +114,7 @@ const HomeMain = () => {
                     <motion.div
                         className={classes.main_image}
                         ref={imageRef}
-                        {...rightAnimationVariant(2)}
+                        {...scaleAnimationVariant(2)}
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
