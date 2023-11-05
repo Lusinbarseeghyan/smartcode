@@ -4,20 +4,8 @@ import classNames from "classnames";
 
 import { isOdd } from "../../utils/helpers";
 import useAnimations from "../../utils/Animations/useAnimations";
-import SmartCodeText from "../SmartCodeText/SmartCodeText";
+// import SmartCodeText from "../SmartCodeText/SmartCodeText";
 import FormBox from "../FormBox/FormBox";
-
-// import { LiaChalkboardTeacherSolid } from "react-icons/lia";
-// import {
-//     MdOutlineDone,
-//     MdVideoChat,
-//     MdOutlineRocketLaunch,
-//     MdAssuredWorkload,
-// } from "react-icons/md";
-// import { SiCoffeescript } from "react-icons/si";
-// import { TbFreeRights } from "react-icons/tb";
-// import { BiSupport, BiSolidHourglassTop } from "react-icons/bi";
-// import mainImage from "../../assets/images/header.svg";
 
 import { useDispatch, useSelector } from "react-redux";
 import { selectFeaturesList } from "../../store/slices/features/featuresSlice";

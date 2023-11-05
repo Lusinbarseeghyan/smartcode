@@ -8,37 +8,6 @@ const AboutMain = ({ title, firstP, secondP, video, image }) => {
 
     const { opacityAnimationVariant, blurAnimationVariant } = useAnimations();
     return (
-        // <motion.header
-        //     className={classes.headerWrapper}
-        //     initial="hidden"
-        //     whileInView="visible"
-        //     viewport={{ once: true }}
-        // >
-        //     <div className={classes.header_text}>
-        //         <motion.p {...leftAnimationVariant(1)}>
-        //             SmartCode ծրագրավորման ուսուցման ընկերությունը արդեն 7 տարի
-        //             է կազմակերպում և իրականացնում է ծրագրավորման դասընթացներ,
-        //             նպատակ ունենալով աշխատաշուկային հանձնել որակյալ մասնագետներ:
-        //         </motion.p>
-        //         <motion.p {...leftAnimationVariant(2)}>
-        // Հետևելով համաշխարհային IT թրենդներին՝ թարմացվում և
-        // կատարելագործվում են դասավանդման ծրագրերը: Հատուկ մշակված
-        // ծրագրի, տնային առաջադրանքների և անվճար փորձաշրջանի
-        // արդյունքում մեր ուսանողները գրանցում են մեծ հաջողություններ:
-        // Հմուտ մասնագետների աշխատանքի արդյունքում մենք վայելում ենք
-        // մեր ուսանողների սերն ու վստահությունը: Համագործակցելով IT
-        // ընկերությունների հետ՝ մենք Երաշխավորում ենք լավագույն
-        // ուսանողների փորձաշրջանն ու աշխատանքը:
-        //         </motion.p>
-        //     </div>
-        //     <motion.div
-        //         className={classes.header_image}
-        //         {...rightAnimationVariant(4)}
-        //     >
-        //         <img src="https://smartcode.am/public/image/per3.svg" alt="" />
-        //     </motion.div>
-        // </motion.header>
-
         <motion.main
             className={classes.main}
             initial="hidden"

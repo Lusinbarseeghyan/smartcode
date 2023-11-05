@@ -61,6 +61,7 @@
 .partner img {
     width: 100%;
     object-fit: cover;
+    -webkit-user-drag: none;
 }
 
 .partner:hover {
