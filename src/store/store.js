@@ -13,4 +13,8 @@ export const store = configureStore({
         features: featuresReducer,
         partners: partnersReducer,
     },
+    middleware: (getDefaultMiddleware) =>
+        getDefaultMiddleware({
+            serializableCheck: false,
+        }),
 });

@@ -4,7 +4,7 @@ import { FaBars } from "react-icons/fa";
 import { ReactComponent as SmartCodeLogo } from "../../assets/images/logo.svg";
 import classes from "./Menu.module.css";
 import { useDispatch, useSelector } from "react-redux";
-import { logoutUser, selectAuthUser, setAuthUser } from "../../store/slices/auth/authSlice";
+import { logoutUser, selectAuthUser } from "../../store/slices/auth/authSlice";
 
 const Menu = () => {
     const authUser = useSelector(selectAuthUser);

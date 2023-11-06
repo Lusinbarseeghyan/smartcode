@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { selectCourse } from "../../store/slices/courses/coursesSlice";
-import { fetchCourse } from "../../store/slices/courses/coursesApi";
-
+import { fetchCourseByName } from "../../store/slices/courses/coursesApi";
 import classes from "./CourseInfo.module.css";
+
 const CourseInfo = () => {
     const selectedCourse = useSelector(selectCourse);
     const { name } = useParams();
@@ -12,7 +12,7 @@ const CourseInfo = () => {
 
     useEffect(() => {
         (async () => {
-            dispatch(fetchCourse(name));
+            dispatch(fetchCourseByName(name));
         })();
     }, [name, dispatch]);
 

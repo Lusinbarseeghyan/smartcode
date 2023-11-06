@@ -72,7 +72,11 @@ const HomeMain = () => {
                                     <div className={classes.reason_top}>
                                         <h2>
                                             <SVG
-                                                src={`/images/features/${feature.icon}`}
+                                                src={
+                                                    feature.icon.startsWith("http")
+                                                        ? feature.icon
+                                                        : `/images/features/${feature.icon}`
+                                                }
                                                 title={feature.title}
                                             />
                                         </h2>

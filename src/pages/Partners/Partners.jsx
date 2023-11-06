@@ -27,7 +27,15 @@ const Partners = () => {
                         <Partner
                             key={partner.id}
                             {...partner}
-                            size={[1, 2].includes(index) && isOdd(list.length) ? "big" : "default"}
+                            size={
+                                isOdd(list.length)
+                                    ? [1, 2].includes(index)
+                                        ? "big"
+                                        : "default"
+                                    : index === list.length - 1
+                                    ? "big"
+                                    : "default"
+                            }
                         />
                     ))}
                 </div>

@@ -1,0 +1,11 @@
+.edit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.edit form {
+    width: 500px;
+    background-color: var(--main-dark-color);
+}
