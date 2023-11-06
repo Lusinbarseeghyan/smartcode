@@ -12,5 +12,10 @@ i18n.use(initReactI18next)
             escapeValue: false,
         },
     });
+export const chooseLanguage = (e) => {
+    const languageValue = e.target.value;
+    i18n.changeLanguage(languageValue);
+};
+
 i18n.changeLanguage(`ru`);
 export default i18n;

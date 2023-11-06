@@ -19,8 +19,7 @@ const Menu = () => {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
-    const { t, i18n } = useTranslation("menu");
-
+    const { t } = useTranslation("menu");
 
     return (
         <div className={`${classes.menu} ${darkMode && classes.dark}`}>
@@ -47,19 +46,15 @@ const Menu = () => {
                                 darkMode && classes.dark
                             }`}
                         >
-{/* <<<<<<< HEAD */}
                             <NavLink to="/courses">{t("menu.courses")}</NavLink>
-                            <NavLink to="/features">{t("menu.features")}</NavLink>
+                            <NavLink to="/features">
+                                {t("menu.features")}
+                            </NavLink>
                             <NavLink to="/staff">{t("menu.staff")}</NavLink>
                             <NavLink to="/about">{t("menu.about")}</NavLink>
-                            <NavLink to="/partners">{t("menu.partners")}</NavLink>
-=======
-                            <NavLink to="/courses">Դասընթացներ</NavLink>
-                            <NavLink to="/features">Առավելություններ</NavLink>
-                            <NavLink to="/staff">Թրեյներներ</NavLink>
-                            <NavLink to="/about">Մեր մասին</NavLink>
-                            {/* <NavLink to="/partners">Գործընկերներ</NavLink> */}
-{/* >>>>>>> 96e36e4de5a4328d4fe78cf0074463374c26524d */}
+                            <NavLink to="/partners">
+                                {t("menu.partners")}
+                            </NavLink>
                         </div>
                     </nav>
                 </div>

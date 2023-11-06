@@ -3,7 +3,7 @@
     min-height: 120vh;
     padding-bottom: 40px;
     width: 100%;
-    align-items: start;
+    align-items: flex-start;
     flex-direction: column;
     row-gap: 5rem;
 }
@@ -54,7 +54,7 @@ p {
 .info > ul {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     background-color: var(--main-color);
     border-radius: 1rem;
     padding: 1rem;
@@ -72,7 +72,6 @@ p {
     justify-content: center;
     max-width: 500px;
     width: 800px;
-    animation: changeShape 10s linear infinite;
     border-radius: 1rem;
     animation: scale 2s infinite;
     & img {
@@ -93,16 +92,3 @@ p {
         scale: 1;
     }
 }
-
-/* @keyframes changeShape {
-    0%,
-    100% {
-        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    }
-    50% {
-        border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
-    }
-    75% {
-        border-radius: 30% 70% 30% 50% / 30% 30% 70% 40%;
-    }
-} */

@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import classes from "./Partner.module.css";
 
 const Partner = ({ title, logo, website, size = "default" }) => {
-    const {t, i18n} = useTranslation("menu");
+    const { t } = useTranslation("menu");
     return (
         <div className={`${classes.partner} ${classes[size]}`} title={title}>
             <div className={classes.logo}>

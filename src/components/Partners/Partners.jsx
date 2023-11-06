@@ -57,7 +57,7 @@ const Partners = () => {
             <div className={classes.partners_slide}>
                 {list.map((partner) => {
                     return (
-                        <Link to={partner.website}>
+                        <Link key={partner.id} to={partner.website}>
                             <div className={classes.partner}>
                                 <img
                                     src={partner.logo}
@@ -70,19 +70,17 @@ const Partners = () => {
                 })}
             </div>
             <div className={classes.partners_slide}>
-                {list.map((partner) => {
-                    return (
-                        <Link to={partner.website}>
-                            <div className={classes.partner}>
-                                <img
-                                    src={partner.logo}
-                                    alt={partner.title}
-                                    title={partner.title}
-                                />
-                            </div>
-                        </Link>
-                    );
-                })}
+                {list.map((partner) => (
+                    <Link key={partner.id} to={partner.website}>
+                        <div className={classes.partner}>
+                            <img
+                                src={partner.logo}
+                                alt={partner.title}
+                                title={partner.title}
+                            />
+                        </div>
+                    </Link>
+                ))}
             </div>
         </div>
     );

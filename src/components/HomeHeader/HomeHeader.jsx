@@ -9,17 +9,11 @@ import FormBox from "../../components/FormBox/FormBox";
 
 import { AiOutlineInstagram } from "react-icons/ai";
 import { BiLogoFacebook, BiLogoLinkedin } from "react-icons/bi";
-
 import classes from "./HomeHeader.module.css";
-// <<<<<<< HEAD
-import SmartCodeText from "../SmartCodeText/SmartCodeText";
 import { useTranslation } from "react-i18next";
-// =======
-// // import SmartCodeText from "../SmartCodeText/SmartCodeText";
-// >>>>>>> 96e36e4de5a4328d4fe78cf0074463374c26524d
 
 const HomeHeader = () => {
-    const {t, i18n} = useTranslation("menu");
+    const { t } = useTranslation("menu");
     const { leftAnimationVariant, rightAnimationVariant } = useAnimations();
     const videoStopRef = useRef();
     const videoSectionRef = useRef();
