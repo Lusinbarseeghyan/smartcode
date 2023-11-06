@@ -47,7 +47,7 @@ const Menu = () => {
                                 darkMode && classes.dark
                             }`}
                         >
-<<<<<<< HEAD
+{/* <<<<<<< HEAD */}
                             <NavLink to="/courses">{t("menu.courses")}</NavLink>
                             <NavLink to="/features">{t("menu.features")}</NavLink>
                             <NavLink to="/staff">{t("menu.staff")}</NavLink>
@@ -59,7 +59,7 @@ const Menu = () => {
                             <NavLink to="/staff">Թրեյներներ</NavLink>
                             <NavLink to="/about">Մեր մասին</NavLink>
                             {/* <NavLink to="/partners">Գործընկերներ</NavLink> */}
->>>>>>> 96e36e4de5a4328d4fe78cf0074463374c26524d
+{/* >>>>>>> 96e36e4de5a4328d4fe78cf0074463374c26524d */}
                         </div>
                     </nav>
                 </div>

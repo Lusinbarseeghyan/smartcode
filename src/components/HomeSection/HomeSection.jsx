@@ -4,20 +4,22 @@ import { motion } from "framer-motion";
 import trainers from "../../assets/videos/trainers.mp4";
 import useAnimations from "../../utils/Animations/useAnimations";
 
+
 import classes from "./HomeSection.module.css";
-<<<<<<< HEAD
+// <<<<<<< HEAD
 import { useTranslation } from "react-i18next";
+import Partners from "../Partners/Partners";
+
 
 const HomeSection = () => {
 const {t, i18n} = useTranslation("menu");
 
     const { leftAnimationVariant, topAnimationVariant } = useAnimations();
-=======
-import Partners from "../Partners/Partners";
+
 
 const HomeSection = () => {
     const { scaleAnimationVariant, topAnimationVariant } = useAnimations();
->>>>>>> 96e36e4de5a4328d4fe78cf0074463374c26524d
+// >>>>>>> 96e36e4de5a4328d4fe78cf0074463374c26524d
     return (
         <motion.section
             className={`container mb-footer ${classes.section_cont}`}
@@ -30,16 +32,17 @@ const HomeSection = () => {
             </motion.h2>
             <div className={classes.section}>
                 <div className={classes.section_text}>
-<<<<<<< HEAD
+{/* <<<<<<< HEAD */}
                     <motion.p {...leftAnimationVariant(2)}>
                         {t(`homeSection.body`)}
+                        </motion.p>
 =======
                     <motion.p {...scaleAnimationVariant(2)}>
                         Մեզ մոտ կարող եք սովորել ծրագրավորման բոլոր լեզուները,
                         UX / UI Design: Մեզ մոտ անհատական մոտեցում է
                         ցուցաբերվում բոլոր ուսանողներին, որը Ձեզ կօգնի հասնել
                         Ձեր նպատակներին։
->>>>>>> 96e36e4de5a4328d4fe78cf0074463374c26524d
+{/* >>>>>>> 96e36e4de5a4328d4fe78cf0074463374c26524d */}
                     </motion.p>
                 </div>
                 <motion.div
@@ -60,5 +63,6 @@ const HomeSection = () => {
         </motion.section>
     );
 };
+}
 
 export default HomeSection;

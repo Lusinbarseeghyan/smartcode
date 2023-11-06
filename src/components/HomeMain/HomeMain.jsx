@@ -13,11 +13,9 @@ import { fetchFeatures } from "../../store/slices/features/featuresApi";
 import SVG from "react-inlinesvg";
 
 import classes from "./HomeMain.module.css";
-<<<<<<< HEAD
 import { useTranslation } from "react-i18next";
-=======
 
->>>>>>> 96e36e4de5a4328d4fe78cf0074463374c26524d
+
 const HomeMain = () => {
     const {t, i18n}= useTranslation("menu");
 

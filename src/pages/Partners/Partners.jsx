@@ -20,7 +20,7 @@ const {t, i18n} = useTranslation("menu");
     return (
         <div className={`mt-40 mb-footer section ${classes.wrapper}`}>
             <div className={`container ${classes.partners}`}>
-<<<<<<< HEAD
+{/* <<<<<<< HEAD */}
                 <h1>{t(`partners.mainTitle`)}</h1>
                 {/* երկրորդ Հ1 թեգն է */}
                 <p>{t(`partners.offer`)}</p>
@@ -30,7 +30,7 @@ const {t, i18n} = useTranslation("menu");
                     Դասընթացի ավարտին կստանաք հնարավորություն անցնել աշխատանքի
                     մեր գործընկեր կազմակերպություններում
                 </p>
->>>>>>> 96e36e4de5a4328d4fe78cf0074463374c26524d
+{/* >>>>>>> 96e36e4de5a4328d4fe78cf0074463374c26524d */}
                 <div className={classes.list}>
                     {list.map((partner, index) => (
                         <Partner
