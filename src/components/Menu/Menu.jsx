@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
-import { BsInstagram, BsLinkedin } from "react-icons/bs";
+import {  NavLink } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { ReactComponent as SmartCodeLogo } from "../../assets/images/logo.svg";
 import { useTranslation } from "react-i18next";
 
+import Flags from "../Flags/Flags";
 import classes from "./Menu.module.css";
 
 const Menu = () => {
@@ -58,13 +58,13 @@ const Menu = () => {
                         </div>
                     </nav>
                 </div>
-                <div className={classes.socials}>
-                    <Link>
-                        <BsInstagram />
-                    </Link>
-                    <Link>
-                        <BsLinkedin />
-                    </Link>
+                <div>
+                    {/* <select className={classes.selectbtn} onChange={chooseLanguage}>
+                            <option value="hy">Հայերեն</option>
+                            <option value="ru">Русский</option>
+                            <option value="en">English</option>
+                        </select> */}
+                    <Flags />
                 </div>
             </header>
         </div>

@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import classes from "./CourseCard.module.css";
+import { useTranslation } from "react-i18next";
 
 const CourseCard = ({ name, posters, shortTitle, price, duration }) => {
+    const {t} = useTranslation("menu")
     return (
         <div className={classes.course_card}>
             <div className={classes.course}>
@@ -16,7 +18,7 @@ const CourseCard = ({ name, posters, shortTitle, price, duration }) => {
                     </div>
                 </main>
                 <footer>
-                    <Link to={`/courses/${name}`}>Տեսնել ավելին</Link>
+                    <Link to={`/courses/${name}`}>{t(`courses`)}</Link>
                 </footer>
             </div>
         </div>

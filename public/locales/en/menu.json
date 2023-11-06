@@ -16,7 +16,10 @@
     },
     "formBox": {
         "signin": "Sign In",
-        "begin": "Start learning"
+        "begin": "Start learning",
+        "name": "Name Lastname",
+        "eMail": "eMail",
+        "phone": "Phone"
     },
     "homeHeader": {
         "do": {
@@ -57,7 +60,7 @@
             "title": "Join us, become competitive in the field of programming and guarantee your work with the help of SmartCode.",
             "certificate": "At the end of the course, all students will be given a certificate.",
             "workOffer": "And students who have shown the best results will be offered jobs in partner organizations."
-        }
-        
-    }
+        }        
+    },
+        "courses": "See more"
 }

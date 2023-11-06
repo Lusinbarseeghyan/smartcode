@@ -317,56 +317,56 @@
         {
             "id": 1,
             "icon": "specialists.svg",
-            "title": "Փորձառու մասնագետներ",
-            "description": "Դասավանդում են փորձառու մասնագետներ, ովքեր կմատուցեն Ձեզ բարդ թվացող ինֆորմացիան բավականին պարզեցված տեսքով:"
+            "title": "specialists.title",
+            "description": "specialists.description"
         },
         {
             "id": 2,
             "icon": "check.svg",
-            "title": "Փոքր խմբեր անհատական մոտեցում",
-            "description": "Դասընթացները անցկացվում են՝ 6-8 ուսանողից կազմված խմբերից, ապահովելով անհատական մոտեցում յուրաքանչյուր ուսանողին:"
+            "title": "check.title",
+            "description": "check.description"
         },
         {
             "id": 3,
             "icon": "coffee.svg",
-            "title": "Հարմարավետ կահավորված լսարաններ",
-            "description": "Մեր հարմարավետ կահավորված լսարաններում Ձեր ուսման պրոցեսը կդառնա էլ ավելի հաճելի։"
+            "title": "coffee.title",
+            "description": "coffee.description"
         },
         {
             "id": 4,
             "icon": "time-money.svg",
-            "title": "3 դասի անվճար մասնակցություն",
-            "description": "Բոլոր ուսանողներին կտրամադրվի 3 փարձնական անվճար դաս, որը Ձեզ հնարավորություն կտա փորձել Ձեր ուժերը և ծանոթանալ դասապրոցեսի ընթացքին։"
+            "title": "timeMoney.title",
+            "description": "timeMoney.description"
         },
         {
             "id": 5,
             "icon": "chat-video.svg",
-            "title": "Դասի ձայնագրություն",
-            "description": "Յուրաքանչյուր դասի ավարտին կստանաք նաև դասի տեսագրությունը՝ տանը կրկնելու համար։"
+            "title": "chatVideo.title",
+            "description": "chatVideo.description"
         },
         {
             "id": 6,
             "icon": "online-support.svg",
-            "title": "Օնլայն օգնական",
-            "description": "Կուրսի ամբողջ ընթացքում դուք կստանաք հեռավար աջակցություն` մասնագետի կողմից:"
+            "title": "support.title",
+            "description": "support.description"
         },
         {
             "id": 7,
             "icon": "time.svg",
-            "title": "Ապառիկ ուսուցում",
-            "description": "Շատ լավ հնարավորություն՝ սովորել ապառիկ պայմաններով և վճարել ուսման համար դասընթացի ավարտին՝ աշխատանքի անցնելուց հետո:"
+            "title": "time.title",
+            "description": "time.description"
         },
         {
             "id": 8,
             "icon": "rocket.svg",
-            "title": "Կարիերային աճ",
-            "description": "Բոլոր ուսանողները կստանան 1 ամսյա անվճար թրեյնինգ մեր HR մասնագետի կողմից` հաջողակ կարիերա ստեղծելու համար:"
+            "title": "rocket.title",
+            "description": "rocket.description"
         },
         {
             "id": 9,
             "icon": "assured-workload.svg",
-            "title": "Աշխատանքի առաջարկ",
-            "description": "Դասընթացի ավարտին լավագույն արդյունք ցուցաբերած ուսանողներին կառաջարկվի աշխատանք գործընկեր կազմակերպություններում:"
+            "title": "workOffer.title",
+            "description": "workOffer.description"
         }
     ],
     "partners": [

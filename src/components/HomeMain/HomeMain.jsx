@@ -13,11 +13,11 @@ import { fetchFeatures } from "../../store/slices/features/featuresApi";
 import SVG from "react-inlinesvg";
 
 import classes from "./HomeMain.module.css";
-import { useTranslation } from "react-i18next";
-
+import useTranslation from "../../utils/hooks/useTranslation";
+// import { useTranslation } from "react-i18next";
 
 const HomeMain = () => {
-    const {t, i18n}= useTranslation("menu");
+    const t = useTranslation(["menu", "features"]);
 
     const list = useSelector(selectFeaturesList);
     const dispatch = useDispatch();
@@ -90,13 +90,18 @@ const HomeMain = () => {
                                         <h2>
                                             <SVG
                                                 src={`/images/features/${feature.icon}`}
-                                                title={feature.title}
+                                                title={t(
+                                                    feature.title,
+                                                    "features"
+                                                )}
                                             />
                                         </h2>
                                     </div>
                                     <div className={classes.reason_bottom}>
                                         <div className={classes.reason_title}>
-                                            <h3>{feature.title}</h3>
+                                            <h3>
+                                                {t(feature.title, "features")}
+                                            </h3>
                                         </div>
                                     </div>
                                 </motion.div>

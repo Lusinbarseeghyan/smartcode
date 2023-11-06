@@ -1,0 +1,16 @@
+.flags{
+    width: 10%;
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-evenly;
+    vertical-align: middle;
+    align-items: center;
+
+}
+
+
+.flags img{
+    width:100%;
+  
+}
+

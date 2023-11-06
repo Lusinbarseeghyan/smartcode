@@ -5,8 +5,11 @@ import classes from "./Features.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { selectFeaturesList } from "../../store/slices/features/featuresSlice";
 import { fetchFeatures } from "../../store/slices/features/featuresApi";
+import { useTranslation } from "react-i18next";
 
 const Features = ({ theme = "dark" }) => {
+    const { t } = useTranslation("features");
+
     const list = useSelector(selectFeaturesList);
     const dispatch = useDispatch();
     const [current, setCurrent] = useState(0);
@@ -57,13 +60,13 @@ const Features = ({ theme = "dark" }) => {
                                 <div className={classes.iconWrapper}>
                                     <img
                                         src={`/images/features/${feature.icon}`}
-                                        alt={feature.title}
+                                        alt={t(feature.title)}
                                     />
                                 </div>
                             </div>
                             <div className={classes.content}>
-                                <h1>{feature.title}</h1>
-                                <p>{feature.description}</p>
+                                <h1>{t(feature.title)}</h1>
+                                <p>{t(feature.description)}</p>
                             </div>
                         </div>
                     ))}

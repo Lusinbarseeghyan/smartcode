@@ -7,15 +7,14 @@ i18n.use(initReactI18next)
     .use(LanguageDetector)
     .use(HTTPApi)
     .init({
+        supportedLngs:[`hy`, `ru`, `en`],
         fallbackLng: "hy",
         interpolation: {
             escapeValue: false,
         },
     });
 export const chooseLanguage = (e) => {
-    const languageValue = e.target.value;
+    const languageValue = e.target.value
     i18n.changeLanguage(languageValue);
 };
-
-i18n.changeLanguage(`ru`);
 export default i18n;
