@@ -52,19 +52,11 @@ const Menu = () => {
                             </NavLink>
                             <NavLink to="/staff">{t("menu.staff")}</NavLink>
                             <NavLink to="/about">{t("menu.about")}</NavLink>
-                            <NavLink to="/partners">
+                            {/* <NavLink to="/partners">
                                 {t("menu.partners")}
-                            </NavLink>
+                            </NavLink> */}
                         </div>
                     </nav>
-                </div>
-                <div className={classes.socials}>
-                    <Link>
-                        <BsInstagram />
-                    </Link>
-                    <Link>
-                        <BsLinkedin />
-                    </Link>
                 </div>
             </header>
         </div>
