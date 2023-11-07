@@ -40,7 +40,7 @@ const CourseInfo = () => {
                         <li>{selectedCourse.description.stages.first}</li>
                         <li>{selectedCourse.description.stages.second}</li>
                         <li>{selectedCourse.description.stages.third}</li>
-                        <li>{selectedCourse.description.stages.forth}</li>
+                        <li>{selectedCourse.description.stages.fourth}</li>
                     </ul>
                     <p>{selectedCourse.description.content}</p>
                     <p>{selectedCourse.description.offer}</p>

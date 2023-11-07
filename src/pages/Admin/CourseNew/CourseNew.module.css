@@ -1,4 +1,4 @@
-.edit {
+.add {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -6,11 +6,11 @@
     padding: 20px;
 }
 
-.edit p {
+.add p {
     color: white;
 }
 
-.edit form {
+.add form {
     width: 500px;
     background-color: var(--main-dark-color);
 }

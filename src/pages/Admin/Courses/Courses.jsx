@@ -32,6 +32,11 @@ const Courses = () => {
 
     return (
         <div className={`section ${classes.courses}`}>
+            <header>
+                <Link to={"/dashboard/courses/new"} className={classes.addBtn}>
+                    New
+                </Link>
+            </header>
             <table>
                 <thead>
                     <tr>

@@ -1,5 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { deleteCourse, fetchCourseById, fetchCourseByName, fetchCourses } from "./coursesApi";
+import {
+    addCourse,
+    deleteCourse,
+    fetchCourseById,
+    fetchCourseByName,
+    fetchCourses,
+    saveCourse,
+} from "./coursesApi";
 
 const coursesSlice = createSlice({
     name: "courses",
@@ -40,6 +47,19 @@ const coursesSlice = createSlice({
             state.list = state.list.filter((item) => item.id !== +payload);
         },
         [deleteCourse.rejected]: (_, action) => {
+            console.error(action);
+        },
+        [saveCourse.fulfilled]: (state, { payload }) => {
+            state.edit = null;
+            state.list = state.list.map((item) => (item.id === payload.id ? payload : item));
+        },
+        [saveCourse.rejected]: (_, action) => {
+            console.error(action);
+        },
+        [addCourse.fulfilled]: (state, { payload }) => {
+            state.list.push(payload);
+        },
+        [addCourse.rejected]: (_, action) => {
             console.error(action);
         },
     },

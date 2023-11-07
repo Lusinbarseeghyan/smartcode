@@ -6,6 +6,20 @@
     max-height: calc(100vh - var(--menuHeight));
 }
 
+.courses header {
+    margin-bottom: 20px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: right;
+}
+
+.courses .addBtn {
+    padding: 10px 15px;
+    background-color: forestgreen;
+    color: white;
+}
+
 .courses table,
 .courses tr,
 .courses th,

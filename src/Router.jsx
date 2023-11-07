@@ -20,6 +20,7 @@ import FeatureEdit from "./pages/Admin/FeatureEdit/FeatureEdit";
 import CourseEdit from "./pages/Admin/CourseEdit/CourseEdit";
 import PartnerNew from "./pages/Admin/PartnerNew/PartnerNew";
 import FeatureNew from "./pages/Admin/FeatureNew/FeatureNew";
+import CourseNew from "./pages/Admin/CourseNew/CourseNew";
 
 const Router = () => {
     return (
@@ -45,6 +46,7 @@ const Router = () => {
                     <Route path="/dashboard" element={<Dashboard />}>
                         <Route path="/dashboard/courses" element={<AdminCourses />} />
                         <Route path="/dashboard/courses/:id" element={<CourseEdit />} />
+                        <Route path="/dashboard/courses/new" element={<CourseNew />} />
                         <Route path="/dashboard/features" element={<AdminFeatures />} />
                         <Route path="/dashboard/features/:id" element={<FeatureEdit />} />
                         <Route path="/dashboard/features/new" element={<FeatureNew />} />
