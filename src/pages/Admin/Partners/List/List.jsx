@@ -1,19 +1,19 @@
-import { useDispatch, useSelector } from "react-redux";
-import classes from "./Features.module.css";
-import { selectFeaturesList } from "../../../store/slices/features/featuresSlice";
 import { useEffect } from "react";
-import { deleteFeature, fetchFeatures } from "../../../store/slices/features/featuresApi";
-import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { selectPartnersList } from "../../../../store/slices/partners/partnersSlice";
+import { deletePartner, fetchPartners } from "../../../../store/slices/partners/partnersApi";
 import { AiFillEdit } from "react-icons/ai";
 import { BsFillTrashFill } from "react-icons/bs";
-import { hideModal, showModal } from "../../../store/slices/app/appSlice";
+import classes from "./List.module.css";
+import { Link } from "react-router-dom";
+import { hideModal, showModal } from "../../../../store/slices/app/appSlice";
 
-const Features = () => {
-    const features = useSelector(selectFeaturesList);
+const List = () => {
+    const partners = useSelector(selectPartnersList);
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(fetchFeatures());
+        dispatch(fetchPartners());
     }, [dispatch]);
 
     const deleteHandle = (id) => {
@@ -23,7 +23,7 @@ const Features = () => {
                 body: "Do you really want to remove it?",
                 actionBtnText: "Delete",
                 actionBtnCallback: () => {
-                    dispatch(deleteFeature(id)).then(() => dispatch(hideModal()));
+                    dispatch(deletePartner(id)).then(() => dispatch(hideModal()));
                 },
                 actionBtnType: "danger",
             })
@@ -31,9 +31,9 @@ const Features = () => {
     };
 
     return (
-        <div className={`section ${classes.features}`}>
+        <div className={`section ${classes.partners}`}>
             <header>
-                <Link to={"/dashboard/features/new"} className={classes.addBtn}>
+                <Link to={"/dashboard/partners/new"} className={classes.addBtn}>
                     New
                 </Link>
             </header>
@@ -42,27 +42,28 @@ const Features = () => {
                     <tr>
                         <th width={50}>ID</th>
                         <th width={300}>Title</th>
-                        <th>Description</th>
-                        <th>icon</th>
+                        <th>Logo</th>
+                        <th>Website</th>
                         <th width={90}>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
-                    {features.map(({ id, title, description, icon }) => (
-                        <tr key={id} className={classes.feature}>
+                    {partners.map(({ id, title, logo, website }) => (
+                        <tr key={id} className={classes.partner}>
                             <td>{id}</td>
                             <td>{title}</td>
-                            <td>{description}</td>
                             <td>
-                                <img
-                                    src={icon && icon.startsWith("http") ? icon : `/images/features/${icon}`}
-                                    alt={title}
-                                />
+                                <img src={logo} alt={title} />
+                            </td>
+                            <td className={classes.website}>
+                                <a href={website} target="_blank" rel="noreferrer">
+                                    {website}
+                                </a>
                             </td>
                             <td>
                                 <div className={classes.actions}>
                                     <Link
-                                        to={`/dashboard/features/${id}`}
+                                        to={`/dashboard/partners/${id}`}
                                         className={`${classes.btn} ${classes.editBtn}`}
                                     >
                                         <AiFillEdit />
@@ -83,4 +84,4 @@ const Features = () => {
     );
 };
 
-export default Features;
+export default List;

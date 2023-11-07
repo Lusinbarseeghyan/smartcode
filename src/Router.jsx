@@ -1,26 +1,20 @@
 import { Route, Routes } from "react-router-dom";
 import Layout from "./pages/Layout/Layout";
 import Courses from "./pages/Courses/Courses";
-import AdminCourses from "./pages/Admin/Courses/Courses";
 import Features from "./pages/Features/Features";
-import AdminFeatures from "./pages/Admin/Features/Features";
 import Staff from "./pages/Staff/Staff";
 import About from "./pages/About/About";
 import Home from "./pages/Home/Home";
 import Partners from "./pages/Partners/Partners";
-import AdminPartners from "./pages/Admin/Partners/Partners";
 import NotFound from "./pages/NotFound/NotFound";
 import CourseInfo from "./components/CourseInfo/CourseInfo";
 import Login from "./pages/Login/Login";
 import RouteMiddleware from "./components/RouteMiddleware/RouteMiddleware";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import Profile from "./pages/Profile/Profile";
-import PartnerEdit from "./pages/Admin/PartnerEdit/PartnerEdit";
-import FeatureEdit from "./pages/Admin/FeatureEdit/FeatureEdit";
-import CourseEdit from "./pages/Admin/CourseEdit/CourseEdit";
-import PartnerNew from "./pages/Admin/PartnerNew/PartnerNew";
-import FeatureNew from "./pages/Admin/FeatureNew/FeatureNew";
-import CourseNew from "./pages/Admin/CourseNew/CourseNew";
+import { FeaturesList, FeaturesMain } from "./pages/Admin/Features";
+import { PartnersList, PartnersMain } from "./pages/Admin/Partners";
+import { CoursesList, CoursesMain } from "./pages/Admin/Courses";
 
 const Router = () => {
     return (
@@ -44,15 +38,20 @@ const Router = () => {
 
                 <Route element={<RouteMiddleware admin />}>
                     <Route path="/dashboard" element={<Dashboard />}>
-                        <Route path="/dashboard/courses" element={<AdminCourses />} />
-                        <Route path="/dashboard/courses/:id" element={<CourseEdit />} />
-                        <Route path="/dashboard/courses/new" element={<CourseNew />} />
-                        <Route path="/dashboard/features" element={<AdminFeatures />} />
-                        <Route path="/dashboard/features/:id" element={<FeatureEdit />} />
-                        <Route path="/dashboard/features/new" element={<FeatureNew />} />
-                        <Route path="/dashboard/partners" element={<AdminPartners />} />
-                        <Route path="/dashboard/partners/:id" element={<PartnerEdit />} />
-                        <Route path="/dashboard/partners/new" element={<PartnerNew />} />
+                        {/* Courses */}
+                        <Route path="/dashboard/courses" element={<CoursesList />} />
+                        <Route path="/dashboard/courses/:id" element={<CoursesMain action="update" />} />
+                        <Route path="/dashboard/courses/new" element={<CoursesMain action="create" />} />
+
+                        {/* Features */}
+                        <Route path="/dashboard/features" element={<FeaturesList />} />
+                        <Route path="/dashboard/features/:id" element={<FeaturesMain action="update" />} />
+                        <Route path="/dashboard/features/new" element={<FeaturesMain action="create" />} />
+
+                        {/* Partners */}
+                        <Route path="/dashboard/partners" element={<PartnersList />} />
+                        <Route path="/dashboard/partners/:id" element={<PartnersMain action="update" />} />
+                        <Route path="/dashboard/partners/new" element={<PartnersMain action="create" />} />
                     </Route>
                 </Route>
             </Route>

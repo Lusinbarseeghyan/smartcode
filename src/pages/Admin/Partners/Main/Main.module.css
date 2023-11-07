@@ -1,16 +1,11 @@
-.edit {
+.wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
-    padding: 20px;
 }
 
-.edit p {
-    color: white;
-}
-
-.edit form {
+.wrapper form {
     width: 500px;
     background-color: var(--main-dark-color);
 }

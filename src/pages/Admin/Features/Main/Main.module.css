@@ -1,11 +1,11 @@
-.add {
+.wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
 }
 
-.add form {
+.wrapper form {
     width: 500px;
     background-color: var(--main-dark-color);
 }

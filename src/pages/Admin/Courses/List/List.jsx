@@ -1,19 +1,19 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { selectPartnersList } from "../../../store/slices/partners/partnersSlice";
-import { deletePartner, fetchPartners } from "../../../store/slices/partners/partnersApi";
+import { Link } from "react-router-dom";
 import { AiFillEdit } from "react-icons/ai";
 import { BsFillTrashFill } from "react-icons/bs";
-import classes from "./Partners.module.css";
-import { Link } from "react-router-dom";
-import { hideModal, showModal } from "../../../store/slices/app/appSlice";
+import { hideModal, showModal } from "../../../../store/slices/app/appSlice";
+import { selectCoursesList } from "../../../../store/slices/courses/coursesSlice";
+import { deleteCourse, fetchCourses } from "../../../../store/slices/courses/coursesApi";
+import classes from "./List.module.css";
 
-const Partners = () => {
-    const partners = useSelector(selectPartnersList);
+const List = () => {
+    const courses = useSelector(selectCoursesList);
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(fetchPartners());
+        dispatch(fetchCourses());
     }, [dispatch]);
 
     const deleteHandle = (id) => {
@@ -23,7 +23,7 @@ const Partners = () => {
                 body: "Do you really want to remove it?",
                 actionBtnText: "Delete",
                 actionBtnCallback: () => {
-                    dispatch(deletePartner(id)).then(() => dispatch(hideModal()));
+                    dispatch(deleteCourse(id)).then(() => dispatch(hideModal()));
                 },
                 actionBtnType: "danger",
             })
@@ -31,9 +31,9 @@ const Partners = () => {
     };
 
     return (
-        <div className={`section ${classes.partners}`}>
+        <div className={`section ${classes.courses}`}>
             <header>
-                <Link to={"/dashboard/partners/new"} className={classes.addBtn}>
+                <Link to={"/dashboard/courses/new"} className={classes.addBtn}>
                     New
                 </Link>
             </header>
@@ -41,29 +41,26 @@ const Partners = () => {
                 <thead>
                     <tr>
                         <th width={50}>ID</th>
-                        <th width={300}>Title</th>
-                        <th>Logo</th>
-                        <th>Website</th>
+                        <th width={300}>Short title</th>
+                        <th>Route</th>
+                        <th>Duration</th>
+                        <th>Price</th>
                         <th width={90}>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
-                    {partners.map(({ id, title, logo, website }) => (
-                        <tr key={id} className={classes.partner}>
+                    {courses.map(({ id, shortTitle, name, duration, price }) => (
+                        <tr key={id} className={classes.course}>
                             <td>{id}</td>
-                            <td>{title}</td>
-                            <td>
-                                <img src={logo} alt={title} />
-                            </td>
-                            <td className={classes.website}>
-                                <a href={website} target="_blank" rel="noreferrer">
-                                    {website}
-                                </a>
-                            </td>
+                            <td>{shortTitle}</td>
+                            <td>{name}</td>
+                            <td>{duration}</td>
+                            <td>{price}</td>
                             <td>
                                 <div className={classes.actions}>
                                     <Link
-                                        to={`/dashboard/partners/${id}`}
+                                        to={`/dashboard/courses/${id}`}
+                                        disabled
                                         className={`${classes.btn} ${classes.editBtn}`}
                                     >
                                         <AiFillEdit />
@@ -84,4 +81,4 @@ const Partners = () => {
     );
 };
 
-export default Partners;
+export default List;

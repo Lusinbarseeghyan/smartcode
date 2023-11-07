@@ -3,17 +3,17 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { AiFillEdit } from "react-icons/ai";
 import { BsFillTrashFill } from "react-icons/bs";
-import { hideModal, showModal } from "../../../store/slices/app/appSlice";
-import classes from "./Courses.module.css";
-import { selectCoursesList } from "../../../store/slices/courses/coursesSlice";
-import { deleteCourse, fetchCourses } from "../../../store/slices/courses/coursesApi";
+import { selectFeaturesList } from "../../../../store/slices/features/featuresSlice";
+import { deleteFeature, fetchFeatures } from "../../../../store/slices/features/featuresApi";
+import { hideModal, showModal } from "../../../../store/slices/app/appSlice";
+import classes from "./List.module.css";
 
-const Courses = () => {
-    const courses = useSelector(selectCoursesList);
+const List = () => {
+    const features = useSelector(selectFeaturesList);
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(fetchCourses());
+        dispatch(fetchFeatures());
     }, [dispatch]);
 
     const deleteHandle = (id) => {
@@ -23,7 +23,7 @@ const Courses = () => {
                 body: "Do you really want to remove it?",
                 actionBtnText: "Delete",
                 actionBtnCallback: () => {
-                    dispatch(deleteCourse(id)).then(() => dispatch(hideModal()));
+                    dispatch(deleteFeature(id)).then(() => dispatch(hideModal()));
                 },
                 actionBtnType: "danger",
             })
@@ -31,9 +31,9 @@ const Courses = () => {
     };
 
     return (
-        <div className={`section ${classes.courses}`}>
+        <div className={`section ${classes.features}`}>
             <header>
-                <Link to={"/dashboard/courses/new"} className={classes.addBtn}>
+                <Link to={"/dashboard/features/new"} className={classes.addBtn}>
                     New
                 </Link>
             </header>
@@ -41,26 +41,28 @@ const Courses = () => {
                 <thead>
                     <tr>
                         <th width={50}>ID</th>
-                        <th width={300}>Short title</th>
-                        <th>Route</th>
-                        <th>Duration</th>
-                        <th>Price</th>
+                        <th width={300}>Title</th>
+                        <th>Description</th>
+                        <th>icon</th>
                         <th width={90}>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
-                    {courses.map(({ id, shortTitle, name, duration, price }) => (
-                        <tr key={id} className={classes.course}>
+                    {features.map(({ id, title, description, icon }) => (
+                        <tr key={id} className={classes.feature}>
                             <td>{id}</td>
-                            <td>{shortTitle}</td>
-                            <td>{name}</td>
-                            <td>{duration}</td>
-                            <td>{price}</td>
+                            <td>{title}</td>
+                            <td>{description}</td>
+                            <td>
+                                <img
+                                    src={icon && icon.startsWith("http") ? icon : `/images/features/${icon}`}
+                                    alt={title}
+                                />
+                            </td>
                             <td>
                                 <div className={classes.actions}>
                                     <Link
-                                        to={`/dashboard/courses/${id}`}
-                                        disabled
+                                        to={`/dashboard/features/${id}`}
                                         className={`${classes.btn} ${classes.editBtn}`}
                                     >
                                         <AiFillEdit />
@@ -81,4 +83,4 @@ const Courses = () => {
     );
 };
 
-export default Courses;
+export default List;
