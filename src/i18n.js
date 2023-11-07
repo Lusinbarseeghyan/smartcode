@@ -14,7 +14,8 @@ i18n.use(initReactI18next)
         },
     });
 export const chooseLanguage = (e) => {
-    const languageValue = e.target.value
+    const languageValue = i18n.init.supportedLngs
     i18n.changeLanguage(languageValue);
+    console.log(languageValue);
 };
 export default i18n;

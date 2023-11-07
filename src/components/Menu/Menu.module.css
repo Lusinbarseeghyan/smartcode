@@ -93,7 +93,9 @@
 .menu.dark a {
     color: var(--white);
 }
-
+.globe{
+    width: 10%;
+}
 @media (max-width: 1100px) {
     .links {
         background-color: var(--white);

@@ -51,7 +51,6 @@ const FormBox = () => {
         }, 3000);
     }, []);
 
-    const { t } = useTranslation("menu");
     return (
         <div className={classes.form_container}>
             <div className={classes.icons}>

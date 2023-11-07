@@ -58,7 +58,7 @@ const Menu = () => {
                         </div>
                     </nav>
                 </div>
-                <div>
+                <div className={classes.globe}>
                     <Flags />
                 </div>
             </header>

@@ -1,16 +1,13 @@
-.flags{
-    width: 10%;
+.lngBar{
     display: flex;
-    border: 1px solid black;
-    justify-content: space-evenly;
+    justify-content: space-between;
     vertical-align: middle;
-    align-items: center;
-
+    gap: 2px;
 }
-
-
-.flags img{
-    width:100%;
-  
+.lngBtn{
+    width: 30%;
+    border: none;
 }
-
+.lngBtn img{
+    width: 100%;
+}
