@@ -44,7 +44,6 @@ const FormBox = () => {
         laptop,
     ]);
 
-    const {t}= useTranslation("menu");
     useEffect(() => {
         setInterval(() => {
             setImages((images) => [...images]);
