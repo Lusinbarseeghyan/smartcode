@@ -32,7 +32,7 @@ const CourseInfo = () => {
             </div>
             <div className={classes.bottom}>
                 <div className={classes.info}>
-                    <h1>{selectedCourse.name}</h1>
+                    <h1>{selectedCourse.shortTitle}</h1>
                     <h2>{selectedCourse.title}</h2>
                     <p>{selectedCourse.subtitle}</p>
                     <p>{selectedCourse.description.mainTitle}</p>

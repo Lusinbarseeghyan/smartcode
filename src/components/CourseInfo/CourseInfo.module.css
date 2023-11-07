@@ -57,6 +57,10 @@
     line-height: 2;
 }
 
+.info ul li {
+    text-align: left;
+}
+
 .body_image {
     display: flex;
     align-items: center;
