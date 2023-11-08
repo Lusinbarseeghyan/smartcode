@@ -40,6 +40,7 @@ const Menu = () => {
                             }`}
                         >
                             <FaBars />
+                            
                         </div>
                         <div
                             className={`${classes.links} ${

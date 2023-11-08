@@ -1,73 +1,49 @@
-import arm from "../../assets/images/flags/arm.png";
-import rus from "../../assets/images/flags/russian.jpg";
-import eng from "../../assets/images/flags/gb.png";
+import hy from "../../assets/images/flags/arm.png";
+import ru from "../../assets/images/flags/russian.jpg";
+import en from "../../assets/images/flags/gb.png";
 
 import classes from "./Flags.module.css";
-import i18n from "../../i18n";
+import { FaGlobe } from "react-icons/fa";
+import { useDispatch, useSelector } from "react-redux";
+import {
+    changeLang,
+    selectLang,
+    setLang,
+} from "../../store/slices/app/appSlice";
 
 const Flags = () => {
-   
-   return (
-       <div className={classes.lngBar}>
-           <button className={classes.lngBtn}>
-               <img
-                   src={arm}
-                   alt="arm"
-                   onClick={() => i18n.changeLanguage("hy")}
-               />
-           </button>
-           <button className={classes.lngBtn }>
-               <img
-                   src={rus}
-                   alt="rus"
-                   onClick={() => i18n.changeLanguage("ru")}
-               />
-           </button>
-           <button className={classes.lngBtn}>
-               <img
-                   src={eng}
-                   alt="eng"
-                   onClick={() => i18n.changeLanguage("en")}
-               />
-           </button>
-       </div>
-   );
-}
+    const flags = [hy, ru, en];
+    const currentLang = useSelector(selectLang);
+    const dispatch = useDispatch();
 
-//     return (
-//         <div className={classes.flags}>
-//             <ul className={classes.lngBar}>
-//                 <li>
-//                     <FaGlobe />
-//                 </li>
-//                 <ul className={classes.chooseFlag}>
-//                     <li>
-//                         <button className={classes.lngBtn}>
-//                             <option value="hy" onClick={chooseLanguage}>
-//                                 Հայ
-//                             </option>
-//                             <img src={arm} alt="" />
-//                         </button>
-//                     </li>
-//                     <li>
-//                         <button className={classes.lngBtn}>
-//                             <li value="ru" onClick={chooseLanguage}>
-//                                 Рус
-//                             </li>
-//                             <img src={rus} alt="" />
-//                         </button>
-//                     </li>
-//                     <li>
-//                         <button className={classes.lngBtn}>
-//                             <option value="en" onClick={chooseLanguage}>
-//                                 Eng
-//                             </option>
-//                             <img src={eng} alt="" />
-//                         </button>
-//                     </li>
-//                 </ul>
-//             </ul>
-//         </div>
-//     );
-// }
+    return (
+        <div className={classes.translate}>
+            <div className={classes.lngBar}>
+                <button className={classes.lngBtn}>
+                    <img
+                        src={flags[currentLang]}
+                        alt="lang"
+                        onClick={() => dispatch(changeLang())}
+                    />
+                </button>
+            </div>
+            <div className={classes.globe}>
+                <FaGlobe />
+                <select onChange={(e) => dispatch(setLang(e.target.value))}>
+                    <option value="hy">Հայ</option>
+                    <option value="ru">Рус</option>
+                    <option value="en">Eng</option>
+                </select>
+            </div>
+            <div className={classes.burgerLang}>
+                <select onChange={(e) => dispatch(setLang(e.target.value))}>
+                    <option value="hy">Հայ</option>
+                    <option value="ru">Рус</option>
+                    <option value="en">Eng</option>
+                </select>
+            </div>
+        </div>
+    );
+};
+
 export default Flags;

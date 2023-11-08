@@ -11,6 +11,7 @@ import { useTranslation } from "react-i18next";
 import classes from "./Form.module.css";
 import { random } from "../../utils/helpers";
 const FormBox = () => {
+    const {t}=useTranslation(`menu`)
     const [images, setImages] = useState([
         js,
         c_sharp,
