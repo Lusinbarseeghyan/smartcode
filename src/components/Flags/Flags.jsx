@@ -1,9 +1,9 @@
-import hy from "../../assets/images/flags/arm.png";
-import ru from "../../assets/images/flags/russian.jpg";
-import en from "../../assets/images/flags/gb.png";
+import hy from "../../assets/images/flags/arm.svg";
+import ru from "../../assets/images/flags/ru.svg";
+import en from "../../assets/images/flags/gb (2).svg";
 
 import classes from "./Flags.module.css";
-import { FaGlobe } from "react-icons/fa";
+import { FaAngleDown, FaGlobe } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
 import {
     changeLang,
@@ -19,16 +19,15 @@ const Flags = () => {
     return (
         <div className={classes.translate}>
             <div className={classes.lngBar}>
-                <button className={classes.lngBtn}>
-                    <img
-                        src={flags[currentLang]}
-                        alt="lang"
-                        onClick={() => dispatch(changeLang())}
-                    />
-                </button>
+                <img
+                    src={flags[currentLang]}
+                    alt="lang"
+                    onClick={() => dispatch(changeLang())}
+                />
             </div>
             <div className={classes.globe}>
                 <FaGlobe />
+                
                 <select onChange={(e) => dispatch(setLang(e.target.value))}>
                     <option value="hy">Հայ</option>
                     <option value="ru">Рус</option>
@@ -37,9 +36,12 @@ const Flags = () => {
             </div>
             <div className={classes.burgerLang}>
                 <select onChange={(e) => dispatch(setLang(e.target.value))}>
-                    <option value="hy">Հայ</option>
+                    <li>hay</li>
+                    <li>eng</li>
+                    <li>rus</li>
+                    {/* <option value="hy">Հայ</option>
                     <option value="ru">Рус</option>
-                    <option value="en">Eng</option>
+                    <option value="en">Eng</option> */}
                 </select>
             </div>
         </div>

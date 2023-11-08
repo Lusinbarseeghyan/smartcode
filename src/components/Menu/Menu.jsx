@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 import Flags from "../Flags/Flags";
 import classes from "./Menu.module.css";
 
-const Menu = () => {
+const Menu = ({darkmode}) => {
     const [darkMode, setDarkMode] = useState(false);
 
     useEffect(() => {

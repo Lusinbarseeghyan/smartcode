@@ -9,20 +9,23 @@
     vertical-align: middle;
     gap: 2px;
 }
-.lngBtn {
+
+img {
+    box-sizing: border-box;
     width: 30%;
-    border: none;
-}
-.lngBtn img {
-    width: 100%;
     cursor: pointer;
+    /* border-radius: 50%; */
+    
 }
+
 .globe {
     display: none;
     justify-content: space-between;
 }
 option {
+    display: flex;
     font-size: 10px;
+    justify-content: center;
 }
 select {
     padding: 8px;
