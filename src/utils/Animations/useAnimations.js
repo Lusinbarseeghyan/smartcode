@@ -1,5 +1,3 @@
-import { filter } from "lodash";
-
 const useAnimations = () => {
     const leftAnimation = {
         hidden: {
@@ -59,6 +57,26 @@ const useAnimations = () => {
         };
     };
 
+    const bottomAnimation = {
+        hidden: {
+            y: 200,
+            opacity: 0,
+        },
+        visible: (custom) => ({
+            y: 0,
+            opacity: 1,
+
+            transition: { delay: custom * 0.2 },
+        }),
+    };
+
+    const bottomAnimationVariant = (custom) => {
+        return {
+            variants: topAnimation,
+            custom,
+        };
+    };
+
     const opacityAnimation = {
         hidden: {
             opacity: 0,
@@ -72,6 +90,25 @@ const useAnimations = () => {
     const opacityAnimationVariant = (custom) => {
         return {
             variants: opacityAnimation,
+            custom,
+        };
+    };
+
+    const scaleAnimation = {
+        hidden: {
+            scale: 0,
+            opacity: 0,
+        },
+        visible: (custom) => ({
+            scale: 1,
+            opacity: 1,
+            transition: { delay: custom * 0.3 },
+        }),
+    };
+
+    const scaleAnimationVariant = (custom) => {
+        return {
+            variants: scaleAnimation,
             custom,
         };
     };
@@ -93,15 +130,12 @@ const useAnimations = () => {
         };
     };
     return {
-        leftAnimation,
         leftAnimationVariant,
-        rightAnimation,
         rightAnimationVariant,
-        topAnimation,
         topAnimationVariant,
-        opacityAnimation,
+        bottomAnimationVariant,
         opacityAnimationVariant,
-        blurAnimation,
+        scaleAnimationVariant,
         blurAnimationVariant,
     };
 };

@@ -48,7 +48,7 @@ const HeaderGridImages = ({ videoStopRef, videoSectionRef }) => {
 
                 if (scrollPosition > startScalePosition) {
                     let scale =
-                        1.2 +
+                        1 +
                         (scrollPosition - startScalePosition) /
                             (endScalePosition - startScalePosition);
 

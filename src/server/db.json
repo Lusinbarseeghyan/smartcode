@@ -7,23 +7,23 @@
             "price": 58000,
             "posters": {
                 "small": "https://smartcode.am/public/image/courses/front-end.svg",
-                "big": "https://smartcode.am/public/image/courses/poster/front-end.png"
+                "big": "https://cdn-icons-png.flaticon.com/512/2721/2721264.png"
             },
             "shortTitle": "WEB Front-End",
             "title": "Ծրագրավորում 0-ից դասընթաց",
             "subtitle": "SmartCode-ը մեկնարկում է 3 փուլից բաղկացած` ծրագրավորում 0-ից (Front-End) դասընթացի նոր ընդունելություն։",
-            "description":{
-                "mainTitle":"Դասընթացի փուլերը՝",
-                "stages":{
-                    "first":"1. HTML5, CSS3, BOOTSTRAP, SASS",
-                    "second":"2. JavaScript (Jquery)",
-                    "third":"3. React.js (Redux)",
-                    "forth": ""
+            "description": {
+                "mainTitle": "Դասընթացի փուլերը՝",
+                "stages": {
+                    "first": "1. HTML5, CSS3, BOOTSTRAP, SASS",
+                    "second": "2. JavaScript (Jquery)",
+                    "third": "3. React.js (Redux)",
+                    "fourth": ""
                 },
-                "content":"Դասընթացի տևողություն՝ 8 ամիս, շաբաթական՝ 3 պարապմունք (2 ժամ տևողությամբ): Դասընթացի ավարտին բոլոր ուսանողներին կտրվի վկայական։ Դասընթացի ամսական վճարը՝ 58,000 դրամ նաև ԱՊԱՌԻԿ ամսական՝ 24,000 դրամ։",
-                "offer":"Գրանցվի՛ր հիմա և ստացիր 3 փորձնական դասի մասնակցության հնարավորություն ԱՆՎՃԱՐ։"
-            }
-               
+                "content": "Դասընթացի տևողություն՝ 8 ամիս, շաբաթական՝ 3 պարապմունք (2 ժամ տևողությամբ): Դասընթացի ավարտին բոլոր ուսանողներին կտրվի վկայական։ Դասընթացի ամսական վճարը՝ 58,000 դրամ նաև ԱՊԱՌԻԿ ամսական՝ 24,000 դրամ։",
+                "offer": "Գրանցվի՛ր հիմա և ստացիր 3 փորձնական դասի մասնակցության հնարավորություն ԱՆՎՃԱՐ։"
+            },
+            "isDeleted": false
         },
         {
             "id": 2,
@@ -32,24 +32,23 @@
             "price": 68000,
             "posters": {
                 "small": "https://smartcode.am/public/image/courses/python-ml.svg",
-                "big": "https://smartcode.am/public/image/courses/poster/python-ml.png"
+                "big": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/935px-Python-logo-notext.svg.png"
             },
             "shortTitle": "Phyton(ML/AI)",
-            "title": "Python / ML դասընթաց",
+            "title": "Python / ML & AI դասընթաց",
             "subtitle": "Python-ը ծրագրավորման ամենահայտնի լեզուն է աշխարհում: Այսօր գրեթե բոլոր հսկա ընկերությունները ինչպիսիք են՝ NASA, Google, Netflix, Facebook, Instagram, Pinterest, Dropbox օգտագործում են Python լեզուն իրենց նորարարական նախագծերում:",
             "description": {
                 "mainTitle": "Դասընթացի սկսզբում կսովորեք Python լեզվի հիմունքները և կկարգավորեք Python-ի հետ աշխատելու համար անհրաժեշտ միջավայր: Այնուհետև, առաջ կշարժվեք միջին մակարդակ իրական նախագծի ուղեկցությամբ, կսովորեք՝ օբյեկտ կողմնորոշված ծրագրավորման հիմունքները (OOP): Որից հետո ձեռք կբերեք Python-ի առաջադեմ մակարդակի գիտելիքներ՝ մեքենայական ուսուցման (ML) և արհեստական բանականության (AI) աշխատանքի վերաբերյալ:Դասընթացի փուլերը՝",
                 "stages": {
                     "first": "1. Python (OOP)",
                     "second": "2. Python (Machine learning & AI)",
-                    "third":"",
-                    "forth": ""
+                    "third": "",
+                    "fourth": ""
                 },
                 "content": "Դասընթացի տևողություն՝ 7 ամիս, շաբաթական՝ 3 պարապմունք (2 ժամ տևողությամբ): Դասընթացի ավարտին բոլոր ուսանողներին կտրվի վկայական։ Դասընթացի ամսական վճարը՝ 68,000 դրամ նաև ԱՊԱՌԻԿ ամսական՝ 25,000 դրամ։",
-                "offer":"Գրանցվի՛ր հիմա և ստացիր 3 փորձնական դասի մասնակցության հնարավորություն ԱՆՎՃԱՐ"
-            }
-            
-                 
+                "offer": "Գրանցվի՛ր հիմա և ստացիր 3 փորձնական դասի մասնակցության հնարավորություն ԱՆՎՃԱՐ"
+            },
+            "isDeleted": false
         },
         {
             "id": 3,
@@ -58,23 +57,23 @@
             "price": 68000,
             "posters": {
                 "small": "https://smartcode.am/public/image/courses/java.svg",
-                "big": "https://smartcode.am/public/image/courses/poster/java.png"
+                "big": "https://static.vecteezy.com/system/resources/previews/019/899/953/non_2x/java-free-download-free-png.png"
             },
             "shortTitle": "JAVA",
             "title": "Java դասընթաց",
             "subtitle": "Java-ն ամենաակտուալ և ամենապահանջված ծրագրավորման լեզուներից մեկն է ամբողջ աշխարհում: Այն հիանալի տարբերակ է IT ոլորտում կարիերան սկսելու համար:",
-            "description":{
+            "description": {
                 "mainTitle": "",
                 "stages": {
                     "first": "",
                     "second": "",
                     "third": "",
-                    "forth": ""
+                    "fourth": ""
                 },
                 "content": "Դասընթացի տևողություն՝ 6 ամիս, շաբաթական՝ 3 պարապմունք (2 ժամ տևողությամբ): Դասընթացի ավարտին բոլոր ուսանողներին կտրվի վկայական։ Դասընթացի ամսական վճարը՝ 68,000 դրամ նաև ԱՊԱՌԻԿ ամսական՝ 21,000 դրամ։",
-                "offer":"Գրանցվի՛ր հիմա և ստացիր 3 փորձնական դասի մասնակցության հնարավորություն ԱՆՎՃԱՐ։"
-            }
-             
+                "offer": "Գրանցվի՛ր հիմա և ստացիր 3 փորձնական դասի մասնակցության հնարավորություն ԱՆՎՃԱՐ։"
+            },
+            "isDeleted": false
         },
         {
             "id": 4,
@@ -83,23 +82,23 @@
             "price": 58000,
             "posters": {
                 "small": "https://smartcode.am/public/image/courses/javaScript.svg",
-                "big": "https://smartcode.am/public/image/courses/poster/javaScript.png"
+                "big": "https://i0.wp.com/blog.canadianwebhosting.com/wp-content/uploads/2018/04/javascript-logo.png?ssl=1"
             },
             "shortTitle": "JavaScript",
             "title": "JavaScript դասընթաց",
             "subtitle": "JavaScript ծրագրավորման խորացված դասընթաց` 0-ից մինչև հմուտ մասնագետ:JavaScript-ը վեբ ծրագրավորման մեջ կիրառվող հիմնական  տեխնոլոգիան է HTML և CSS-ի հետ միասին։ Եթե ցանկանում ես դառնալ մրցունակ Front-End ծրագրավորող, ապա պետք է սովորես JavaScript բավականին խորացված։ Ավելին, ներկայումս JavaScript-ը կիրառվում է նաև Mobile, Desktop հավելվածներում և խաղերի մշակման մեջ։",
-            "description":{
+            "description": {
                 "mainTitle": "",
                 "stages": {
                     "first": "",
                     "second": "",
                     "third": "",
-                    "forth": ""
+                    "fourth": ""
                 },
-                "content": "Դասընթացի տևողություն՝ 6 ամիս, շաբաթական՝ 3 պարապմունք (2 ժամ տևողությամբ): Դասընթացի ավարտին բոլոր ուսանողներին կտրվի վկայական։ Դասընթացի ամսական վճարը՝ 68,000 դրամ նաև ԱՊԱՌԻԿ ամսական՝ 21,000 դրամ։"
-,                "offer":"Գրանցվի՛ր հիմա և ստացիր 3 փորձնական դասի մասնակցության հնարավորություն ԱՆՎՃԱՐ։"
-            } 
-            
+                "content": "Դասընթացի տևողություն՝ 6 ամիս, շաբաթական՝ 3 պարապմունք (2 ժամ տևողությամբ): Դասընթացի ավարտին բոլոր ուսանողներին կտրվի վկայական։ Դասընթացի ամսական վճարը՝ 68,000 դրամ նաև ԱՊԱՌԻԿ ամսական՝ 21,000 դրամ։",
+                "offer": "Գրանցվի՛ր հիմա և ստացիր 3 փորձնական դասի մասնակցության հնարավորություն ԱՆՎՃԱՐ։"
+            },
+            "isDeleted": false
         },
         {
             "id": 5,
@@ -108,7 +107,7 @@
             "price": 58000,
             "posters": {
                 "small": "https://smartcode.am/public/image/courses/react.svg",
-                "big": "https://smartcode.am/public/image/courses/poster/react.png"
+                "big": "https://static-00.iconduck.com/assets.00/react-javascript-js-framework-facebook-icon-512x455-jctj7y5w.png"
             },
             "shortTitle": "React.js (Redux)",
             "title": "React.js դասընթաց",
@@ -119,12 +118,12 @@
                     "first": "",
                     "second": "",
                     "third": "",
-                    "forth": ""
+                    "fourth": ""
                 },
                 "content": "Դասընթացի տևողություն՝ 6 ամիս, շաբաթական՝ 3 պարապմունք (2 ժամ տևողությամբ): Դասընթացի ավարտին բոլոր ուսանողներին կտրվի վկայական։ Դասընթացի ամսական վճարը՝ 68,000 դրամ նաև ԱՊԱՌԻԿ ամսական՝ 21,000 դրամ։",
                 "offer": "Գրանցվի՛ր հիմա և ստացիր 3 փորձնական դասի մասնակցության հնարավորություն ԱՆՎՃԱՐ։"
-            }
-             
+            },
+            "isDeleted": false
         },
         {
             "id": 6,
@@ -133,7 +132,7 @@
             "price": 68000,
             "posters": {
                 "small": "https://smartcode.am/public/image/courses/node.svg",
-                "big": "https://smartcode.am/public/image/courses/poster/node.png"
+                "big": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png"
             },
             "shortTitle": "Node.js",
             "title": "Node.js դասընթաց",
@@ -144,12 +143,12 @@
                     "first": "",
                     "second": "",
                     "third": "",
-                    "forth": ""
+                    "fourth": ""
                 },
                 "content": "Դասընթացի տևողություն՝ 3 ամիս, շաբաթական՝ 3 պարապմունք (2 ժամ տևողությամբ): Դասընթացի ավարտին բոլոր ուսանողներին կտրվի վկայական։ Դասընթացի ամսական վճարը՝ 68,000 դրամ նաև ԱՊԱՌԻԿ ամսական՝ 21,000 դրամ։",
                 "offer": "Գրանցվի՛ր հիմա և ստացիր 3 փորձնական դասի մասնակցության հնարավորություն ԱՆՎՃԱՐ։"
-            }
-          
+            },
+            "isDeleted": false
         },
         {
             "id": 7,
@@ -158,7 +157,7 @@
             "price": 68000,
             "posters": {
                 "small": "https://smartcode.am/public/image/courses/devops.svg",
-                "big": "https://smartcode.am/public/image/courses/poster/devops.png"
+                "big": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Devops-toolchain.svg/1280px-Devops-toolchain.svg.png"
             },
             "shortTitle": "DevOps",
             "title": "DevOps դասընթաց",
@@ -166,14 +165,15 @@
             "description": {
                 "mainTitle": "Դասընթացի ընթացքում՝",
                 "stages": {
-                    "first": "կսովորեք ինչպես կառավարել Linux համակարգերը",
-                    "second": "կծանոթանաք Python ծրագրավորման լեզվի հիմունքներին և կիրառությանը",
-                    "third": "կուսումնասիրեք CI/CD մեթոդաբանության աշխատանքը",
-                    "forth":"կտիրապետեք DevOps մասնագիտության լավագույն պրակտիկաներին"
+                    "first": "1. կսովորեք ինչպես կառավարել Linux համակարգերը",
+                    "second": "2. կծանոթանաք Python ծրագրավորման լեզվի հիմունքներին և կիրառությանը",
+                    "third": "3. կուսումնասիրեք CI/CD մեթոդաբանության աշխատանքը",
+                    "fourth": "4. կտիրապետեք DevOps մասնագիտության լավագույն պրակտիկաներին"
                 },
                 "content": "Դասընթացի տևողություն՝ 4 ամիս, շաբաթական՝ 3 պարապմունք (2 ժամ տևողությամբ): Դասընթացի ավարտին բոլոր ուսանողներին կտրվի վկայական։ Դասընթացի ամսական վճարը՝ 68,000 դրամ նաև ԱՊԱՌԻԿ ամսական՝ 15,000 դրամ։",
                 "offer": "Գրանցվի՛ր հիմա և ստացիր 3 փորձնական դասի մասնակցության հնարավորություն ԱՆՎՃԱՐ։"
-            }
+            },
+            "isDeleted": false
         },
         {
             "id": 8,
@@ -182,7 +182,7 @@
             "price": 68000,
             "posters": {
                 "small": "https://smartcode.am/public/image/courses/C.svg",
-                "big": "https://smartcode.am/public/image/courses/poster/devops.png"
+                "big": "https://vectorseek.com/wp-content/uploads/2023/09/CSharp-Logo-Vector.svg-.png"
             },
             "shortTitle": "C#",
             "title": "C# դասընթաց",
@@ -193,11 +193,12 @@
                     "first": "",
                     "second": "",
                     "third": "",
-                    "forth": ""
+                    "fourth": ""
                 },
                 "content": "Դասընթացի տևողություն՝ 6 ամիս, շաբաթական՝ 3 պարապմունք (2 ժամ տևողությամբ): Դասընթացի ավարտին բոլոր ուսանողներին կտրվի վկայական։ Դասընթացի ամսական վճարը՝ 68,000 դրամ նաև ԱՊԱՌԻԿ ամսական՝ 21,000 դրամ։",
                 "offer": "Գրանցվի՛ր հիմա և ստացիր 3 փորձնական դասի մասնակցության հնարավորություն ԱՆՎՃԱՐ։"
-            }
+            },
+            "isDeleted": false
         },
         {
             "id": 9,
@@ -206,7 +207,7 @@
             "price": 68000,
             "posters": {
                 "small": "https://smartcode.am/public/image/courses/python-django.svg",
-                "big": "https://smartcode.am/public/image/courses/poster/python-django.png"
+                "big": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/935px-Python-logo-notext.svg.png"
             },
             "shortTitle": "Python (Django)",
             "title": "Python / DJango դասընթաց",
@@ -217,11 +218,12 @@
                     "first": "1. Python (OOP)",
                     "second": "2. Django",
                     "third": "",
-                    "forth": ""
+                    "fourth": ""
                 },
                 "content": "Դասընթացի տևողություն՝ 5 ամիս, շաբաթական՝ 3 պարապմունք (2 ժամ տևողությամբ): Դասընթացի ավարտին բոլոր ուսանողներին կտրվի վկայական։ Դասընթացի ամսական վճարը՝ 68,000 դրամ նաև ԱՊԱՌԻԿ ամսական՝ 18,000 դրամ։",
                 "offer": "Գրանցվի՛ր հիմա և ստացիր 3 փորձնական դասի մասնակցության հնարավորություն ԱՆՎՃԱՐ։"
-            }
+            },
+            "isDeleted": false
         },
         {
             "id": 10,
@@ -230,7 +232,7 @@
             "price": 68000,
             "posters": {
                 "small": "https://smartcode.am/public/image/courses/php.svg",
-                "big": "https://smartcode.am/public/image/courses/poster/php.png"
+                "big": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png"
             },
             "shortTitle": "PHP (Laravel)",
             "title": "PHP / Laravel դասընթաց",
@@ -241,11 +243,12 @@
                     "first": "",
                     "second": "",
                     "third": "",
-                    "forth": ""
+                    "fourth": ""
                 },
                 "content": "Դասընթացի տևողություն՝ 3 ամիս, շաբաթական՝ 3 պարապմունք (2 ժամ տևողությամբ): Դասընթացի ավարտին բոլոր ուսանողներին կտրվի վկայական։ Դասընթացի ամսական վճարը՝ 68,000 դրամ նաև ԱՊԱՌԻԿ ամսական՝ 11,000 դրամ։",
                 "offer": "Գրանցվի՛ր հիմա և ստացիր 3 փորձնական դասի մասնակցության հնարավորություն ԱՆՎՃԱՐ։"
-            }
+            },
+            "isDeleted": false
         },
         {
             "id": 11,
@@ -254,7 +257,7 @@
             "price": 58000,
             "posters": {
                 "small": "https://smartcode.am/public/image/courses/full-stack.svg",
-                "big": "https://smartcode.am/public/image/courses/poster/full-stack.png"
+                "big": "https://static.vecteezy.com/system/resources/thumbnails/019/153/003/small/3d-minimal-programming-icon-coding-screen-web-development-concept-laptop-with-a-coding-screen-and-a-coding-icon-3d-illustration-png.png"
             },
             "shortTitle": "WEB Full-Stack",
             "title": "Վեբ ծրագրավորման դասընթաց",
@@ -265,11 +268,12 @@
                     "first": "1. HTML5, CSS3, BOOTSTRAP, SASS ",
                     "second": "2. JavaScript (Jquery)",
                     "third": "3. React.js (Redux)",
-                    "forth": " 4. Node.js / Python (Django) / PHP (Laravel)"
+                    "fourth": " 4. Node.js / Python (Django) / PHP (Laravel)"
                 },
                 "content": "Դասընթացի տևողություն՝ 11 ամիս, շաբաթական՝ 3 պարապմունք (2 ժամ տևողությամբ): Դասընթացի ավարտին բոլոր ուսանողներին կտրվի վկայական։ Դասընթացի ամսական վճարը՝ 58,000 դրամ նաև ԱՊԱՌԻԿ ամսական՝ 33,000 դրամ։",
                 "offer": "Գրանցվի՛ր հիմա և ստացիր 3 փորձնական դասի մասնակցության հնարավորություն ԱՆՎՃԱՐ։"
-            }
+            },
+            "isDeleted": false
         },
         {
             "id": 12,
@@ -278,7 +282,7 @@
             "price": 65000,
             "posters": {
                 "small": "https://smartcode.am/public/image/courses/ui-ux.svg",
-                "big": "https://smartcode.am/public/image/courses/poster/ui-ux.png"
+                "big": "https://www.softura.com/wp-content/uploads/2021/10/Group-256@2x.png"
             },
             "shortTitle": "UI / UX Design",
             "title": "UI / UX Design դասընթաց",
@@ -289,11 +293,12 @@
                     "first": "",
                     "second": "",
                     "third": "",
-                    "forth": ""
+                    "fourth": ""
                 },
                 "content": "Դասընթացի տևողություն՝ 4 ամիս, շաբաթական՝ 3 պարապմունք (2 ժամ տևողությամբ): Դասընթացի ավարտին բոլոր ուսանողներին կտրվի վկայական։ Դասընթացի ամսական վճարը՝ 65,000 դրամ նաև ԱՊԱՌԻԿ ամսական՝ 14,000 դրամ։",
                 "offer": "Գրանցվի՛ր հիմա և ստացիր 3 փորձնական դասի մասնակցության հնարավորություն ԱՆՎՃԱՐ։"
-            }
+            },
+            "isDeleted": false
         },
         {
             "id": 13,
@@ -302,7 +307,7 @@
             "price": 65000,
             "posters": {
                 "small": "https://smartcode.am/public/image/courses/graphic-design.svg?v=1.2",
-                "big": "https://smartcode.am/public/image/courses/poster/graphic-design.png"
+                "big": "https://cdn-eokfn.nitrocdn.com/diBQUISGKsmoTQlhuYAsruhMTNXpLtAP/assets/images/optimized/rev-490b9c2/silica.co.in/wp-content/uploads/2020/03/Graphic-Design.png"
             },
             "shortTitle": "Graphic Design",
             "title": "Graphic Design դասընթաց",
@@ -313,67 +318,77 @@
                     "first": "",
                     "second": "",
                     "third": "",
-                    "forth": ""
+                    "fourth": ""
                 },
                 "content": "Դասընթացի տևողություն՝ 3 ամիս (36 դաս): Դասընթացի ավարտին բոլոր ուսանողներին կտրվի վկայական։ Դասընթացի ամսական վճարը՝ 65,000 դրամ նաև ԱՊԱՌԻԿ ամսական՝ 11,000 դրամ։",
                 "offer": "Գրանցվի՛ր հիմա և ստացիր 3 փորձնական դասի մասնակցության հնարավորություն ԱՆՎՃԱՐ։"
-            }
+            },
+            "isDeleted": false
         }
     ],
     "features": [
         {
             "id": 1,
+            "title": "specialists.title",
+            "description": "specialists.description",
             "icon": "specialists.svg",
-            "title": "Փորձառու մասնագետներ",
-            "description": "Դասավանդում են փորձառու մասնագետներ, ովքեր կմատուցեն Ձեզ բարդ թվացող ինֆորմացիան բավականին պարզեցված տեսքով:"
+            "isDeleted": false
         },
         {
             "id": 2,
+            "title": "check.title",
+            "description": "check.description",
             "icon": "check.svg",
-            "title": "Փոքր խմբեր անհատական մոտեցում",
-            "description": "Դասընթացները անցկացվում են՝ 6-8 ուսանողից կազմված խմբերից, ապահովելով անհատական մոտեցում յուրաքանչյուր ուսանողին:"
+            "isDeleted": false
         },
         {
             "id": 3,
+            "title": "coffee.title",
+            "description": "coffee.description",
             "icon": "coffee.svg",
-            "title": "Հարմարավետ կահավորված լսարաններ",
-            "description": "Մեր հարմարավետ կահավորված լսարաններում Ձեր ուսման պրոցեսը կդառնա էլ ավելի հաճելի։"
+            "isDeleted": false
         },
         {
             "id": 4,
+            "title": "timeMoney.title",
+            "description": "timeMoney.description",
             "icon": "time-money.svg",
-            "title": "3 դասի անվճար մասնակցություն",
-            "description": "Բոլոր ուսանողներին կտրամադրվի 3 փարձնական անվճար դաս, որը Ձեզ հնարավորություն կտա փորձել Ձեր ուժերը և ծանոթանալ դասապրոցեսի ընթացքին։"
+            "isDeleted": false
         },
         {
             "id": 5,
+            "title": "chatVideo.title",
+            "description": "chatVideo.description",
             "icon": "chat-video.svg",
-            "title": "Դասի ձայնագրություն",
-            "description": "Յուրաքանչյուր դասի ավարտին կստանաք նաև դասի տեսագրությունը՝ տանը կրկնելու համար։"
+            "isDeleted": false
         },
         {
             "id": 6,
+            "title": "support.title",
+            "description": "support.description",
             "icon": "online-support.svg",
-            "title": "Օնլայն օգնական",
-            "description": "Կուրսի ամբողջ ընթացքում դուք կստանաք հեռավար աջակցություն` մասնագետի կողմից:"
+            "isDeleted": false
         },
         {
             "id": 7,
+            "title": "time.title",
+            "description": "time.description",
             "icon": "time.svg",
-            "title": "Ապառիկ ուսուցում",
-            "description": "Շատ լավ հնարավորություն՝ սովորել ապառիկ պայմաններով և վճարել ուսման համար դասընթացի ավարտին՝ աշխատանքի անցնելուց հետո:"
+            "isDeleted": false
         },
         {
             "id": 8,
+            "title": "rocket.title",
+            "description": "rocket.description",
             "icon": "rocket.svg",
-            "title": "Կարիերային աճ",
-            "description": "Բոլոր ուսանողները կստանան 1 ամսյա անվճար թրեյնինգ մեր HR մասնագետի կողմից` հաջողակ կարիերա ստեղծելու համար:"
+            "isDeleted": false
         },
         {
             "id": 9,
+            "title": "workOffer.title",
+            "description": "workOffer.description",
             "icon": "assured-workload.svg",
-            "title": "Աշխատանքի առաջարկ",
-            "description": "Դասընթացի ավարտին լավագույն արդյունք ցուցաբերած ուսանողներին կառաջարկվի աշխատանք գործընկեր կազմակերպություններում:"
+            "isDeleted": false
         }
     ],
     "partners": [
@@ -381,43 +396,50 @@
             "id": 1,
             "title": "Web Foundation LLC",
             "logo": "https://smartcode.am/public/image/partners/webfoundationllc.svg",
-            "website": "https://webfoundationllc.com/"
+            "website": "https://webfoundationllc.com/",
+            "isDeleted": false
         },
         {
             "id": 2,
-            "title": "Hi-Teck Gateway",
+            "title": "Hi-Tech Gateway",
             "logo": "https://smartcode.am/public/image/partners/hi-teck.png",
-            "website": "https://hitechgateway.com/about"
+            "website": "https://hitechgateway.com/about",
+            "isDeleted": false
         },
         {
             "id": 3,
             "title": "Iguan Systems",
             "logo": "https://smartcode.am/public/image/partners/Iguan.png",
-            "website": "https://iguansystems.com/"
+            "website": "https://iguansystems.com/",
+            "isDeleted": false
         },
         {
             "id": 4,
             "title": "Evistep",
             "logo": "https://smartcode.am/public/image/partners/evistep.png",
-            "website": "https://evistep.com/"
+            "website": "https://evistep.com/",
+            "isDeleted": false
         },
         {
             "id": 5,
             "title": "Bee-Web",
             "logo": "https://smartcode.am/public/image/partners/bee-web.png",
-            "website": "https://beewebsystems.com/"
+            "website": "https://beewebsystems.com/",
+            "isDeleted": false
         },
         {
             "id": 6,
             "title": "S2S",
             "logo": "https://smartcode.am/public/image/partners/s2s.png",
-            "website": "https://www.s2s.am/"
+            "website": "https://www.s2s.am/",
+            "isDeleted": false
         },
         {
             "id": 7,
             "title": "Unisoft",
             "logo": "https://smartcode.am/public/image/partners/unisoft.png",
-            "website": "https://unisoft.am/"
+            "website": "https://unisoft.am/",
+            "isDeleted": false
         }
     ],
     "comments": [
@@ -483,6 +505,26 @@
             "image": "https://scontent.fevn9-1.fna.fbcdn.net/v/t39.30808-1/396961273_3718674168376084_8503439064900395179_n.jpg?stp=cp0_dst-jpg_p60x60&_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=KaQXLv9qmasAX9privl&_nc_ht=scontent.fevn9-1.fna&oh=00_AfBCFWPNO4A8WBE7bU6NPfGMbrP-MIHLQa63XXIWnsrTWw&oe=6547518E",
             "date": "12 December 2020",
             "text": "Թույն ծառայություններ, թույն մասնագետների կողմից։"
+        }
+    ],
+    "users": [
+        {
+            "id": 1,
+            "firstName": "Admin",
+            "lastName": "Admin",
+            "email": "admin@smartcode.com",
+            "username": "admin",
+            "password": "admin",
+            "type": "admin"
+        },
+        {
+            "id": 2,
+            "firstName": "Boris",
+            "lastName": "Shakhverdyan",
+            "email": "boris@gmail.com",
+            "username": "boris",
+            "password": "boris",
+            "type": "user"
         }
     ]
 }
