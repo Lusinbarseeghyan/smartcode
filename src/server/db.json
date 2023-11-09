@@ -18,11 +18,12 @@
                     "first": "1. HTML5, CSS3, BOOTSTRAP, SASS",
                     "second": "2. JavaScript (Jquery)",
                     "third": "3. React.js (Redux)",
-                    "forth": ""
+                    "fourth": ""
                 },
                 "content": "Դասընթացի տևողություն՝ 8 ամիս, շաբաթական՝ 3 պարապմունք (2 ժամ տևողությամբ): Դասընթացի ավարտին բոլոր ուսանողներին կտրվի վկայական։ Դասընթացի ամսական վճարը՝ 58,000 դրամ նաև ԱՊԱՌԻԿ ամսական՝ 24,000 դրամ։",
                 "offer": "Գրանցվի՛ր հիմա և ստացիր 3 փորձնական դասի մասնակցության հնարավորություն ԱՆՎՃԱՐ։"
-            }
+            },
+            "isDeleted": false
         },
         {
             "id": 2,
@@ -42,11 +43,12 @@
                     "first": "1. Python (OOP)",
                     "second": "2. Python (Machine learning & AI)",
                     "third": "",
-                    "forth": ""
+                    "fourth": ""
                 },
                 "content": "Դասընթացի տևողություն՝ 7 ամիս, շաբաթական՝ 3 պարապմունք (2 ժամ տևողությամբ): Դասընթացի ավարտին բոլոր ուսանողներին կտրվի վկայական։ Դասընթացի ամսական վճարը՝ 68,000 դրամ նաև ԱՊԱՌԻԿ ամսական՝ 25,000 դրամ։",
                 "offer": "Գրանցվի՛ր հիմա և ստացիր 3 փորձնական դասի մասնակցության հնարավորություն ԱՆՎՃԱՐ"
-            }
+            },
+            "isDeleted": false
         },
         {
             "id": 3,
@@ -66,11 +68,12 @@
                     "first": "",
                     "second": "",
                     "third": "",
-                    "forth": ""
+                    "fourth": ""
                 },
                 "content": "Դասընթացի տևողություն՝ 6 ամիս, շաբաթական՝ 3 պարապմունք (2 ժամ տևողությամբ): Դասընթացի ավարտին բոլոր ուսանողներին կտրվի վկայական։ Դասընթացի ամսական վճարը՝ 68,000 դրամ նաև ԱՊԱՌԻԿ ամսական՝ 21,000 դրամ։",
                 "offer": "Գրանցվի՛ր հիմա և ստացիր 3 փորձնական դասի մասնակցության հնարավորություն ԱՆՎՃԱՐ։"
-            }
+            },
+            "isDeleted": false
         },
         {
             "id": 4,
@@ -90,11 +93,12 @@
                     "first": "",
                     "second": "",
                     "third": "",
-                    "forth": ""
+                    "fourth": ""
                 },
                 "content": "Դասընթացի տևողություն՝ 6 ամիս, շաբաթական՝ 3 պարապմունք (2 ժամ տևողությամբ): Դասընթացի ավարտին բոլոր ուսանողներին կտրվի վկայական։ Դասընթացի ամսական վճարը՝ 68,000 դրամ նաև ԱՊԱՌԻԿ ամսական՝ 21,000 դրամ։",
                 "offer": "Գրանցվի՛ր հիմա և ստացիր 3 փորձնական դասի մասնակցության հնարավորություն ԱՆՎՃԱՐ։"
-            }
+            },
+            "isDeleted": false
         },
         {
             "id": 5,
@@ -114,11 +118,12 @@
                     "first": "",
                     "second": "",
                     "third": "",
-                    "forth": ""
+                    "fourth": ""
                 },
                 "content": "Դասընթացի տևողություն՝ 6 ամիս, շաբաթական՝ 3 պարապմունք (2 ժամ տևողությամբ): Դասընթացի ավարտին բոլոր ուսանողներին կտրվի վկայական։ Դասընթացի ամսական վճարը՝ 68,000 դրամ նաև ԱՊԱՌԻԿ ամսական՝ 21,000 դրամ։",
                 "offer": "Գրանցվի՛ր հիմա և ստացիր 3 փորձնական դասի մասնակցության հնարավորություն ԱՆՎՃԱՐ։"
-            }
+            },
+            "isDeleted": false
         },
         {
             "id": 6,
@@ -138,11 +143,12 @@
                     "first": "",
                     "second": "",
                     "third": "",
-                    "forth": ""
+                    "fourth": ""
                 },
                 "content": "Դասընթացի տևողություն՝ 3 ամիս, շաբաթական՝ 3 պարապմունք (2 ժամ տևողությամբ): Դասընթացի ավարտին բոլոր ուսանողներին կտրվի վկայական։ Դասընթացի ամսական վճարը՝ 68,000 դրամ նաև ԱՊԱՌԻԿ ամսական՝ 21,000 դրամ։",
                 "offer": "Գրանցվի՛ր հիմա և ստացիր 3 փորձնական դասի մասնակցության հնարավորություն ԱՆՎՃԱՐ։"
-            }
+            },
+            "isDeleted": false
         },
         {
             "id": 7,
@@ -162,11 +168,12 @@
                     "first": "1. կսովորեք ինչպես կառավարել Linux համակարգերը",
                     "second": "2. կծանոթանաք Python ծրագրավորման լեզվի հիմունքներին և կիրառությանը",
                     "third": "3. կուսումնասիրեք CI/CD մեթոդաբանության աշխատանքը",
-                    "forth": "4. կտիրապետեք DevOps մասնագիտության լավագույն պրակտիկաներին"
+                    "fourth": "4. կտիրապետեք DevOps մասնագիտության լավագույն պրակտիկաներին"
                 },
                 "content": "Դասընթացի տևողություն՝ 4 ամիս, շաբաթական՝ 3 պարապմունք (2 ժամ տևողությամբ): Դասընթացի ավարտին բոլոր ուսանողներին կտրվի վկայական։ Դասընթացի ամսական վճարը՝ 68,000 դրամ նաև ԱՊԱՌԻԿ ամսական՝ 15,000 դրամ։",
                 "offer": "Գրանցվի՛ր հիմա և ստացիր 3 փորձնական դասի մասնակցության հնարավորություն ԱՆՎՃԱՐ։"
-            }
+            },
+            "isDeleted": false
         },
         {
             "id": 8,
@@ -186,11 +193,12 @@
                     "first": "",
                     "second": "",
                     "third": "",
-                    "forth": ""
+                    "fourth": ""
                 },
                 "content": "Դասընթացի տևողություն՝ 6 ամիս, շաբաթական՝ 3 պարապմունք (2 ժամ տևողությամբ): Դասընթացի ավարտին բոլոր ուսանողներին կտրվի վկայական։ Դասընթացի ամսական վճարը՝ 68,000 դրամ նաև ԱՊԱՌԻԿ ամսական՝ 21,000 դրամ։",
                 "offer": "Գրանցվի՛ր հիմա և ստացիր 3 փորձնական դասի մասնակցության հնարավորություն ԱՆՎՃԱՐ։"
-            }
+            },
+            "isDeleted": false
         },
         {
             "id": 9,
@@ -210,11 +218,12 @@
                     "first": "1. Python (OOP)",
                     "second": "2. Django",
                     "third": "",
-                    "forth": ""
+                    "fourth": ""
                 },
                 "content": "Դասընթացի տևողություն՝ 5 ամիս, շաբաթական՝ 3 պարապմունք (2 ժամ տևողությամբ): Դասընթացի ավարտին բոլոր ուսանողներին կտրվի վկայական։ Դասընթացի ամսական վճարը՝ 68,000 դրամ նաև ԱՊԱՌԻԿ ամսական՝ 18,000 դրամ։",
                 "offer": "Գրանցվի՛ր հիմա և ստացիր 3 փորձնական դասի մասնակցության հնարավորություն ԱՆՎՃԱՐ։"
-            }
+            },
+            "isDeleted": false
         },
         {
             "id": 10,
@@ -234,11 +243,12 @@
                     "first": "",
                     "second": "",
                     "third": "",
-                    "forth": ""
+                    "fourth": ""
                 },
                 "content": "Դասընթացի տևողություն՝ 3 ամիս, շաբաթական՝ 3 պարապմունք (2 ժամ տևողությամբ): Դասընթացի ավարտին բոլոր ուսանողներին կտրվի վկայական։ Դասընթացի ամսական վճարը՝ 68,000 դրամ նաև ԱՊԱՌԻԿ ամսական՝ 11,000 դրամ։",
                 "offer": "Գրանցվի՛ր հիմա և ստացիր 3 փորձնական դասի մասնակցության հնարավորություն ԱՆՎՃԱՐ։"
-            }
+            },
+            "isDeleted": false
         },
         {
             "id": 11,
@@ -258,11 +268,12 @@
                     "first": "1. HTML5, CSS3, BOOTSTRAP, SASS ",
                     "second": "2. JavaScript (Jquery)",
                     "third": "3. React.js (Redux)",
-                    "forth": " 4. Node.js / Python (Django) / PHP (Laravel)"
+                    "fourth": " 4. Node.js / Python (Django) / PHP (Laravel)"
                 },
                 "content": "Դասընթացի տևողություն՝ 11 ամիս, շաբաթական՝ 3 պարապմունք (2 ժամ տևողությամբ): Դասընթացի ավարտին բոլոր ուսանողներին կտրվի վկայական։ Դասընթացի ամսական վճարը՝ 58,000 դրամ նաև ԱՊԱՌԻԿ ամսական՝ 33,000 դրամ։",
                 "offer": "Գրանցվի՛ր հիմա և ստացիր 3 փորձնական դասի մասնակցության հնարավորություն ԱՆՎՃԱՐ։"
-            }
+            },
+            "isDeleted": false
         },
         {
             "id": 12,
@@ -282,11 +293,12 @@
                     "first": "",
                     "second": "",
                     "third": "",
-                    "forth": ""
+                    "fourth": ""
                 },
                 "content": "Դասընթացի տևողություն՝ 4 ամիս, շաբաթական՝ 3 պարապմունք (2 ժամ տևողությամբ): Դասընթացի ավարտին բոլոր ուսանողներին կտրվի վկայական։ Դասընթացի ամսական վճարը՝ 65,000 դրամ նաև ԱՊԱՌԻԿ ամսական՝ 14,000 դրամ։",
                 "offer": "Գրանցվի՛ր հիմա և ստացիր 3 փորձնական դասի մասնակցության հնարավորություն ԱՆՎՃԱՐ։"
-            }
+            },
+            "isDeleted": false
         },
         {
             "id": 13,
@@ -306,67 +318,77 @@
                     "first": "",
                     "second": "",
                     "third": "",
-                    "forth": ""
+                    "fourth": ""
                 },
                 "content": "Դասընթացի տևողություն՝ 3 ամիս (36 դաս): Դասընթացի ավարտին բոլոր ուսանողներին կտրվի վկայական։ Դասընթացի ամսական վճարը՝ 65,000 դրամ նաև ԱՊԱՌԻԿ ամսական՝ 11,000 դրամ։",
                 "offer": "Գրանցվի՛ր հիմա և ստացիր 3 փորձնական դասի մասնակցության հնարավորություն ԱՆՎՃԱՐ։"
-            }
+            },
+            "isDeleted": false
         }
     ],
     "features": [
         {
             "id": 1,
-            "icon": "specialists.svg",
             "title": "specialists.title",
-            "description": "specialists.description"
+            "description": "specialists.description",
+            "icon": "specialists.svg",
+            "isDeleted": false
         },
         {
             "id": 2,
-            "icon": "check.svg",
             "title": "check.title",
-            "description": "check.description"
+            "description": "check.description",
+            "icon": "check.svg",
+            "isDeleted": false
         },
         {
             "id": 3,
-            "icon": "coffee.svg",
             "title": "coffee.title",
-            "description": "coffee.description"
+            "description": "coffee.description",
+            "icon": "coffee.svg",
+            "isDeleted": false
         },
         {
             "id": 4,
-            "icon": "time-money.svg",
             "title": "timeMoney.title",
-            "description": "timeMoney.description"
+            "description": "timeMoney.description",
+            "icon": "time-money.svg",
+            "isDeleted": false
         },
         {
             "id": 5,
-            "icon": "chat-video.svg",
             "title": "chatVideo.title",
-            "description": "chatVideo.description"
+            "description": "chatVideo.description",
+            "icon": "chat-video.svg",
+            "isDeleted": false
         },
         {
             "id": 6,
-            "icon": "online-support.svg",
             "title": "support.title",
-            "description": "support.description"
+            "description": "support.description",
+            "icon": "online-support.svg",
+            "isDeleted": false
         },
         {
             "id": 7,
-            "icon": "time.svg",
             "title": "time.title",
-            "description": "time.description"
+            "description": "time.description",
+            "icon": "time.svg",
+            "isDeleted": false
         },
         {
             "id": 8,
-            "icon": "rocket.svg",
             "title": "rocket.title",
-            "description": "rocket.description"
+            "description": "rocket.description",
+            "icon": "rocket.svg",
+            "isDeleted": false
         },
         {
             "id": 9,
-            "icon": "assured-workload.svg",
             "title": "workOffer.title",
-            "description": "workOffer.description"
+            "description": "workOffer.description",
+            "icon": "assured-workload.svg",
+            "isDeleted": false
         }
     ],
     "partners": [
@@ -374,43 +396,50 @@
             "id": 1,
             "title": "Web Foundation LLC",
             "logo": "https://smartcode.am/public/image/partners/webfoundationllc.svg",
-            "website": "https://webfoundationllc.com/"
+            "website": "https://webfoundationllc.com/",
+            "isDeleted": false
         },
         {
             "id": 2,
             "title": "Hi-Tech Gateway",
             "logo": "https://smartcode.am/public/image/partners/hi-teck.png",
-            "website": "https://hitechgateway.com/about"
+            "website": "https://hitechgateway.com/about",
+            "isDeleted": false
         },
         {
             "id": 3,
             "title": "Iguan Systems",
             "logo": "https://smartcode.am/public/image/partners/Iguan.png",
-            "website": "https://iguansystems.com/"
+            "website": "https://iguansystems.com/",
+            "isDeleted": false
         },
         {
             "id": 4,
             "title": "Evistep",
             "logo": "https://smartcode.am/public/image/partners/evistep.png",
-            "website": "https://evistep.com/"
+            "website": "https://evistep.com/",
+            "isDeleted": false
         },
         {
             "id": 5,
             "title": "Bee-Web",
             "logo": "https://smartcode.am/public/image/partners/bee-web.png",
-            "website": "https://beewebsystems.com/"
+            "website": "https://beewebsystems.com/",
+            "isDeleted": false
         },
         {
             "id": 6,
             "title": "S2S",
             "logo": "https://smartcode.am/public/image/partners/s2s.png",
-            "website": "https://www.s2s.am/"
+            "website": "https://www.s2s.am/",
+            "isDeleted": false
         },
         {
             "id": 7,
             "title": "Unisoft",
             "logo": "https://smartcode.am/public/image/partners/unisoft.png",
-            "website": "https://unisoft.am/"
+            "website": "https://unisoft.am/",
+            "isDeleted": false
         }
     ],
     "comments": [
@@ -476,6 +505,26 @@
             "image": "https://scontent.fevn9-1.fna.fbcdn.net/v/t39.30808-1/396961273_3718674168376084_8503439064900395179_n.jpg?stp=cp0_dst-jpg_p60x60&_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=KaQXLv9qmasAX9privl&_nc_ht=scontent.fevn9-1.fna&oh=00_AfBCFWPNO4A8WBE7bU6NPfGMbrP-MIHLQa63XXIWnsrTWw&oe=6547518E",
             "date": "12 December 2020",
             "text": "Թույն ծառայություններ, թույն մասնագետների կողմից։"
+        }
+    ],
+    "users": [
+        {
+            "id": 1,
+            "firstName": "Admin",
+            "lastName": "Admin",
+            "email": "admin@smartcode.com",
+            "username": "admin",
+            "password": "admin",
+            "type": "admin"
+        },
+        {
+            "id": 2,
+            "firstName": "Boris",
+            "lastName": "Shakhverdyan",
+            "email": "boris@gmail.com",
+            "username": "boris",
+            "password": "boris",
+            "type": "user"
         }
     ]
 }

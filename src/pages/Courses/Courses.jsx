@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { motion } from "framer-motion";
 import CourseCard from "../../components/CourseCard/CourseCard";
-import useAnimations from "../../utils/Animations/useAnimations";
 import { selectCoursesList } from "../../store/slices/courses/coursesSlice";
 import classes from "./Courses.module.css";
 import { fetchCourses } from "../../store/slices/courses/coursesApi";
@@ -11,8 +10,11 @@ const Courses = () => {
     const list = useSelector(selectCoursesList);
     const dispatch = useDispatch();
 
+<<<<<<< HEAD
     const { opacityAnimationVariant } = useAnimations();
 
+=======
+>>>>>>> 128fc2e95e30f26a1ac8260efb4ea0cc9c7350e8
     useEffect(() => {
         dispatch(fetchCourses());
     }, [dispatch]);

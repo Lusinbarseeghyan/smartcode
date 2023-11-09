@@ -28,7 +28,15 @@ const Partners = () => {
                             key={partner.id}
                             {...partner}
                             size={
+<<<<<<< HEAD
                                 [1, 2].includes(index) && isOdd(list.length)
+=======
+                                isOdd(list.length)
+                                    ? [1, 2].includes(index)
+                                        ? "big"
+                                        : "default"
+                                    : index === list.length - 1
+>>>>>>> 128fc2e95e30f26a1ac8260efb4ea0cc9c7350e8
                                     ? "big"
                                     : "default"
                             }

@@ -1,16 +1,16 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
 import useAnimations from "../../utils/Animations/useAnimations";
-
 import HeaderGridImages from "../HeaderGridImages/HeaderGridImages";
 import FormBox from "../../components/FormBox/FormBox";
-
 import { AiOutlineInstagram } from "react-icons/ai";
 import { BiLogoFacebook, BiLogoLinkedin } from "react-icons/bi";
 import classes from "./HomeHeader.module.css";
+<<<<<<< HEAD
 import { useTranslation } from "react-i18next";
+=======
+>>>>>>> 128fc2e95e30f26a1ac8260efb4ea0cc9c7350e8
 
 const HomeHeader = () => {
     const { t } = useTranslation("menu");
@@ -46,13 +46,14 @@ const HomeHeader = () => {
                         </motion.p>
 
                         <motion.p {...leftAnimationVariant(3)}>
+<<<<<<< HEAD
                             {t(`homeHeader.opportunity`)}
+=======
+                            Որակյալ ուսուցում, անվճար պրակտիկա, երաշխավորված աշխատանք։
+>>>>>>> 128fc2e95e30f26a1ac8260efb4ea0cc9c7350e8
                         </motion.p>
                     </div>
-                    <HeaderGridImages
-                        videoSectionRef={videoSectionRef}
-                        videoStopRef={videoStopRef}
-                    />
+                    <HeaderGridImages videoSectionRef={videoSectionRef} videoStopRef={videoStopRef} />
                 </motion.div>
             </motion.header>
             <motion.div className={`section ${classes.form}`}>
@@ -67,10 +68,7 @@ const HomeHeader = () => {
                         <div className={classes.form_box}>
                             <FormBox />
                         </div>
-                        <img
-                            src="https://smartcode.am/public/image/per4.svg"
-                            alt="header"
-                        />
+                        <img src="https://smartcode.am/public/image/per4.svg" alt="header" />
                     </motion.div>
                     <motion.div
                         className={classes.contacts}
@@ -79,17 +77,13 @@ const HomeHeader = () => {
                         viewport={{ once: true }}
                         {...rightAnimationVariant(3)}
                     >
-                        <Link
-                            to={`https://www.instagram.com/smartcode.am/?ysclid=lohadj8leo782877109`}
-                        >
+                        <Link to={`https://www.instagram.com/smartcode.am/?ysclid=lohadj8leo782877109`}>
                             <AiOutlineInstagram />
                         </Link>
                         <Link to={`https://www.facebook.com/SmartCode.am/`}>
                             <BiLogoFacebook />
                         </Link>
-                        <Link
-                            to={`https://am.linkedin.com/company/smartcode-development-school`}
-                        >
+                        <Link to={`https://am.linkedin.com/company/smartcode-development-school`}>
                             <BiLogoLinkedin />
                         </Link>
                     </motion.div>
