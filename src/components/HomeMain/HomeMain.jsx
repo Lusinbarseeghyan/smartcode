@@ -9,10 +9,14 @@ import { selectFeaturesList } from "../../store/slices/features/featuresSlice";
 import { fetchFeatures } from "../../store/slices/features/featuresApi";
 import SVG from "react-inlinesvg";
 import classes from "./HomeMain.module.css";
+import useTranslation from "../../utils/hooks/useTranslation";
 
 const HomeMain = () => {
+    const t = useTranslation(["menu", "features"]);
+
     const list = useSelector(selectFeaturesList);
     const dispatch = useDispatch();
+
     const mainRef = useRef(null);
     const imageRef = useRef(null);
 
@@ -20,7 +24,7 @@ const HomeMain = () => {
         dispatch(fetchFeatures());
     }, [dispatch]);
 
-    const { leftAnimationVariant, rightAnimationVariant, topAnimationVariant } = useAnimations();
+    const { topAnimationVariant, scaleAnimationVariant } = useAnimations();
 
     useEffect(() => {
         dispatch(fetchFeatures());
@@ -55,8 +59,8 @@ const HomeMain = () => {
                 whileInView="visible"
                 viewport={{ once: true }}
             >
-                <motion.h2 {...topAnimationVariant(1)}>Ինչո՞ւ սովորել մեզ մոտ</motion.h2>
-                <motion.p {...topAnimationVariant(2)}>Մեզ մոտ ծրագրավորում սովորելը ձեռնտու է`</motion.p>
+                <motion.h2 {...topAnimationVariant(1)}>{t(`HomeMain.why`)}</motion.h2>
+                <motion.p {...topAnimationVariant(2)}>{t(`HomeMain.becouse`)}</motion.p>
                 <div className={classes.content}>
                     <div className={classes.reasons}>
                         {list.map((feature, index) => {
@@ -67,7 +71,7 @@ const HomeMain = () => {
                                     className={classNames(classes.reason, {
                                         [classes.span_column]: lastReason && isOdd(list.length),
                                     })}
-                                    {...leftAnimationVariant(feature.id)}
+                                    {...scaleAnimationVariant(feature.id)}
                                 >
                                     <div className={classes.reason_top}>
                                         <h2>
@@ -77,13 +81,13 @@ const HomeMain = () => {
                                                         ? feature.icon
                                                         : `/images/features/${feature.icon}`
                                                 }
-                                                title={feature.title}
+                                                title={t(feature.title, "features")}
                                             />
                                         </h2>
                                     </div>
                                     <div className={classes.reason_bottom}>
-                                        <div className={classes.reason_icon}>
-                                            <h3>{feature.title}</h3>
+                                        <div className={classes.reason_title}>
+                                            <h3>{t(feature.title, "features")}</h3>
                                         </div>
                                     </div>
                                 </motion.div>
@@ -93,7 +97,7 @@ const HomeMain = () => {
                     <motion.div
                         className={classes.main_image}
                         ref={imageRef}
-                        {...rightAnimationVariant(2)}
+                        {...scaleAnimationVariant(2)}
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}

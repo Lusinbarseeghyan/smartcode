@@ -1,5 +1,4 @@
 .parallax {
-    letter-spacing: -2px;
     line-height: 0.8;
     margin: 0;
     white-space: nowrap;
@@ -11,18 +10,13 @@
 }
 
 .parallax .scroller {
-    font-weight: 600;
-    text-transform: uppercase;
     display: flex;
-    white-space: nowrap;
 }
 
-.parallax span {
-    display: block;
+.parallax img {
     margin-right: 30px;
     color: var(--main-dark-color);
-    font-family: var(--font-family-grotesk);
-    font-size: 65px;
+    width: 60px;
 }
 
 @media (max-width: 980px) {

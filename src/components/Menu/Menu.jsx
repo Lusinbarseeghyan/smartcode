@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { ReactComponent as SmartCodeLogo } from "../../assets/images/logo.svg";
+import { useTranslation } from "react-i18next";
+import Flags from "../Flags/Flags";
 import classes from "./Menu.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { logoutUser, selectAuthUser } from "../../store/slices/auth/authSlice";
@@ -19,6 +21,7 @@ const Menu = () => {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
+    const { t } = useTranslation("menu");
     const logout = () => {
         dispatch(logoutUser());
     };
@@ -40,13 +43,15 @@ const Menu = () => {
                             <FaBars />
                         </div>
                         <div className={`${classes.links} ${darkMode && classes.dark}`}>
-                            <NavLink to="/courses">Դասընթացներ</NavLink>
-                            <NavLink to="/features">Առավելություններ</NavLink>
-                            <NavLink to="/staff">Թրեյներներ</NavLink>
-                            <NavLink to="/about">Մեր մասին</NavLink>
-                            <NavLink to="/partners">Գործընկերներ</NavLink>
+                            <NavLink to="/courses">{t("menu.courses")}</NavLink>
+                            <NavLink to="/features">{t("menu.features")}</NavLink>
+                            <NavLink to="/staff">{t("menu.staff")}</NavLink>
+                            <NavLink to="/about">{t("menu.about")}</NavLink>
                         </div>
                     </nav>
+                </div>
+                <div className={classes.globe}>
+                    <Flags />
                 </div>
                 <div className={classes.socials}>
                     {!authUser ? (
