@@ -7,10 +7,7 @@ import FormBox from "../../components/FormBox/FormBox";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { BiLogoFacebook, BiLogoLinkedin } from "react-icons/bi";
 import classes from "./HomeHeader.module.css";
-<<<<<<< HEAD
 import { useTranslation } from "react-i18next";
-=======
->>>>>>> 128fc2e95e30f26a1ac8260efb4ea0cc9c7350e8
 
 const HomeHeader = () => {
     const { t } = useTranslation("menu");
@@ -20,10 +17,7 @@ const HomeHeader = () => {
 
     return (
         <div className={classes.wrapper}>
-            <motion.header
-                className={`container section ${classes.header}`}
-                ref={videoSectionRef}
-            >
+            <motion.header className={`container section ${classes.header}`} ref={videoSectionRef}>
                 <motion.div
                     className={classes.content}
                     initial="hidden"
@@ -38,20 +32,12 @@ const HomeHeader = () => {
                         </div>
 
                         <motion.p {...leftAnimationVariant(2)}>
-                            <span>{t(`homeHeader.do.firstPart`)}</span>{" "}
-                            {t(`homeHeader.do.secondPart`)}
+                            <span>{t(`homeHeader.do.firstPart`)}</span> {t(`homeHeader.do.secondPart`)}
                             <br />
-                            <span>{t(`homeHeader.for.firstPart`)}</span>{" "}
-                            {t(`homeHeader.for.secondPart`)}
+                            <span>{t(`homeHeader.for.firstPart`)}</span> {t(`homeHeader.for.secondPart`)}
                         </motion.p>
 
-                        <motion.p {...leftAnimationVariant(3)}>
-<<<<<<< HEAD
-                            {t(`homeHeader.opportunity`)}
-=======
-                            Որակյալ ուսուցում, անվճար պրակտիկա, երաշխավորված աշխատանք։
->>>>>>> 128fc2e95e30f26a1ac8260efb4ea0cc9c7350e8
-                        </motion.p>
+                        <motion.p {...leftAnimationVariant(3)}>{t(`homeHeader.opportunity`)}</motion.p>
                     </div>
                     <HeaderGridImages videoSectionRef={videoSectionRef} videoStopRef={videoStopRef} />
                 </motion.div>

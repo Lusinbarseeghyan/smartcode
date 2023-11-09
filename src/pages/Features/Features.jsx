@@ -53,17 +53,12 @@ const Features = ({ theme = "dark" }) => {
                             <div className={classes.line}>
                                 <div className={classes.iconWrapper}>
                                     <img
-<<<<<<< HEAD
-                                        src={`/images/features/${feature.icon}`}
-                                        alt={t(feature.title)}
-=======
                                         src={
                                             feature.icon.startsWith("http")
                                                 ? feature.icon
                                                 : `/images/features/${feature.icon}`
                                         }
-                                        alt={feature.title}
->>>>>>> 128fc2e95e30f26a1ac8260efb4ea0cc9c7350e8
+                                        alt={t(feature.title)}
                                     />
                                 </div>
                             </div>

@@ -2,15 +2,9 @@ import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { selectCourse } from "../../store/slices/courses/coursesSlice";
-<<<<<<< HEAD
-import { fetchCourse } from "../../store/slices/courses/coursesApi";
 import { motion } from "framer-motion";
-
 import useAnimations from "../../utils/Animations/useAnimations";
-
-=======
 import { fetchCourseByName } from "../../store/slices/courses/coursesApi";
->>>>>>> 128fc2e95e30f26a1ac8260efb4ea0cc9c7350e8
 import classes from "./CourseInfo.module.css";
 
 const CourseInfo = () => {
@@ -37,14 +31,11 @@ const CourseInfo = () => {
             {...scaleAnimationVariant(1)}
         >
             <div className={classes.course_image}>
-                <img
-                    src={selectedCourse.posters.small}
-                    alt={selectedCourse.name}
-                />
+                <img src={selectedCourse.posters.small} alt={selectedCourse.name} />
             </div>
             <div className={classes.bottom}>
                 <div className={classes.info}>
-<<<<<<< HEAD
+                    <h1>{selectedCourse.shortTitle}</h1>
                     <h2>{selectedCourse.title}</h2>
                     <p>{selectedCourse.subtitle}</p>
                     <p>{selectedCourse.description.mainTitle}</p>
@@ -59,26 +50,11 @@ const CourseInfo = () => {
                             <li>{selectedCourse.description.stages.forth}</li>
                         </ul>
                     ) : null}
-=======
-                    <h1>{selectedCourse.shortTitle}</h1>
-                    <h2>{selectedCourse.title}</h2>
-                    <p>{selectedCourse.subtitle}</p>
-                    <p>{selectedCourse.description.mainTitle}</p>
-                    <ul>
-                        <li>{selectedCourse.description.stages.first}</li>
-                        <li>{selectedCourse.description.stages.second}</li>
-                        <li>{selectedCourse.description.stages.third}</li>
-                        <li>{selectedCourse.description.stages.fourth}</li>
-                    </ul>
->>>>>>> 128fc2e95e30f26a1ac8260efb4ea0cc9c7350e8
                     <p>{selectedCourse.description.content}</p>
                     <p>{selectedCourse.description.offer}</p>
                 </div>
                 <div className={classes.body_image}>
-                    <img
-                        src={selectedCourse.posters.big}
-                        alt={selectedCourse.title}
-                    />
+                    <img src={selectedCourse.posters.big} alt={selectedCourse.title} />
                 </div>
             </div>
         </motion.div>

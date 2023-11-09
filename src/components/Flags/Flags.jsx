@@ -3,7 +3,7 @@ import ru from "../../assets/images/flags/ru.svg";
 import en from "../../assets/images/flags/gb (2).svg";
 
 import classes from "./Flags.module.css";
-import { FaAngleDown, FaGlobe } from "react-icons/fa";
+import { FaGlobe } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
 import {
     changeLang,
@@ -36,9 +36,9 @@ const Flags = () => {
             </div>
             <div className={classes.burgerLang}>
                 <select onChange={(e) => dispatch(setLang(e.target.value))}>
-                    <li>hay</li>
-                    <li>eng</li>
-                    <li>rus</li>
+                    <option>hay</option>
+                    <option>eng</option>
+                    <option>rus</option>
                     {/* <option value="hy">Հայ</option>
                     <option value="ru">Рус</option>
                     <option value="en">Eng</option> */}

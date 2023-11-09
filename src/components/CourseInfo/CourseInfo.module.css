@@ -15,11 +15,8 @@
     align-items: center;
     justify-content: center;
     border-radius: 6px;
-<<<<<<< HEAD
     background-color: var(--main-dark-color);
-=======
 
->>>>>>> 128fc2e95e30f26a1ac8260efb4ea0cc9c7350e8
     & img {
         -webkit-user-drag: none;
         width: 200px;
@@ -56,11 +53,6 @@
     width: 600px;
 }
 
-<<<<<<< HEAD
-p {
-    line-height: 2;
-}
-
 .info > ul {
     display: flex;
     flex-direction: column;
@@ -69,12 +61,14 @@ p {
     border-radius: 1rem;
     padding: 1rem;
     width: 100%;
+
     & li {
         font-family: var(--font-family-grotesk);
         text-align: start;
         color: var(--white);
     }
-=======
+}
+
 .course_info_container p {
     width: 600px;
     line-height: 2;
@@ -82,7 +76,6 @@ p {
 
 .info ul li {
     text-align: left;
->>>>>>> 128fc2e95e30f26a1ac8260efb4ea0cc9c7350e8
 }
 
 .body_image {

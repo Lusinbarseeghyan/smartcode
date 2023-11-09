@@ -11,7 +11,7 @@ import { useTranslation } from "react-i18next";
 import classes from "./Form.module.css";
 import { random } from "../../utils/helpers";
 const FormBox = () => {
-    const {t}=useTranslation(`menu`)
+    const { t } = useTranslation(`menu`);
     const [images, setImages] = useState([
         js,
         c_sharp,
@@ -56,6 +56,7 @@ const FormBox = () => {
             <div className={classes.icons}>
                 {images.map((item, index) => (
                     <img
+                        key={index}
                         src={item}
                         alt=""
                         className={`${classes.icon} ${classes["icon" + index]}`}
