@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import { FaBars } from "react-icons/fa";
+import { GiSpellBook, GiStarFormation } from "react-icons/gi";
+import { FaPeopleGroup } from "react-icons/fa6";
+import { FaInfoCircle } from "react-icons/fa";
 import { ReactComponent as SmartCodeLogo } from "../../assets/images/logo.svg";
 import { useTranslation } from "react-i18next";
 import Flags from "../Flags/Flags";
@@ -14,7 +16,8 @@ const Menu = () => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        const handleScroll = () => (window.scrollY ? setDarkMode(true) : setDarkMode(false));
+        const handleScroll = () =>
+            window.scrollY ? setDarkMode(true) : setDarkMode(false);
 
         window.addEventListener("scroll", handleScroll);
 
@@ -39,14 +42,34 @@ const Menu = () => {
                         </NavLink>
                     </div>
                     <nav>
-                        <div className={`${classes.hamburger} ${darkMode && classes.dark}`}>
+                        {/* <div
+                            className={`${classes.hamburger} ${
+                                darkMode && classes.dark
+                            }`}
+                        >
                             <FaBars />
-                        </div>
-                        <div className={`${classes.links} ${darkMode && classes.dark}`}>
-                            <NavLink to="/courses">{t("menu.courses")}</NavLink>
-                            <NavLink to="/features">{t("menu.features")}</NavLink>
-                            <NavLink to="/staff">{t("menu.staff")}</NavLink>
-                            <NavLink to="/about">{t("menu.about")}</NavLink>
+                        </div> */}
+                        <div
+                            className={`${classes.links} ${
+                                darkMode && classes.dark
+                            }`}
+                        >
+                            <NavLink to="/courses">
+                                {t("menu.courses")}
+                                <GiSpellBook />
+                            </NavLink>
+                            <NavLink to="/features">
+                                {t("menu.features")}
+                                <GiStarFormation />
+                            </NavLink>
+                            <NavLink to="/staff">
+                                {t("menu.staff")}
+                                <FaPeopleGroup />
+                            </NavLink>
+                            <NavLink to="/about">
+                                {t("menu.about")}
+                                <FaInfoCircle />
+                            </NavLink>
                         </div>
                     </nav>
                 </div>
