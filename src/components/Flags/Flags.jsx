@@ -39,9 +39,6 @@ const Flags = () => {
                     <option>hay</option>
                     <option>eng</option>
                     <option>rus</option>
-                    {/* <option value="hy">Հայ</option>
-                    <option value="ru">Рус</option>
-                    <option value="en">Eng</option> */}
                 </select>
             </div>
         </div>

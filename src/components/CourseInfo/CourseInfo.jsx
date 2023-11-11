@@ -6,8 +6,11 @@ import { motion } from "framer-motion";
 import useAnimations from "../../utils/Animations/useAnimations";
 import { fetchCourseByName } from "../../store/slices/courses/coursesApi";
 import classes from "./CourseInfo.module.css";
+import { useTranslation } from "react-i18next";
 
 const CourseInfo = () => {
+const {t} = useTranslation("courses")
+
     const { scaleAnimationVariant } = useAnimations();
     const selectedCourse = useSelector(selectCourse);
     const { name } = useParams();
@@ -35,10 +38,10 @@ const CourseInfo = () => {
             </div>
             <div className={classes.bottom}>
                 <div className={classes.info}>
-                    <h1>{selectedCourse.shortTitle}</h1>
-                    <h2>{selectedCourse.title}</h2>
-                    <p>{selectedCourse.subtitle}</p>
-                    <p>{selectedCourse.description.mainTitle}</p>
+                    <h1>{t(selectedCourse.shortTitle)}</h1>
+                    <h2>{t(selectedCourse.title)}</h2>
+                    <p>{t(selectedCourse.subtitle)}</p>
+                    <p>{t(selectedCourse.mainTitle)}</p>
                     {selectedCourse.description.stages.first ||
                     selectedCourse.description.stages.second ||
                     selectedCourse.description.stages.third ||
@@ -50,8 +53,8 @@ const CourseInfo = () => {
                             <li>{selectedCourse.description.stages.forth}</li>
                         </ul>
                     ) : null}
-                    <p>{selectedCourse.description.content}</p>
-                    <p>{selectedCourse.description.offer}</p>
+                    <p>{t("content")}</p>
+                    <p>{t("offer")}</p>
                 </div>
                 <div className={classes.body_image}>
                     <img src={selectedCourse.posters.big} alt={selectedCourse.title} />
