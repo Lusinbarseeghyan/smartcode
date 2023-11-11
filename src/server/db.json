@@ -5,6 +5,7 @@
             "name": "web-front-end",
             "duration": 8,
             "price": 58000,
+            "credit":"24000",
             "posters": {
                 "small": "https://smartcode.am/public/image/courses/front-end.svg",
                 "big": "https://cdn-icons-png.flaticon.com/512/2721/2721264.png"
@@ -31,6 +32,7 @@
             "name": "phyton-ml-ai",
             "duration": 7,
             "price": 68000,
+            "credit": "25000",
             "posters": {
                 "small": "https://smartcode.am/public/image/courses/python-ml.svg",
                 "big": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/935px-Python-logo-notext.svg.png"
@@ -57,6 +59,7 @@
             "name": "java",
             "duration": 6,
             "price": 68000,
+            "credit": "21000",
             "posters": {
                 "small": "https://smartcode.am/public/image/courses/java.svg",
                 "big": "https://static.vecteezy.com/system/resources/previews/019/899/953/non_2x/java-free-download-free-png.png"
@@ -83,6 +86,7 @@
             "name": "javascript",
             "duration": 3,
             "price": 58000,
+            "credit": "9000",
             "posters": {
                 "small": "https://smartcode.am/public/image/courses/javaScript.svg",
                 "big": "https://i0.wp.com/blog.canadianwebhosting.com/wp-content/uploads/2018/04/javascript-logo.png?ssl=1"
@@ -109,13 +113,14 @@
             "name": "react.js-redux",
             "duration": 3,
             "price": 58000,
+            "credit": "9000",
             "posters": {
                 "small": "https://smartcode.am/public/image/courses/react.svg",
                 "big": "https://static-00.iconduck.com/assets.00/react-javascript-js-framework-facebook-icon-512x455-jctj7y5w.png"
             },
             "shortTitle": "React.js (Redux)",
-            "title": "React.js դասընթաց",
-            "subtitle": "React - ը JavaScript - ի գրադարան է՝ User Interface - ներ ստեղծելու համար, որի միջոցով կկարողանաք նախագծել ժամանակակից և դինամիկ SPA կայքեր:React - ի ինտերակտիվ ինտերֆեյսերի ստեղծումը շատ հեշտ է: Պարզապես պետք է նկարագրել, թե ինչպիսի կառուցվածք ունեն կայքի տարբեր հատվածները: React - ը դրանք ժամանակին կթարմացնի, երբ տվյալները փոխվեն:",
+            "title": "react.js-redux.title",
+            "subtitle": "react.js-redux.subtitle",
             "description": {
                 "mainTitle": "",
                 "stages": {
@@ -135,6 +140,7 @@
             "name": "node.js",
             "duration": 3,
             "price": 68000,
+            "credit": "11000",
             "posters": {
                 "small": "https://smartcode.am/public/image/courses/node.svg",
                 "big": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png"
@@ -161,6 +167,7 @@
             "name": "dev-ops",
             "duration": 4,
             "price": 68000,
+            "credit": "15000",
             "posters": {
                 "small": "https://smartcode.am/public/image/courses/devops.svg",
                 "big": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Devops-toolchain.svg/1280px-Devops-toolchain.svg.png"
@@ -187,6 +194,7 @@
             "name": "c-sharp",
             "duration": 6,
             "price": 68000,
+            "credit": "21000",
             "posters": {
                 "small": "https://smartcode.am/public/image/courses/C.svg",
                 "big": "https://vectorseek.com/wp-content/uploads/2023/09/CSharp-Logo-Vector.svg-.png"
@@ -213,15 +221,16 @@
             "name": "python-django",
             "duration": 5,
             "price": 68000,
+            "credit": "18000",
             "posters": {
                 "small": "https://smartcode.am/public/image/courses/python-django.svg",
                 "big": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/935px-Python-logo-notext.svg.png"
             },
             "shortTitle": "Python (Django)",
-            "title": "Python / DJango դասընթաց",
-            "subtitle": "Python-ը ծրագրավորման ամենահայտնի լեզուն է աշխարհում: Այսօր գրեթե բոլոր հսկա ընկերությունները ինչպիսիք են՝ NASA, Google, Netflix, Facebook, Instagram, Pinterest, Dropbox օգտագործում են Python լեզուն իրենց նորարարական նախագծերում: Դասընթացի սկսզբում կսովորեք Python լեզվի հիմունքները և կկարգավորեք Python-ի հետ աշխատելու համար անհրաժեշտ միջավայր: Այնուհետև, առաջ կշարժվեք միջին մակարդակ իրական նախագծի ուղեկցությամբ, կսովորեք՝ օբյեկտ կողմնորոշված ծրագրավորման հիմունքները (OOP): Որից հետո ձեռք կբերեք Python-ի ամենահայտնի գրադարաններից մեկի՝ Django-ի մասին առաջադեմ գիտելիքներ, որի միջոցով կկարողանաք օգտագործել Python լեզուն վեբ կայքերի նախագծման համար:",
+            "title": "python-django.title",
+            "subtitle": "python-django.subtitle",
             "description": {
-                "mainTitle": "Դասընթացի փուլերը`",
+                "mainTitle": "python-django.mainTitle",
                 "stages": {
                     "first": "1. Python (OOP)",
                     "second": "2. Django",
@@ -239,13 +248,14 @@
             "name": "php-laravel",
             "duration": 3,
             "price": 68000,
+            "credit": "11000",
             "posters": {
                 "small": "https://smartcode.am/public/image/courses/php.svg",
                 "big": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png"
             },
             "shortTitle": "PHP (Laravel)",
-            "title": "PHP / Laravel դասընթաց",
-            "subtitle": "PHP-ն ընդհանուր նշանակության ծրագրավորման լեզու է, որը հատկապես հարմար է դինամիկ վեբ էջեր նախագծելու համար:  Արագ, ճկուն և պրագմատիկ PHP-ն հնարավորություն է տալիս նախագծել տարբեր բարդության և ծավալի կայքեր՝ սկսած փոքր տեղեկատվական բլոգերից մինչև աշխարհի ամենահայտնի սոցիալական պորտալներ:",
+            "title": "php-laravel.title",
+            "subtitle": "php-laravel.subtitle",
             "description": {
                 "mainTitle": "",
                 "stages": {
@@ -265,6 +275,7 @@
             "name": "web-full-stack",
             "duration": 11,
             "price": 58000,
+            "credit": 33000,
             "posters": {
                 "small": "https://smartcode.am/public/image/courses/full-stack.svg",
                 "big": "https://static.vecteezy.com/system/resources/thumbnails/019/153/003/small/3d-minimal-programming-icon-coding-screen-web-development-concept-laptop-with-a-coding-screen-and-a-coding-icon-3d-illustration-png.png"
@@ -291,13 +302,14 @@
             "name": "ui-ux-design",
             "duration": 4,
             "price": 65000,
+            "credit": "14000",
             "posters": {
                 "small": "https://smartcode.am/public/image/courses/ui-ux.svg",
                 "big": "https://www.softura.com/wp-content/uploads/2021/10/Group-256@2x.png"
             },
             "shortTitle": "UI / UX Design",
-            "title": "UI / UX Design դասընթաց",
-            "subtitle": "Առանց UX / UI դիզայների անհնար է պատկերացնել որևէ ժամանակակից՝ վեբ կայք կամ մոբայլ հավելված։ User Interface-ը (UI) և User Experience-ը (UX) առանցքային դեր ունեն ցանկացած թվային նախագծի արտադրական փուլում: UX / UI դիզայները իր աշխատանքում համատեղում է կրեատիվությունն և վերլուծական միտքը: Նա պատասխանատու է կայքերի և հավելվածների օգտագործման հարմարավետության և գեղեցիկ արտաքին տեսքի համար և այդպիսով օգնում է բիզնեսին զարգանալ և հասնել իր նպատակներին: Այն վերլուծում է օգտագործողի վարքագիծը և որոշում, թե ինչպես կարելի է բարելավել թվային արտադրանքը: Իմացիր UX-ի օրենքները՝ լավագույն գործիքները և պրակտիկաները, որոնք թույլ են տալիս ստեղծել հարմար և հասկանալի ինտերֆեյս։",
+            "title": "ui-ux-design.title",
+            "subtitle": "ui-ux-design.subtitle",
             "description": {
                 "mainTitle": "",
                 "stages": {
@@ -314,16 +326,42 @@
         },
         {
             "id": 13,
+            "name": "qa-engineer",
+            "duration": 6,
+            "price": 68000,
+            "credit": 21000,
+            "posters": {
+               "big": "https://cdn-eokfn.nitrocdn.com/diBQUISGKsmoTQlhuYAsruhMTNXpLtAP/assets/images/optimized/rev-490b9c2/silica.co.in/wp-content/uploads/2020/03/Graphic-Design.png"
+            },
+            "shortTitle": "QA Engineer",
+            "title": "qa-engineer.title",
+            "subtitle": "qa-engineer.subtitle",
+            "description": {
+                "mainTitle": "",
+                "stages": {
+                    "first": "",
+                    "second": "",
+                    "third": "",
+                    "fourth": ""
+                },
+                "content": "content",
+                "offer": "offer"
+            },
+            "isDeleted": false
+        },
+        {
+            "id": 14,
             "name": "graphic-design",
             "duration": 3,
             "price": 65000,
+            "credit": 11000,
             "posters": {
                 "small": "https://smartcode.am/public/image/courses/graphic-design.svg?v=1.2",
                 "big": "https://cdn-eokfn.nitrocdn.com/diBQUISGKsmoTQlhuYAsruhMTNXpLtAP/assets/images/optimized/rev-490b9c2/silica.co.in/wp-content/uploads/2020/03/Graphic-Design.png"
             },
             "shortTitle": "Graphic Design",
-            "title": "Graphic Design դասընթաց",
-            "subtitle": "Գրաֆիկական դիզայնը հաճախ բիզնեսի և նրա լսարանի շփման առաջին կետն է: Պրոֆեսիոնալ ձևավորված լոգոն, կայքը կամ մարքեթինգային նյութը օգնում է բիզնեսին առանձնանալ մրցակիցներից, ձեռք բերել ապրանքանիշի ճանաչում և ներգրավել նոր հաճախորդներ: Այս դասընթացը նախատեսված է սանձազերծելու ձեր ստեղծագործական ներուժը և զինելու այնպիսի գործիքներով, որոնք անհրաժեշտ են պրոֆեսիոնալ մասնագետ դառնալու համար: Դասընթացի ընթացքում ձեռք կբերեք հմտություններ գրաֆիկական դիզայնի բոլոր ասպեկտներում՝ սկսած կոնցեպտի մտահաղացումից մինչև վիզուալ իրագործում: Մեր փորձառու դասընթացավարների անհատական ուղղորդումների միջոցով կստեղծեք տպավորիչ պորտֆոլիո, որը կցուցադրի ձեր փորձը՝ օգնելով ձեզ առանձնանալ մրցակցային աշխատաշուկայում: Մեր ճկուն ժամանակացույցը ձեզ թույլ կտա դասերի համար ընտրել այն ժամը, որը առավել համապատասխան կլինի ձեր զբաղված ապրելակերպին:",
+            "title": "graphic-design.title",
+            "subtitle": "graphic-design.subtitle",
             "description": {
                 "mainTitle": "",
                 "stages": {
@@ -333,6 +371,31 @@
                     "fourth": ""
                 },
                
+                "content": "content",
+                "offer": "offer"
+            },
+            "isDeleted": false
+        },
+        {
+            "id": 15,
+            "name": "product-management",
+            "duration": 4,
+            "price": 68000,
+            "credit": 15000,
+            "posters": {
+                "big": "https://cdn-eokfn.nitrocdn.com/diBQUISGKsmoTQlhuYAsruhMTNXpLtAP/assets/images/optimized/rev-490b9c2/silica.co.in/wp-content/uploads/2020/03/Graphic-Design.png"
+            },
+            "shortTitle": "Product Management",
+            "title": "product-management.title",
+            "subtitle": "product-management.subtitle",
+            "description": {
+                "mainTitle": "product-management.mainTitle",
+                "stages": {
+                    "first": "",
+                    "second": "",
+                    "third": "",
+                    "fourth": ""
+                },
                 "content": "content",
                 "offer": "offer"
             },

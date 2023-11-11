@@ -7,6 +7,7 @@ i18n.use(initReactI18next)
     .use(LanguageDetector)
     .use(HTTPApi)
     .init({
+        defaultLang:"hy",
         supportedLangs: [`hy`, `ru`, `en`],
         fallbackLng: "hy",
         interpolation: {

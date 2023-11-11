@@ -8,11 +8,13 @@ import { fetchCourseByName } from "../../store/slices/courses/coursesApi";
 import classes from "./CourseInfo.module.css";
 import { useTranslation } from "react-i18next";
 
+
 const CourseInfo = () => {
 const {t} = useTranslation("courses")
 
     const { scaleAnimationVariant } = useAnimations();
     const selectedCourse = useSelector(selectCourse);
+
     const { name } = useParams();
     const dispatch = useDispatch();
 
@@ -53,7 +55,7 @@ const {t} = useTranslation("courses")
                             <li>{selectedCourse.description.stages.forth}</li>
                         </ul>
                     ) : null}
-                    <p>{t("content")}</p>
+                    <p>{t("content", {duration: selectedCourse.duration, price:selectedCourse.price, credit:selectedCourse.credit})}</p>
                     <p>{t("offer")}</p>
                 </div>
                 <div className={classes.body_image}>
