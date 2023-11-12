@@ -3,7 +3,6 @@ import ru from "../../assets/images/flags/ru.svg";
 import en from "../../assets/images/flags/gb (2).svg";
 
 import classes from "./Flags.module.css";
-import { FaGlobe } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
 import {
     changeLang,

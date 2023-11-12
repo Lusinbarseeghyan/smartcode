@@ -88,4 +88,15 @@
             font-size: 18px;
         }
     }
+
+    .section_video_cont {
+        & video {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+:picture-in-picture {
+    box-shadow: 0 0 0 5px red;
 }
