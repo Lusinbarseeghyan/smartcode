@@ -31,13 +31,17 @@ const HomeMain = () => {
 
         const handleScroll = () => {
             const sectionRect = mainRef.current.getBoundingClientRect();
-
-            if (sectionRect.top < 800 && sectionRect.bottom > window.innerHeight - 500) {
-                imageRef.current.classList.remove(classes.absolute);
-                imageRef.current.classList.add(classes.fixed);
-            } else {
-                imageRef.current.classList.remove(classes.fixed);
-                imageRef.current.classList.add(classes.absolute);
+            if (imageRef.current) {
+                if (
+                    sectionRect.top < 800 &&
+                    sectionRect.bottom > window.innerHeight - 500
+                ) {
+                    imageRef.current.classList.remove(classes.absolute);
+                    imageRef.current.classList.add(classes.fixed);
+                } else {
+                    imageRef.current.classList.remove(classes.fixed);
+                    imageRef.current.classList.add(classes.absolute);
+                }
             }
         };
 
@@ -59,8 +63,12 @@ const HomeMain = () => {
                 whileInView="visible"
                 viewport={{ once: true }}
             >
-                <motion.h2 {...topAnimationVariant(1)}>{t(`HomeMain.why`)}</motion.h2>
-                <motion.p {...topAnimationVariant(2)}>{t(`HomeMain.becouse`)}</motion.p>
+                <motion.h2 {...topAnimationVariant(1)}>
+                    {t(`HomeMain.why`)}
+                </motion.h2>
+                <motion.p {...topAnimationVariant(2)}>
+                    {t(`HomeMain.becouse`)}
+                </motion.p>
                 <div className={classes.content}>
                     <div className={classes.reasons}>
                         {list.map((feature, index) => {
@@ -69,7 +77,8 @@ const HomeMain = () => {
                                 <motion.div
                                     key={feature.id}
                                     className={classNames(classes.reason, {
-                                        [classes.span_column]: lastReason && isOdd(list.length),
+                                        [classes.span_column]:
+                                            lastReason && isOdd(list.length),
                                     })}
                                     {...scaleAnimationVariant(feature.id)}
                                 >
@@ -77,17 +86,24 @@ const HomeMain = () => {
                                         <h2>
                                             <SVG
                                                 src={
-                                                    feature.icon.startsWith("http")
+                                                    feature.icon.startsWith(
+                                                        "http"
+                                                    )
                                                         ? feature.icon
                                                         : `/images/features/${feature.icon}`
                                                 }
-                                                title={t(feature.title, "features")}
+                                                title={t(
+                                                    feature.title,
+                                                    "features"
+                                                )}
                                             />
                                         </h2>
                                     </div>
                                     <div className={classes.reason_bottom}>
                                         <div className={classes.reason_title}>
-                                            <h3>{t(feature.title, "features")}</h3>
+                                            <h3>
+                                                {t(feature.title, "features")}
+                                            </h3>
                                         </div>
                                     </div>
                                 </motion.div>

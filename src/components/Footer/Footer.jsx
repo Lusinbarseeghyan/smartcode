@@ -15,10 +15,8 @@ import { ImLocation2 } from "react-icons/im";
 
 import classes from "./Footer.module.css";
 
-
 const Footer = () => {
-
-    const {t, i18n}= useTranslation("menu");
+    const { t, i18n } = useTranslation("menu");
 
     return (
         <div className={`mt-20 ${classes.footer_container}`}>
@@ -26,15 +24,6 @@ const Footer = () => {
                 <div className={classes.logo_container}>
                     <img src={logo} alt="logo" />
                     <p>{t(`footer.about`)}</p>
-
-                    <div className={classes.links}>
-                        <Link>
-                            <BsInstagram />
-                        </Link>
-                        <Link>
-                            <BsLinkedin />
-                        </Link>
-                    </div>
                 </div>
                 <div className={classes.about_container}>
                     <h3>{t(`footer.contact`)}</h3>

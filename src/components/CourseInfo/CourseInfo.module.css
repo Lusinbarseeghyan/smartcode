@@ -125,8 +125,10 @@
     .bottom {
         flex-direction: column;
         align-items: center;
+        row-gap: 2rem;
+
         & img {
-            width: 300px;
+            max-width: 300px;
         }
 
         & p {

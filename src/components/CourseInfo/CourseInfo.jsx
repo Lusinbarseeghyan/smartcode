@@ -8,9 +8,8 @@ import { fetchCourseByName } from "../../store/slices/courses/coursesApi";
 import classes from "./CourseInfo.module.css";
 import { useTranslation } from "react-i18next";
 
-
 const CourseInfo = () => {
-const {t} = useTranslation("courses")
+    const { t } = useTranslation("courses");
 
     const { scaleAnimationVariant } = useAnimations();
     const selectedCourse = useSelector(selectCourse);
@@ -36,7 +35,10 @@ const {t} = useTranslation("courses")
             {...scaleAnimationVariant(1)}
         >
             <div className={classes.course_image}>
-                <img src={selectedCourse.posters.small} alt={selectedCourse.name} />
+                <img
+                    src={selectedCourse.posters.small}
+                    alt={selectedCourse.name}
+                />
             </div>
             <div className={classes.bottom}>
                 <div className={classes.info}>
@@ -55,11 +57,20 @@ const {t} = useTranslation("courses")
                             <li>{selectedCourse.description.stages.forth}</li>
                         </ul>
                     ) : null}
-                    <p>{t("content", {duration: selectedCourse.duration, price:selectedCourse.price, credit:selectedCourse.credit})}</p>
+                    <p>
+                        {t("content", {
+                            duration: selectedCourse.duration,
+                            price: selectedCourse.price,
+                            credit: selectedCourse.credit,
+                        })}
+                    </p>
                     <p>{t("offer")}</p>
                 </div>
                 <div className={classes.body_image}>
-                    <img src={selectedCourse.posters.big} alt={selectedCourse.title} />
+                    <img
+                        src={selectedCourse.posters.big}
+                        alt={selectedCourse.title}
+                    />
                 </div>
             </div>
         </motion.div>

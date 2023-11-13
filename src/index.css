@@ -7,7 +7,7 @@
     --main-dark-color: #1e282d;
     --card-color: #98c1d9;
     --dark: #111;
-    --title: 25px;
+    --title: clamp(18px, 2vw, 25px);
     --menuHeight: 50px;
     --text-color-dark: #111;
     scroll-behavior: smooth;
@@ -70,5 +70,5 @@ body {
 }
 
 .mb-footer {
-    margin-bottom: 250px;
+    margin-bottom: clamp(450px, 2vw, 250px);
 }

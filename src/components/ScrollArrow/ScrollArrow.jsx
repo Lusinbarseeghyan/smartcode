@@ -7,9 +7,11 @@ const ScrollArrow = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            arrowRef.current.classList[window.scrollY ? "add" : "remove"](
-                classes.into_view
-            );
+            if (arrowRef.current) {
+                arrowRef.current.classList[window.scrollY ? "add" : "remove"](
+                    classes.into_view
+                );
+            }
         };
 
         window.addEventListener("scroll", handleScroll);

@@ -6,29 +6,30 @@ import c_sharp from "../../assets/images/c#.png";
 import node_js from "../../assets/images/node_js.png";
 import windows from "../../assets/images/windows.png";
 import laptop from "../../assets/images/laptop.png";
+
 import { useTranslation } from "react-i18next";
 
 import classes from "./Form.module.css";
 import { random } from "../../utils/helpers";
 const FormBox = () => {
     const { t } = useTranslation(`menu`);
-    const [images, setImages] = useState([
-        js,
-        c_sharp,
-        node_js,
-        windows,
-        laptop,
-    ]);
+    // const [images, setImages] = useState([
+    //     js,
+    //     c_sharp,
+    //     node_js,
+    //     windows,
+    //     laptop,
+    // ]);
 
-    useEffect(() => {
-        setInterval(() => {
-            setImages((images) => [...images]);
-        }, 3000);
-    }, []);
+    // useEffect(() => {
+    //     setInterval(() => {
+    //         setImages((images) => [...images]);
+    //     }, 3000);
+    // }, []);
 
     return (
         <div className={classes.form_container}>
-            <div className={classes.icons}>
+            {/* <div className={classes.icons}>
                 {images.map((item, index) => (
                     <img
                         key={index}
@@ -41,7 +42,7 @@ const FormBox = () => {
                         }}
                     />
                 ))}
-            </div>
+            </div> */}
             <h2>{t(`formBox.signin`)}</h2>
             <form>
                 <input type="text" name="" placeholder={t(`formBox.name`)} />

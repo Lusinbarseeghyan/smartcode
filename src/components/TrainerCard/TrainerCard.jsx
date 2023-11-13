@@ -1,5 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
-import { motion } from "framer-motion";
+import React, { useRef } from "react";
 
 import classes from "./TrainerCard.module.css";
 const TrainerCard = ({ image, proffesion, name }) => {

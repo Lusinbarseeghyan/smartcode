@@ -7,7 +7,6 @@
     flex-direction: column;
     row-gap: 3rem;
     overflow: hidden;
-
     & h2 {
         color: var(--dark);
         font-family: var(--font-family-grotesk);
@@ -85,7 +84,8 @@
 
         & p {
             text-align: center;
-            font-size: 18px;
+            font-size: clamp(15px, 2vw, 20px);
+            width: 100%;
         }
     }
 
@@ -95,8 +95,4 @@
             object-fit: cover;
         }
     }
-}
-
-:picture-in-picture {
-    box-shadow: 0 0 0 5px red;
 }
