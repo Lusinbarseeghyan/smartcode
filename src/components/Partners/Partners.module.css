@@ -1,43 +1,43 @@
 .partners {
-    padding: 1rem 0;
-    white-space: nowrap;
     display: flex;
-    width: 200%;
-    height: 40vh;
     align-items: center;
     justify-content: space-between;
+    width: 200%;
+    height: 30vh;
+    padding: 1rem 0;
+    white-space: nowrap;
 }
 
 .title {
     position: relative;
-    z-index: 5;
-    font-size: var(--title);
     left: 50%;
     top: -50%;
     transform: translateX(-50%);
+    z-index: 5;
+    font-size: var(--title);
     color: var(--main-dark-color);
     padding: 0.5rem 0;
 }
 
 .title::after {
     content: "";
-    background: var(--main-color);
-    height: 1px;
-    width: 80px;
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    background: var(--main-color);
+    height: 1px;
+    width: 80px;
 }
 
 .partners_slide {
     display: flex;
     align-items: center;
     column-gap: 2rem;
-    animation: slide 10s linear infinite;
     padding: 0 1rem;
     height: fit-content;
     background-color: transparent;
+    animation: slide 10s linear infinite;
 }
 
 .partners:hover .partners_slide {

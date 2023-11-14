@@ -7,7 +7,7 @@ import certificate from "../../assets/images/1.jpg";
 import { useTranslation } from "react-i18next";
 
 const About = () => {
-    const {t, i18n} = useTranslation("menu");
+    const { t } = useTranslation("menu");
     return (
         <div className={classes.about_page}>
             <div className={classes.about_container}>

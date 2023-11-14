@@ -35,10 +35,10 @@
 }
 
 .section {
-    height: 100%;
-    overflow: hidden;
     display: grid;
     grid-template-columns: 100px 1fr;
+    height: 100%;
+    overflow: hidden;
 }
 
 .section .content {

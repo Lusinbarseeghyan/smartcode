@@ -5,7 +5,6 @@ import Features from "./pages/Features/Features";
 import Staff from "./pages/Staff/Staff";
 import About from "./pages/About/About";
 import Home from "./pages/Home/Home";
-import Partners from "./pages/Partners/Partners";
 import NotFound from "./pages/NotFound/NotFound";
 import CourseInfo from "./components/CourseInfo/CourseInfo";
 import Login from "./pages/Login/Login";
@@ -26,7 +25,6 @@ const Router = () => {
                 <Route path="/features" element={<Features />} />
                 <Route path="/staff" element={<Staff />} />
                 <Route path="/about" element={<About />} />
-                <Route path="/partners" element={<Partners />} />
 
                 <Route element={<RouteMiddleware guest />}>
                     <Route path="/login" element={<Login />} />
@@ -39,19 +37,46 @@ const Router = () => {
                 <Route element={<RouteMiddleware admin />}>
                     <Route path="/dashboard" element={<Dashboard />}>
                         {/* Courses */}
-                        <Route path="/dashboard/courses" element={<CoursesList />} />
-                        <Route path="/dashboard/courses/:id" element={<CoursesMain action="update" />} />
-                        <Route path="/dashboard/courses/new" element={<CoursesMain action="create" />} />
+                        <Route
+                            path="/dashboard/courses"
+                            element={<CoursesList />}
+                        />
+                        <Route
+                            path="/dashboard/courses/:id"
+                            element={<CoursesMain action="update" />}
+                        />
+                        <Route
+                            path="/dashboard/courses/new"
+                            element={<CoursesMain action="create" />}
+                        />
 
                         {/* Features */}
-                        <Route path="/dashboard/features" element={<FeaturesList />} />
-                        <Route path="/dashboard/features/:id" element={<FeaturesMain action="update" />} />
-                        <Route path="/dashboard/features/new" element={<FeaturesMain action="create" />} />
+                        <Route
+                            path="/dashboard/features"
+                            element={<FeaturesList />}
+                        />
+                        <Route
+                            path="/dashboard/features/:id"
+                            element={<FeaturesMain action="update" />}
+                        />
+                        <Route
+                            path="/dashboard/features/new"
+                            element={<FeaturesMain action="create" />}
+                        />
 
                         {/* Partners */}
-                        <Route path="/dashboard/partners" element={<PartnersList />} />
-                        <Route path="/dashboard/partners/:id" element={<PartnersMain action="update" />} />
-                        <Route path="/dashboard/partners/new" element={<PartnersMain action="create" />} />
+                        <Route
+                            path="/dashboard/partners"
+                            element={<PartnersList />}
+                        />
+                        <Route
+                            path="/dashboard/partners/:id"
+                            element={<PartnersMain action="update" />}
+                        />
+                        <Route
+                            path="/dashboard/partners/new"
+                            element={<PartnersMain action="create" />}
+                        />
                     </Route>
                 </Route>
             </Route>

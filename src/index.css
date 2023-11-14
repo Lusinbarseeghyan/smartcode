@@ -70,5 +70,5 @@ body {
 }
 
 .mb-footer {
-    margin-bottom: clamp(450px, 2vw, 250px);
+    margin-bottom: 380px;
 }

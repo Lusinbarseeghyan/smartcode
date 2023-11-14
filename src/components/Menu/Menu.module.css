@@ -63,8 +63,8 @@
         font-family: var(--font-family-grotesk);
         color: var(--main-dark-color);
         transition: scale 0.4s;
-        font-size: clamp(12px, 2vw, 15px);
-
+        user-select: none;
+        -webkit-user-drag: none;
         & svg {
             display: none;
         }
@@ -111,28 +111,25 @@
 @media (max-width: 780px) {
     .links {
         width: 100%;
-        align-items: start;
-        justify-content: space-evenly;
+        align-items: center;
+        justify-content: space-around;
         background-color: var(--body-bg-color);
         position: fixed;
+        top: 91vh;
+        bottom: 0;
         left: 0;
         right: 0;
-        top: 91vh;
         z-index: 100;
-        padding: 2rem 1rem;
-
         & a {
             display: flex;
             flex-direction: column-reverse;
             align-items: center;
-            justify-content: start;
-            line-height: 0.8;
-            top: 0;
+            font-size: clamp(8px, 3vw, 15px);
         }
 
         & a svg {
             display: flex;
-            font-size: clamp(15px, 3vw, 52px);
+            font-size: 15px;
         }
     }
 

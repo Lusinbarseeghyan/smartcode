@@ -30,7 +30,7 @@
 
 .title h1 {
     color: var(--main-color);
-    font-size: clamp(35px, 5vw, 70px);
+    font-size: clamp(35px, 5vw, 60px);
     letter-spacing: 5px;
     white-space: nowrap;
     width: 100%;
@@ -92,7 +92,7 @@
 .text p {
     text-align: start;
     color: var(--dark);
-    font-size: clamp(13px, 3vw, 22px);
+    font-size: clamp(13px, 3vw, 18px);
 }
 
 .text p span {

@@ -10,20 +10,17 @@
     row-gap: 1rem;
     max-height: 400px;
     z-index: 105;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-.course_card {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-.course header {
+.course .card_top {
     padding: 1rem;
     border-radius: 5px;
 }
 
-.course header img {
-    fill: antiquewhite;
+.card_top img {
+    fill: var(--white);
     filter: brightness(0%) invert(100%);
     -webkit-user-drag: none;
 }
@@ -51,16 +48,16 @@
 .course_card::after {
     content: "";
     display: flex;
+    position: absolute;
     border-left: 5px solid var(--card-color);
     border-right: 5px solid var(--card-color);
-    position: absolute;
     inset: 30px -10px;
     transform: skew(15deg);
     transition: all 0.5s;
     z-index: 101;
 }
 
-.course header {
+.course .card_top {
     width: 200px;
 
     & img {
@@ -75,7 +72,7 @@
     border-width: 0.5rem;
 }
 
-.course main {
+.card_middle {
     display: flex;
     flex-direction: column;
     row-gap: 0.5rem;
@@ -87,7 +84,7 @@
     }
 }
 
-.course footer a {
+.card_bottom a {
     background: none;
     padding: 0.5rem 1rem;
     color: white;
@@ -98,7 +95,7 @@
     border: 2px solid var(--card-color);
 }
 
-.course footer a:hover {
+.card_bottom a:hover {
     background-color: var(--card-color);
     color: var(--white);
     scale: 1.05;

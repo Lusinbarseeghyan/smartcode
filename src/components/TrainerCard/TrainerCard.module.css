@@ -1,19 +1,19 @@
 .card {
-    max-width: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     position: relative;
+    max-width: 400px;
 }
 .card_image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 300px;
     height: 300px;
     border-radius: 50%;
     background-color: var(--main-dark-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     overflow: hidden;
 }
 .card_image video {
@@ -39,17 +39,17 @@
     }
 }
 .card_icon {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: var(--main-dark-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 10px solid var(--body-bg-color);
-    right: 0;
+    position: absolute;
     bottom: 50px;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    border: 10px solid var(--body-bg-color);
+    border-radius: 50%;
+    background-color: var(--main-dark-color);
 }
 .card_icon img {
     width: 50px;

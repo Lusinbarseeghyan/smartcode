@@ -16,7 +16,7 @@ const appSlice = createSlice({
             },
         },
         supportedLanguages: [`hy`, `ru`, `en`],
-        lang: 0,
+        lang: localStorage.getItem("lang") || 0,
     },
     reducers: {
         setIsLoading(state, { payload }) {
@@ -24,7 +24,15 @@ const appSlice = createSlice({
         },
         showModal(
             state,
-            { payload: { title, body, actionBtnText, actionBtnCallback, actionBtnType = "default" } }
+            {
+                payload: {
+                    title,
+                    body,
+                    actionBtnText,
+                    actionBtnCallback,
+                    actionBtnType = "default",
+                },
+            }
         ) {
             state.modal = {
                 isShow: true,
@@ -45,7 +53,11 @@ const appSlice = createSlice({
             };
         },
         changeLang(state) {
-            state.lang = state.lang + 1 > state.supportedLanguages.length - 1 ? 0 : state.lang + 1;
+            state.lang =
+                state.lang + 1 > state.supportedLanguages.length - 1
+                    ? 0
+                    : state.lang + 1;
+            localStorage.setItem("lang", state.lang);
             i18n.changeLanguage(state.supportedLanguages[state.lang]);
         },
         setLang(state, { payload }) {
@@ -60,6 +72,7 @@ export const selectModal = (state) => state.app.modal;
 export const selectModalStatus = (state) => state.app.modal.isShow;
 export const selectLang = (state) => state.app.lang;
 
-export const { setIsLoading, showModal, hideModal, changeLang, setLang } = appSlice.actions;
+export const { setIsLoading, showModal, hideModal, changeLang, setLang } =
+    appSlice.actions;
 
 export const appReducer = appSlice.reducer;
