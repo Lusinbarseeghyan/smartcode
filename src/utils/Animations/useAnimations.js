@@ -72,7 +72,7 @@ const useAnimations = () => {
 
     const bottomAnimationVariant = (custom) => {
         return {
-            variants: topAnimation,
+            variants: bottomAnimation,
             custom,
         };
     };

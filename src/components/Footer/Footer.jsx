@@ -1,22 +1,12 @@
-import React from "react";
-
 import { useTranslation } from "react-i18next";
-
 import { Link } from "react-router-dom";
-
 import logo from "../../assets/images/logo.svg";
-
-import { BsInstagram, BsLinkedin } from "react-icons/bs";
-import {
-    BsFillEnvelopePaperHeartFill,
-    BsFillTelephoneFill,
-} from "react-icons/bs";
+import { BsFillEnvelopePaperHeartFill, BsFillTelephoneFill } from "react-icons/bs";
 import { ImLocation2 } from "react-icons/im";
-
 import classes from "./Footer.module.css";
 
 const Footer = () => {
-    const { t, i18n } = useTranslation("menu");
+    const { t } = useTranslation("menu");
 
     return (
         <div className={`mt-20 ${classes.footer_container}`}>
@@ -42,16 +32,10 @@ const Footer = () => {
                         <div className={classes.about_email}>
                             <BsFillEnvelopePaperHeartFill />
                             <ul>
-                                <Link
-                                    target="_blank"
-                                    to={"mailto:support@smartcode.am"}
-                                >
+                                <Link target="_blank" to={"mailto:support@smartcode.am"}>
                                     <li>support@smartcode.am</li>
                                 </Link>
-                                <Link
-                                    target="_blank"
-                                    to={"mailto:hr@smartcode.am"}
-                                >
+                                <Link target="_blank" to={"mailto:hr@smartcode.am"}>
                                     <li>hr@smartcode.am</li>
                                 </Link>
                             </ul>
@@ -59,18 +43,10 @@ const Footer = () => {
                         <div className={classes.about_location}>
                             <ImLocation2 />
                             <ul>
-                                <Link
-                                    target="_blank"
-                                    to={
-                                        "https://maps.app.goo.gl/mCPUXRZL42V7RizHA"
-                                    }
-                                >
+                                <Link target="_blank" to={"https://maps.app.goo.gl/mCPUXRZL42V7RizHA"}>
                                     <li>{t(`footer.address.first`)}</li>
                                 </Link>
-                                <Link
-                                    target="_blank"
-                                    to={`https://maps.app.goo.gl/iFajxCgt7ftz9dZE7`}
-                                >
+                                <Link target="_blank" to={`https://maps.app.goo.gl/iFajxCgt7ftz9dZE7`}>
                                     <li>{t(`footer.address.second`)}</li>
                                 </Link>
                             </ul>

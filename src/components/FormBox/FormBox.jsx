@@ -1,16 +1,6 @@
-import React, { useEffect, useState } from "react";
-
-import js from "../../assets/images/js.png";
-import c_sharp from "../../assets/images/c#.png";
-
-import node_js from "../../assets/images/node_js.png";
-import windows from "../../assets/images/windows.png";
-import laptop from "../../assets/images/laptop.png";
-
 import { useTranslation } from "react-i18next";
-
 import classes from "./Form.module.css";
-import { random } from "../../utils/helpers";
+
 const FormBox = () => {
     const { t } = useTranslation(`menu`);
     // const [images, setImages] = useState([

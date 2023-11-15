@@ -16,7 +16,7 @@ const appSlice = createSlice({
             },
         },
         supportedLanguages: [`hy`, `ru`, `en`],
-        lang: localStorage.getItem("lang") || 0,
+        lang: +localStorage.getItem("lang") || 0,
     },
     reducers: {
         setIsLoading(state, { payload }) {
